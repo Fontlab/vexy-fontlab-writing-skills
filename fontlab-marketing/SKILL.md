@@ -6,7 +6,10 @@ description: >-
   to action. Use when the user asks for copy that has to draw attention and lead to a purchase, or
   says "write the landing page", "make this more compelling", "write the pitch", "sales copy" or
   "punch this up". Calibrated against the FontLab and TransType landing pages, which the founder
-  wrote himself. For release notes and announcements use fontlab-neutral. For procedures and
+  wrote himself. Routing: this is for people who have not bought yet. Email to existing customers,
+  including upgrade offers and release notices, goes to fontlab-neutral, because a customer who has
+  already paid is owed a notice rather than a pitch. For release notes and announcements use
+  fontlab-neutral. For procedures and
   reference pages use fontlab-technical.
 license: MIT
 metadata:

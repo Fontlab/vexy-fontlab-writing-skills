@@ -3,7 +3,8 @@ name: fontlab-neutral
 description: >-
   Write in the FontLab house voice for release notes, what's-new pages, changelog entries, product
   announcements, documentation introductions, overview pages, About pages, forum and status posts,
-  and blog posts that inform rather than sell. Use when the user asks to write or rewrite anything
+  blog posts that inform rather than sell, and email to people who already bought: upgrade notices,
+  release announcements, licence and account mail. Use when the user asks to write or rewrite anything
   that states what is true and what changed without pitching it, or says "write the release notes",
   "what's new in", "announce this", "write the intro", "objective but not dry", or "in our voice".
   This is the primary voice skill: it is calibrated against 67,000 words of measured house prose.
