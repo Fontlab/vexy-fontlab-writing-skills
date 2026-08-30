@@ -209,6 +209,17 @@ must produce a diff will produce a worse document.
   changed.
 - State the shape of each section in your own head, not in the document.
 
+
+## Before you return the draft
+
+Count these. Do not estimate them.
+
+1. **Dashes.** Reference and procedural prose in the corpus is effectively dash-free, at 0.3 per 1,000 words. The commonest slip is a pair of dashes around a list inside a sentence: use a colon, or parentheses, or split the sentence. Aim for zero.
+2. **Second person.** Count the words you, your, yours. Aim for at least 5 per 1,000 words. Apple and Microsoft both write to the reader, and so does the house corpus, at 19 per 1,000. A procedure written in the third person reads as a specification, not as help.
+3. **The last paragraph.** Does it add a fact? If not, delete it.
+4. **Benefit clauses.** Search for "This means you", "allows you to", "makes it easy to". Weld each to its mechanism with "so you can", or cut it.
+5. **Placeholders.** Every specific you could not source is visible in the text, not silently omitted.
+
 ## Related skills
 
 `fontlab-neutral` for release notes and general product prose, `fontlab-marketing`

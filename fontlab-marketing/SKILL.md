@@ -94,6 +94,17 @@ At tagline and button length only the swap test and the negation test are runnab
 - No comparison scaffold: Before and After, The old way and The new way, Today versus With FontLab. Zero instances in 76,000 words of house prose.
 - Do not explain the domain to a domain expert. Explaining what kerning is on a font editor's product page costs you the sentence you needed for what your kerning does differently.
 
+
+## Before you return the draft
+
+Count these. Do not estimate them.
+
+1. **Dashes.** This register permits about one per 400 words, and only the turn dash, where what follows carries a finite verb or reverses the sentence. Never the appositive gloss dash, and never a pair of dashes around a parenthesis.
+2. **Second person.** Count the words you, your, yours. Aim for 6 to 25 per 1,000 words. Marketing copy that never says you is a brochure about a company.
+3. **The last paragraph.** Does it add a fact? If not, delete it.
+4. **Benefit clauses.** Search for "This means you", "allows you to", "makes it easy to". Weld each to its mechanism with "so you can", or cut it.
+5. **Placeholders.** Every specific you could not source is visible in the text, not silently omitted.
+
 ## When the input is an existing draft
 
 Preserve the claims, the caveats, the section order, and roughly the length. Fix what the bars and the house rules catch and nothing else. If the draft has a benefit clause standing alone as its own sentence, weld it to its mechanism or cut it.

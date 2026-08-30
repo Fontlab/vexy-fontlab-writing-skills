@@ -40,11 +40,12 @@ Domains are lowercase, take no `www`, and go in code font in prose.
 | --- | --- |
 | `fontlab.com` | The main website |
 | `help.fontlab.com` | FontLab and TransType documentation |
-| `pass.fontlab.com` | Sign-in and licence management |
+| `pass.fontlab.com` | Sign-in and license management |
 | `forum.fontlab.com` | The user forum |
 | `app.fontographer.net` | Where Fontographer runs |
 | `help.vexy.art` | Documentation for the four Vexy products |
 | `playlines.vexy.art` | Where Vexy Playlines runs |
+| `partners.fontlab.com` | The partner site. See section 4: its copy says TransType 4 throughout |
 
 ## 3. Collision nouns
 
@@ -56,9 +57,9 @@ FontLab and the Vexy products use these ten words for different things. The list
 
 **Groups.** FontLab: a kerning group, the same idea as a kerning class. Vexy Vextra and Illustrator: artwork bound into a single object. Vexy Lines: a bundle of layers carrying its own source image, behaving like a folder, with the document itself as the top-level group. TransType: a styling group that links the styles of a family. Never write group alone. Write kerning group, artwork group, layer group, or styling group.
 
-**Fills.** FontLab: the Fill tool colours a closed contour, and winding direction decides what fills. Vexy Lines, Linestra, and Playlines: a fill is a generative technique such as Linear, Wave, Halftone, or Stipple. In the Vexy products prefer the phrase fill mode.
+**Fills.** FontLab: the Fill tool colors a closed contour, and winding direction decides what fills. Vexy Lines, Linestra, and Playlines: a fill is a generative technique such as Linear, Wave, Halftone, or Stipple. In the Vexy products prefer the phrase fill mode.
 
-**Brush.** FontLab and Fontographer: a calligraphic tool that keeps the drawn path as a centreline and generates the outline from it, becoming ordinary contours only when you expand it. FontLab adds a Brush panel for angle and width; Fontographer groups Brush with Pencil and Thickness on one toolbar button. Vexy Lines: a tool that paints masks freehand, not artwork. Name the app and say what the stroke becomes.
+**Brush.** FontLab and Fontographer: a calligraphic tool that keeps the drawn path as a centerline and generates the outline from it, becoming ordinary contours only when you expand it. FontLab adds a Brush panel for angle and width; Fontographer groups Brush with Pencil and Thickness on one toolbar button. Vexy Lines: a tool that paints masks freehand, not artwork. Name the app and say what the stroke becomes.
 
 **Knife.** FontLab: one tool with three sub-tools, Add nodes, Break contour, and Slice contour, so only Slice leaves two closed shapes. Fontographer: cuts through contours along a drawn path, sharing the grouped cutting toolbar button with Scissors. Vexy Lines: inserts points and splits curves on Handmade fills and mask contours. Vexy Vextra: adds nodes and breaks a path at a node. Name the app and the mode.
 
@@ -154,7 +155,7 @@ One line each. Where a term appears in section 3, this table gives the short for
 
 | Term | Meaning |
 | --- | --- |
-| OpenType feature | A named piece of typographic behaviour a font offers, such as `liga` |
+| OpenType feature | A named piece of typographic behavior a font offers, such as `liga` |
 | feature code | The text syntax describing OpenType features: classes, lookups, rules |
 | lookup | One group of rules inside GSUB or GPOS, of a single type, applied as a unit |
 | OpenType class | A named group of glyphs feature code can address at once, written with an at sign |
@@ -163,7 +164,7 @@ One line each. Where a term appears in section 3, this table gives the short for
 | cmap | The table mapping Unicode codepoints to glyphs |
 | OS/2 table | The table carrying metadata for applications: vertical metrics, weight and width classes |
 | CVT table | The control values TrueType hinting instructions refer to |
-| colour font table | The extra tables a colour font carries; several formats, because platforms disagreed |
+| color font table | The extra tables a color font carries; several formats, because platforms disagreed |
 | glyph name | The identifier of a glyph inside the font and inside every feature you write |
 | glyph index | The number a glyph occupies in the font's own order, counting from zero |
 | Unicode codepoint | The number Unicode assigns to a character, written with a U plus prefix |
@@ -196,8 +197,8 @@ One line each. Where a term appears in section 3, this table gives the short for
 | AI file | An Adobe Illustrator document, the container the Vexy plug-ins work inside |
 | AIP | An Adobe Illustrator plug-in binary, how Linestra and Vextra reach Illustrator |
 | Lines file | The native document of Vexy Lines: source image, fills, and masks |
-| SVG | The vector graphics format; also names an OpenType colour table |
-| FLREQ | The licence request file written when a machine cannot reach the licensing service |
+| SVG | The vector graphics format; also names an OpenType color table |
+| FLREQ | The license request file written when a machine cannot reach the licensing service |
 
 Write an extension lowercase with the dot: `.vfc`, `.ufo`, `.otf`. Write the format name in the case the table gives.
 
@@ -215,7 +216,7 @@ Write an extension lowercase with the dot: `.vfc`, `.ufo`, `.otf`. Write the for
 | Smart Corner | A live treatment at a node: rounded, cut, or turned into an ink trap |
 | Remove Overlap | Merging overlapping contours into one outline |
 | Sigma | The Fontographer tool for variable font interpolation paths |
-| stroke | The line drawn along a path, with a weight, a colour, and an alignment |
+| stroke | The line drawn along a path, with a weight, a color, and an alignment |
 | centerline | A path down the middle of a stroke rather than around its edge |
 | autotrace | Conversion of a bitmap into vector paths by finding edges and fitting curves |
 | fill mode | One of the named Vexy techniques turning a source image into line work |

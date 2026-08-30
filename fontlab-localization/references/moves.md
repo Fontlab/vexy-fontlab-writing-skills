@@ -71,11 +71,11 @@ string_1 = "The font contains {contour_error_count} glyphs with open contours."
 
 ## 8. The tight button label
 
-**Source.** A button 72 pixels wide, labelled `Remove overlaps`.
+**Source.** A button sized to fit the English label Remove Overlap and nothing more.
 
-**Rewrite.** A button that grows with its label, and a shorter English form where the control cannot grow: `Remove overlaps`, with `Merge` as the fallback and the full phrase in the tooltip.
+**Rewrite.** A button sized for the longest target string, with the English label filling roughly two thirds of it, and the control set to grow rather than truncate.
 
-**What would have broken.** German runs 20 to 35 percent longer, and `Überlappungen entfernen` needs roughly double the width. A fixed 72 pixel button truncates it, and the truncated form reads as a different command. The English label was never the constraint; the English measurement was.
+**What would have broken.** German runs 20 to 35 percent longer than English, so the German label needs close to double the width. A control measured against English truncates it, and a truncated label reads as a different command. The English wording was never the problem; the English measurement was.
 
 ## 9. The contraction in an interface string
 
@@ -87,8 +87,8 @@ string_1 = "The font contains {contour_error_count} glyphs with open contours."
 
 ## 10. The ambiguous date and the bare number
 
-**Source.** The licence expires 08/30/26, and the export finished in 1,250.5 units.
+**Source.** The license expires 08/30/26, and the export finished in 1,250.5 units.
 
-**Rewrite.** The licence expires 2026-08-30. The export finished in 1250.5 font units.
+**Rewrite.** The license expires 2026-08-30. The export finished in 1250.5 font units.
 
 **What would have broken.** `08/30/26` reads as 30 August 2026 in the United States and as an impossible date almost everywhere else, so a translator either guesses or leaves it wrong. The comma in `1,250.5` is a decimal separator in German and Polish, which turns the number into something a thousand times smaller. Naming the unit as font units removes the second guess.

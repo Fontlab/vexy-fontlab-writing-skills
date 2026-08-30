@@ -36,6 +36,12 @@ The rules below are measured, not preferred. The corpus is 67,153 words of FontL
 
 Two things follow that most style advice gets wrong here. Fifteen percent of sentences run over 30 words, so a readability pass that caps sentences at 25 will destroy the register. And roughly half of all paragraphs are a single sentence, so a pass that merges them into developed paragraphs will too.
 
+## Write to the reader, not about the product
+
+The house corpus runs 19 second-person words per 1,000, and some essays reach 38. This is the single measurement a draft most often misses, because writing about a product is the default and writing to a person is a decision.
+
+If your draft is under 8 per 1,000, you have written a product description. Go back and turn the subject around: not "the panel shows which glyphs a sample uses" but "you see which glyphs a sample uses". Not every sentence, and not by force. The corpus alternates: FontLab does something, then you do something with it.
+
 ## The opening
 
 Thirteen essays out of thirteen open the same way: one short declarative sentence whose subject is FontLab or you, stating what the product is or what it lets you reach. Never a scene. Never a problem. Never a question.
@@ -104,6 +110,17 @@ An editor's instinct will remove these. They are the voice.
 - Never describe a fix as complete when the source says partial, and never drop a known issue.
 - Never open with "We are excited to announce", and never open with a version number alone.
 - No rhetorical questions in body copy. The one question in the corpus is an audience tag answered in the same breath: "Tired of click-click-click? Automate excellence with FontLab's scripting."
+
+
+## Before you return the draft
+
+Count these. Do not estimate them.
+
+1. **Dashes.** The corpus runs 0.19 per 1,000 words in this register, which for a 1,000-word piece means zero or one. If you have more than one, replace each with a colon, a comma, or a new sentence.
+2. **Second person.** Count the words you, your, yours. Aim for at least 8 per 1,000 words, which is 8 in a 1,000-word piece. The corpus averages 19.
+3. **The last paragraph.** Does it add a fact? If not, delete it.
+4. **Benefit clauses.** Search for "This means you", "allows you to", "makes it easy to". Weld each to its mechanism with "so you can", or cut it.
+5. **Placeholders.** Every specific you could not source is visible in the text, not silently omitted.
 
 ## When the input is an existing draft
 
