@@ -21,6 +21,12 @@ TARGETS = {
     # the manual and database articles.
     "neutral":   dict(mean=(10, 22), sd=(5, 15), short=(8, 30), long=(0, 21),
                       you=(8, 39), em=(0.0, 1.0), bang=(0.0, 2.5), hedge=(0.0, 1.5)),
+    # The overview and announcement register: a release-notes front page, a
+    # what's-new index, a product overview. Measurably distinct from the essays:
+    # shorter sentences, far more second person, and roughly ten times the
+    # exclamation rate.
+    "announcement": dict(mean=(8, 18), sd=(5, 15), short=(20, 55), long=(0, 12),
+                         you=(8, 40), em=(0.0, 1.0), bang=(0.0, 4.5), hedge=(0.0, 2.0)),
     "marketing": dict(mean=(8, 18), sd=(5, 14), short=(15, 50), long=(0, 10),
                       you=(6, 32), em=(0.0, 3.0), bang=(0.0, 4.0), hedge=(0.0, 1.5)),
     "reference": dict(mean=(12, 24), sd=(6, 15), short=(3, 25), long=(0, 20),

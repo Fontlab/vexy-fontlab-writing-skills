@@ -94,6 +94,12 @@ Zero of thirteen essays end with a summary, a recap, or a call to action. The co
 
 If your draft ends with a paragraph that adds no new fact, delete that paragraph. It is the single most reliable machine tell in this register.
 
+## Conventions this register uses
+
+Interface labels take italics: choose _File > Add Instance_, turn on _Install Fonts_ in the _Destination_ dropdown. Table names, extensions and settings keys take code style: `gvar`, `.woff2`, `COLR`, `CFF2`. Prices carry both currencies against one number when the number is the same: "€$ 99".
+
+An announcement for a release that ships localization may open in the languages it now speaks. That is a greeting, not a translated paragraph, and it is followed immediately by the English sentence that does the work.
+
 ## What to protect
 
 An editor's instinct will remove these. They are the voice.
@@ -113,7 +119,7 @@ An editor's instinct will remove these. They are the voice.
 - No implied endorsement. "Trusted by" needs names and permission.
 - Never describe a fix as complete when the source says partial, and never drop a known issue.
 - Never open with "We are excited to announce", and never open with a version number alone.
-- No rhetorical questions in body copy. The one question in the corpus is an audience tag answered in the same breath: "Tired of click-click-click? Automate excellence with FontLab's scripting."
+- No unanswered questions. A question answered in the same line is a house device, in body copy as much as in a heading: "Need more? Get a lifetime licence." "Bought TransType 4 in 2026? Your upgrade is free." Ask and answer, or do not ask.
 
 
 ## Before you return the draft
@@ -161,11 +167,13 @@ This block is identical in every FontLab writing skill. It is calibrated against
 
 **H8. Banned vocabulary.** delve, leverage, seamless, robust, pivotal, crucial, comprehensive, transformative, game-changing, cutting-edge, meticulous, vibrant, intricate, nuanced, holistic, ever-evolving, tapestry, realm, elevate, unlock, unleash, harness, empower, foster, underscore, showcase, garner, bolster. Also the constructions "serves as", "stands as", "is a testament to", "boasts", and participle analysis tails such as ", highlighting its importance". A banned word inside a quotation or a product's own interface string stays.
 
-**H9. Forbidden constructions, measured at zero in the corpus.** "It's not X, it's Y" (0 in 76,386 words). Comparison scaffolds: Before and After, The old way and The new way, Today versus With FontLab (0 instances; the corpus frame is "Previously, ... now ..."). Rhetorical questions in marketing body copy (0). A closing paragraph that adds no new fact (0 of 13 essays end with a summary or a call to action). A benefit clause standing alone as its own sentence: weld the benefit to the mechanism with "so you can", or drop it.
+**H9. Forbidden constructions, measured at zero in the corpus.** "It's not X, it's Y" (0 in 76,386 words). Comparison scaffolds: Before and After, The old way and The new way, Today versus With FontLab (0 instances; the corpus frame is "Previously, ... now ..."). Unanswered rhetorical questions (0). A question answered in the same breath is a different thing and it is a house device: "Need more? Get a lifetime licence." "Have an older TransType? Upgrade now." "Bought TransType 4 in 2026? Your upgrade is free." Question, then answer, in one line. What the house never does is ask a question and leave the reader holding it. A closing paragraph that adds no new fact (0 of 13 essays end with a summary or a call to action). A benefit clause standing alone as its own sentence: weld the benefit to the mechanism with "so you can", or drop it.
 
 **H10a. The conditional frame is the house's default sentence.** `If you ...` opens 13.7 percent of sentences in the corpus, 463 instances, and zero percent of the pages an AI wrote for this company. It is the strongest single authorship marker measured. Write "If you don't want element references, first go to any glyph where the contours occur" rather than a comparison scaffold or a bare imperative. The parenthetical technical aside behaves the same way: 12 percent of house sentences carry one, against 2 percent on the AI pages. Do not flatten either into plainer syntax.
 
 **H10. What to protect, because an editor will remove it.** Exclamation marks, at about one per 400 words in marketing and overview prose and one per 4,000 in reference prose. The rule of three, which is 7.6 percent of marketing sentences and the highest rate in the corpus. One travelling idiom per document. Self-undercutting asides ("it's up to you!", "this is just a suggestion"). Customer quotations with their repetition intact. The bare ampersand in headings. Bolded verbs rather than bolded nouns in marketing. Single-sentence paragraphs, which are 45 to 57 percent of neutral paragraphs: never merge them into developed paragraphs.
+
+**H10b. House typographic conventions.** Interface labels take italics, not bold, in release notes and overview prose: choose _File > Add Instance_, turn on _Install Fonts_ in the _Destination_ dropdown. Table names, extensions and settings keys take code style: `gvar`, `.woff2`, `COLR`. Prices are written with both currencies and one number when they are equal, in the house's own shorthand: "€$ 99", "€$ 40". A release that ships localization may open in the languages it now speaks, as a greeting rather than as a translated paragraph.
 
 **H11. Names.** FontLab is the product; Fontlab Ltd. is the company. Lowercase `fontlab` is correct only in the Python module name and in domains. Product names never translate. FontLab and the Vexy products share nouns that mean different things: Layers, Masks, Groups, Fills, Brush, Knife, Transform, and at least Pencil, Eraser, Scissors. Name the app whenever a reader could be confused. A document may declare its own short form once, then must use it.
 

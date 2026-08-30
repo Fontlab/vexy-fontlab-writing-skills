@@ -37,6 +37,9 @@ That measurement changed several rules that a generic anti-AI writing skill woul
 - **The rule of three.** 7.6 percent of house marketing sentences, the highest rate in the corpus. It is a signature, not a tell.
 - **Long sentences.** Fifteen percent of house neutral sentences run over 30 words. A readability pass that caps sentences at 25 destroys the register.
 - **Single-sentence paragraphs.** Between 45 and 57 percent of house paragraphs. Merging them into developed paragraphs is a rewrite, not an edit.
+- **Questions.** A question answered in the same line is a house device, not a tell. What the house never does is ask one and leave it hanging.
+
+There are four registers, not three. The overview and announcement register, a release-notes front page or a what's-new index, sits between neutral and marketing: shorter sentences than the essays, more second person than anything else measured, and about ten times the exclamation rate of reference prose. `measure_voice.py --register announcement` carries its bands.
 
 The full set of what a skill must protect, and what it must forbid, is in the shared house rules at the end of every `SKILL.md`.
 
