@@ -22,7 +22,7 @@ TARGETS = {
     "neutral":   dict(mean=(10, 22), sd=(5, 15), short=(8, 30), long=(0, 21),
                       you=(8, 39), em=(0.0, 1.0), bang=(0.0, 2.5), hedge=(0.0, 1.5)),
     "marketing": dict(mean=(8, 18), sd=(5, 14), short=(15, 50), long=(0, 10),
-                      you=(6, 26), em=(0.0, 3.0), bang=(0.0, 4.0), hedge=(0.0, 1.5)),
+                      you=(6, 32), em=(0.0, 3.0), bang=(0.0, 4.0), hedge=(0.0, 1.5)),
     "reference": dict(mean=(12, 24), sd=(6, 15), short=(3, 25), long=(0, 20),
                       you=(5, 40), em=(0.0, 0.5), bang=(0.0, 0.5), hedge=(0.0, 1.5)),
 }
@@ -38,6 +38,7 @@ FORBIDDEN = [
     (r"(?i)\bwe are (excited|thrilled|pleased) to\b", "excited-to-announce opener"),
     (r"(?i)\btrusted by\b(?![^.]{0,60}[A-Z][a-z]+,)", "unnamed social proof"),
     (r"[—–]\s*\w+(ly)?[, ]+\w+(ly)?\.", "possible appositive gloss dash"),
+    (r"(?i)\b(today|the old way)[^.]{0,30}\bwith \w+", "Today-versus-With comparison scaffold"),
 ]
 
 SENT_END = re.compile(r"(?<=[.!?])\s+")

@@ -36,6 +36,10 @@ The rules below are measured, not preferred. The corpus is 67,153 words of FontL
 
 Two things follow that most style advice gets wrong here. Fifteen percent of sentences run over 30 words, so a readability pass that caps sentences at 25 will destroy the register. And roughly half of all paragraphs are a single sentence, so a pass that merges them into developed paragraphs will too.
 
+The single-sentence proportion is an essay property. A page built from six dense capability sections will not reach it, and forcing it there fragments technical content. Match it in prose, not in a specification.
+
+**Write conditionals.** `If you ...` opens 13.7 percent of house sentences and zero percent of the pages an AI wrote here. It is the strongest authorship marker in the corpus, stronger than anything about dashes. Reach for it wherever a sentence depends on what the reader wants.
+
 ## Write to the reader, not about the product
 
 The house corpus runs 19 second-person words per 1,000, and some essays reach 38. This is the single measurement a draft most often misses, because writing about a product is the default and writing to a person is a decision.
@@ -68,7 +72,7 @@ For anything that changed, the standard opening is the old state:
 
 > Previously, harmonized dragging was only available on macOS.
 
-That frame appears 14 times in the essays. It is the house's only comparison device. Do not reach for Before and After, The old way and The new way, or Today versus With FontLab: those appear zero times in 76,000 words.
+That frame appears 14 times in the essays. It is the house's only comparison device, and it needs a documented before-state. If your source is one manual with no changelog, state the current fact directly rather than inventing a previous version to compare against. Do not reach for Before and After, The old way and The new way, or Today versus With FontLab: those appear zero times in 76,000 words.
 
 ## Stating a change
 
@@ -117,7 +121,7 @@ An editor's instinct will remove these. They are the voice.
 Count these. Do not estimate them.
 
 1. **Dashes.** The corpus runs 0.19 per 1,000 words in this register, which for a 1,000-word piece means zero or one. If you have more than one, replace each with a colon, a comma, or a new sentence.
-2. **Second person.** Count the words you, your, yours. Aim for at least 8 per 1,000 words, which is 8 in a 1,000-word piece. The corpus averages 19.
+2. **Second person.** Count the words you, your, yours. Aim for at least 8 per 1,000 words; the corpus averages 19. This is a register target, not an authorship test: the AI-written pages score as highly on it as the house does, so hitting it proves nothing on its own.
 3. **The last paragraph.** Does it add a fact? If not, delete it.
 4. **Benefit clauses.** Search for "This means you", "allows you to", "makes it easy to". Weld each to its mechanism with "so you can", or cut it.
 5. **Placeholders.** Every specific you could not source is visible in the text, not silently omitted.
@@ -158,6 +162,8 @@ This block is identical in every FontLab writing skill. It is calibrated against
 **H8. Banned vocabulary.** delve, leverage, seamless, robust, pivotal, crucial, comprehensive, transformative, game-changing, cutting-edge, meticulous, vibrant, intricate, nuanced, holistic, ever-evolving, tapestry, realm, elevate, unlock, unleash, harness, empower, foster, underscore, showcase, garner, bolster. Also the constructions "serves as", "stands as", "is a testament to", "boasts", and participle analysis tails such as ", highlighting its importance". A banned word inside a quotation or a product's own interface string stays.
 
 **H9. Forbidden constructions, measured at zero in the corpus.** "It's not X, it's Y" (0 in 76,386 words). Comparison scaffolds: Before and After, The old way and The new way, Today versus With FontLab (0 instances; the corpus frame is "Previously, ... now ..."). Rhetorical questions in marketing body copy (0). A closing paragraph that adds no new fact (0 of 13 essays end with a summary or a call to action). A benefit clause standing alone as its own sentence: weld the benefit to the mechanism with "so you can", or drop it.
+
+**H10a. The conditional frame is the house's default sentence.** `If you ...` opens 13.7 percent of sentences in the corpus, 463 instances, and zero percent of the pages an AI wrote for this company. It is the strongest single authorship marker measured. Write "If you don't want element references, first go to any glyph where the contours occur" rather than a comparison scaffold or a bare imperative. The parenthetical technical aside behaves the same way: 12 percent of house sentences carry one, against 2 percent on the AI pages. Do not flatten either into plainer syntax.
 
 **H10. What to protect, because an editor will remove it.** Exclamation marks, at about one per 400 words in marketing and overview prose and one per 4,000 in reference prose. The rule of three, which is 7.6 percent of marketing sentences and the highest rate in the corpus. One travelling idiom per document. Self-undercutting asides ("it's up to you!", "this is just a suggestion"). Customer quotations with their repetition intact. The bare ampersand in headings. Bolded verbs rather than bolded nouns in marketing. Single-sentence paragraphs, which are 45 to 57 percent of neutral paragraphs: never merge them into developed paragraphs.
 
