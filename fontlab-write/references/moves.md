@@ -1,5 +1,5 @@
 ---
-this_file: fontlab-balanced-writing/references/moves.md
+this_file: fontlab-write/references/moves.md
 ---
 
 # Balanced writing: worked cases

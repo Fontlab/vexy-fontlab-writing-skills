@@ -1,12 +1,12 @@
 ---
-name: fontlab-balanced-writing
+name: fontlab-write
 description: >-
   Write new FontLab or Vexy content that balances emotional appeal with technical explanation. Use for balanced or blended product explainers, feature introductions, educational product articles, and briefs asking for both persuasion and precision. For an existing draft requiring revision, use the editing skill instead. Neutral release notes remain neutral unless a balanced style is requested.
 license: MIT
 metadata:
   version: "1.0.0"
   family: fontlab-writing
-  this_file: fontlab-balanced-writing/SKILL.md
+  this_file: fontlab-write/SKILL.md
 ---
 
 # FontLab balanced writing

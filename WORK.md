@@ -4,6 +4,15 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-09-12: rename balanced skills
+
+Renamed balanced editing to `fontlab-rewrite` and balanced writing to
+`fontlab-write`. Updated metadata, path records, evaluation identifiers,
+README entries, and checker coverage. Verified all six moved files against
+their originals: only identifier substitutions changed their contents.
+
+Validation: both renamed skills pass metadata validation, all nine skill checks pass, and both repositories pass whitespace checks. No old identifiers remain in active skill files or the public catalog.
+
 ## 2026-09-12: TLDR skill
 
 Completed the standalone TLDR skill, reference notes, evaluation inputs,

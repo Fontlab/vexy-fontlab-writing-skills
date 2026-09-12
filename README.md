@@ -24,8 +24,8 @@ npx skills add Fontlab/vexy-fontlab-writing-skills --all
 | `fontlab-neutral` | Release notes, what's new, announcements, introductions, About pages. The primary voice skill. |
 | `fontlab-marketing` | Landing pages, product pages, store copy, campaigns, taglines. |
 | `fontlab-technical` | Manuals, procedures, reference pages, help articles, tooltips, API docs. |
-| `fontlab-balanced-writing` | New text that connects emotional appeal to precise technical explanation. |
-| `fontlab-balanced-editing` | Existing mixed text: recognize each passage's job, edit in the matching style, and smooth the transitions. |
+| `fontlab-write` | New text that connects emotional appeal to precise technical explanation. |
+| `fontlab-rewrite` | Existing mixed text: recognize each passage's job, edit in the matching style, and smooth the transitions. |
 | `fontlab-tldr` | Literary condensation to about 20%, preserving source voice, structure, named identities, and distinctive phrases through three private rounds. |
 | `fontlab-terminology` | Product names, term checking, the nouns that mean different things in different apps. |
 | `fontlab-localization` | Writing English that survives translation, and maintaining term tables. |

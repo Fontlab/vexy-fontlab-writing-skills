@@ -4,6 +4,13 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-09-12: shorter writing skill names
+
+Renamed `fontlab-balanced-editing` to `fontlab-rewrite` and
+`fontlab-balanced-writing` to `fontlab-write`. Updated directory names,
+metadata, file-path records, evaluation identifiers, README entries, and
+default path checks. Writing and editing behavior is unchanged.
+
 ## 2026-09-12: TLDR
 
 Added `fontlab-tldr`: literary condensation at about 20% of the source length,

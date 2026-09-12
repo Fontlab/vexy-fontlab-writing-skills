@@ -1,12 +1,12 @@
 ---
-name: fontlab-balanced-editing
+name: fontlab-rewrite
 description: >-
   Edit existing FontLab or Vexy text that mixes emotional and informational passages. Use for balanced or blended edits, requests to preserve appeal while making technical detail exact, or revisions needing smooth transitions between marketing and explanatory prose. Recognize intent down to the clause. For new content without a draft, use the writing skill instead. Neutral-only editing remains neutral.
 license: MIT
 metadata:
   version: "1.0.0"
   family: fontlab-writing
-  this_file: fontlab-balanced-editing/SKILL.md
+  this_file: fontlab-rewrite/SKILL.md
 ---
 
 # FontLab balanced editing

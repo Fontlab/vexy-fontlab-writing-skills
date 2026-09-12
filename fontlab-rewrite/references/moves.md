@@ -1,5 +1,5 @@
 ---
-this_file: fontlab-balanced-editing/references/moves.md
+this_file: fontlab-rewrite/references/moves.md
 ---
 
 # Balanced editing: worked cases
