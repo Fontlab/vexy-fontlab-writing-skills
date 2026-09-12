@@ -1,0 +1,23 @@
+{
+  "skill_name": "fontlab-balanced-editing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Edit in balanced style. Fictional product facts: PairView shows two previews side by side; it does not export. Approved exact quotation: “Finally, a seamless view.” Draft: “See every difference instantly. PairView shows two previews side by side. In terms of technical functionality, it does not export. ‘Finally, a seamless view.’” Preserve the quotation wording.",
+      "expected_output": "Supported comparison appeal and mechanism are joined. Universal and instant claims disappear. The limitation remains explicit; the approved quotation text, including seamless, stays exact.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Edit in balanced style, copy only. Fictional exercise: all facts are verified. Draft: “Preview only the selected objects so you can inspect that part of the drawing. The preview command does not change the document.”",
+      "expected_output": "The complete draft is returned unchanged. No quota-driven emotion, added transition, or missing condition.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Edit in balanced style. Fictional offer terms: EUR 49 for version 3 owners; version 2 owners are not eligible; no deadline. Draft: “Your upgrade is only EUR 49, so everyone can join in. Version 2 is different.”",
+      "expected_output": "The passage is treated as factual offer terms despite its emotional vocabulary. Preserve EUR 49 and make version 3 eligibility and version 2 exclusion explicit. No invented urgency.",
+      "files": []
+    }
+  ]
+}

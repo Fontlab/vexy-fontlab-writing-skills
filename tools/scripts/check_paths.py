@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# this_file: tools/scripts/check_paths.py
 """Fail if anything a fontlab-* skill references does not exist.
 
 Two kinds of reference are checked:
@@ -17,7 +18,8 @@ import sys
 from pathlib import Path
 
 SKILLS = ["fontlab-neutral", "fontlab-technical", "fontlab-marketing",
-          "fontlab-terminology", "fontlab-localization", "fontlab-partners"]
+          "fontlab-terminology", "fontlab-localization", "fontlab-partners",
+          "fontlab-balanced-writing", "fontlab-balanced-editing", "fontlab-tldr"]
 LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 BACKTICK = re.compile(r"`([^`\n]+)`")
 POINTER_SECTION = re.compile(

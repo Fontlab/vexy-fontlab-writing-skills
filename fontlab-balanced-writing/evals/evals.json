@@ -1,0 +1,23 @@
+{
+  "skill_name": "fontlab-balanced-writing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a balanced introduction and a short procedure for the fictional RegionSketch. Facts: Width changes the stroke width only in the selected region; the preview updates after Width changes; existing source pixels remain unchanged. Verified sequence: select a region, then change Width. No speed or automatic-selection claims are supported.",
+      "expected_output": "A concrete invitation leads into the selected-region mechanism. Two separate actions form the procedure. The preview result and source-pixel boundary remain exact. No ease or speed promise.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write a balanced two-sentence introduction to the fictional PairView. Evidence: it displays two supplied previews side by side; it does not export files. The brief asks for a claim that reviews are twice as fast, but no benchmark is provided.",
+      "expected_output": "An engaging comparison action connects to the display mechanism; no fabricated benchmark. Unsupported speed is visibly marked or explicitly withheld in notes, and the export limitation is preserved.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Write a balanced customer notice for fictional Proof Viewer 4. Facts: version 3 owners pay EUR 29; version 2 owners are ineligible; the supplied next action is to contact support@example.com to request the upgrade. No deadline or new capability is documented. Keep it short.",
+      "expected_output": "Cost, eligibility, and the verified action appear early. No invented feature, deadline, emotional padding, or selling the owned product.",
+      "files": []
+    }
+  ]
+}

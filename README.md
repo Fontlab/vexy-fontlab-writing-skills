@@ -1,3 +1,7 @@
+---
+this_file: README.md
+---
+
 # FontLab writing skills
 
 Agent skills that write in the FontLab house voice. Install them into Claude Code, Cursor, Codex, or any tool that reads `SKILL.md` files:
@@ -20,11 +24,18 @@ npx skills add Fontlab/vexy-fontlab-writing-skills --all
 | `fontlab-neutral` | Release notes, what's new, announcements, introductions, About pages. The primary voice skill. |
 | `fontlab-marketing` | Landing pages, product pages, store copy, campaigns, taglines. |
 | `fontlab-technical` | Manuals, procedures, reference pages, help articles, tooltips, API docs. |
+| `fontlab-balanced-writing` | New text that connects emotional appeal to precise technical explanation. |
+| `fontlab-balanced-editing` | Existing mixed text: recognize each passage's job, edit in the matching style, and smooth the transitions. |
+| `fontlab-tldr` | Literary condensation to about 20%, preserving source voice, structure, named identities, and distinctive phrases through three private rounds. |
 | `fontlab-terminology` | Product names, term checking, the nouns that mean different things in different apps. |
 | `fontlab-localization` | Writing English that survives translation, and maintaining term tables. |
 | `fontlab-partners` | Content for partners.fontlab.com, where the traps are structural rather than stylistic. |
 
 Each skill is self-contained. It installs on its own, carries every rule it enforces, and reads no file outside its own directory.
+
+Balanced is a deliberate mixture, not a new name for neutral. Use neutral for the established factual house voice. Use balanced writing when a new piece needs both reader appeal and technical detail; use balanced editing when a draft already mixes those jobs. There is no fixed percentage, and limitations, prices, and procedures stay factual. The balanced skills reuse the measured registers; no separate balanced corpus or score is claimed.
+
+Use `/fontlab-tldr` to condense a source while keeping its own narrative voice. It combines neutral-writing discipline with three rounds at the same 20% target, then returns only the final text. When no distinctive English style is identifiable, it uses ASD-STE100 as the fallback.
 
 ## Why these are not generic writing skills
 
