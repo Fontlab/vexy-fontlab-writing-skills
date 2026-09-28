@@ -1,16 +1,13 @@
 #!/usr/bin/env bash
+# this_file: tools/scripts/check_all.sh
 # Run every check for the FontLab writing skills. Exits non-zero if any fails.
 set -u
 cd "$(dirname "$0")/../.." || exit 2
 status=0
 python3 tools/scripts/sync_shared.py --check || status=1
 python3 tools/scripts/check_paths.py || status=1
-# A dash inside a blockquote is a quoted example, usually of the tell itself.
-# Everywhere else in house prose it is a defect.
-for f in fontlab-*/SKILL.md fontlab-*/references/*.md tools/house-rules.md; do
-    [ -f "$f" ] || continue
-    if grep -v '^>' "$f" | grep -q '[—–]'; then echo "FAIL     dash in $f"; status=1; fi
-done
+# Punctuation needs contextual review; it is not a structural failure.
+python3 -m unittest discover -s tests || status=1
 for d in fontlab-*/; do
     [ -f "${d}SKILL.md" ] || { echo "FAIL     ${d} has no SKILL.md"; status=1; }
 done

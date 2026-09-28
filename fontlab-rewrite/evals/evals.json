@@ -18,6 +18,12 @@
       "prompt": "Edit in balanced style. Fictional offer terms: EUR 49 for version 3 owners; version 2 owners are not eligible; no deadline. Draft: “Your upgrade is only EUR 49, so everyone can join in. Version 2 is different.”",
       "expected_output": "The passage is treated as factual offer terms despite its emotional vocabulary. Preserve EUR 49 and make version 3 eligibility and version 2 exclusion explicit. No invented urgency.",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Line-edit this balanced introduction, preserving its quiet aside and approximate length: “Start with the edge. Our viewer can show a selected drawing on a light or dark background. This background is for the preview only. Exported artwork is unchanged. An edge can keep you occupied for a while.” Fictional facts: the viewer shows the selected drawing on a light or dark background; only the preview background changes; exported artwork is unchanged. No readability judgment or automatic comparison is supplied.",
+      "expected_output": "One concrete detail connects invitation, display mechanism and the unchanged exported artwork. Pace serves the thought; no invented readability, automation or export capability. Editing retains the useful aside and returns copy only. New writing develops the detail without borrowing an unsupported product claim.",
+      "files": []
     }
   ]
 }

@@ -1,178 +1,199 @@
-# Moves
+<!-- this_file: fontlab-technical/references/moves.md -->
 
-Before and after pairs from real FontLab material. Each pair ends with one line
-saying what changed and why.
+# Technical writing: worked cases
 
-## 1. Two actions in one step
+The application packets below are fictional and define the scope of each example.
+The Python sample is a separate, executable language example. None establishes
+FontLab or Vexy behavior.
 
-**Before:** Press Shift+F1 to open the Help panel and place it where you can
-conveniently read the text, then open Tools > Commands & Shortcuts.
+## Follow the same object through a change
 
-**After:** Press ++Shift+F1++ to open the ==Help== panel. Place it so that you
-can conveniently read the text. Then open ==Tools > Commands & Shortcuts==.
+Facts: a viewer shows a selected drawing. Zoom changes its display scale without
+changing the drawing data. The viewer does not assess whether detail is readable.
 
-*Changed:* three instructions, three sentences, house notation on the key and
-the path. A reader who is executing cannot hold two actions in one line.
+Flat draft:
 
-## 2. The verb tells the reader which input to use
+> Zoom changes the scale. Data stays unchanged. Readability is not assessed.
 
-**Before:** Select Tools > Commands & Shortcuts, then select the Apply checkbox
-and select the command from the list.
+Concept revision:
 
-**After:** Choose ==Tools > Commands & Shortcuts==. Turn on ==Apply==. Click the
-command in the list.
+> Zoom changes how large the selected drawing appears. Follow a detail as the
+> display scale changes: you are inspecting the same drawing data in a different
+> view. You judge whether the detail remains readable; the viewer does not
+> assess it.
 
-*Changed:* one word, one meaning. Choose a menu command, turn on a checkbox,
-click a control. Microsoft's input-agnostic *select* hides three different
-gestures behind one verb.
+The drawing carries the explanation from operation to boundary. The middle
+sentence develops a relationship instead of adding a list of controls. It does
+not promise sharper detail or a change to saved artwork.
 
-## 3. Agency
+For a local reference note:
 
-**Before:** Kerning is stored in the kern feature and spacing can be adjusted
-using the arrow keys.
+> Zoom changes the display scale, not the drawing data.
 
-**After:** FontLab stores the kerning in the font's `kern` feature. You adjust
-spacing with ++Alt++ and the arrow keys.
+The short version answers a local question. It does not need the introduction’s
+patient pace. Neither version supplies an undocumented zoom gesture.
 
-*Changed:* the app acts, or you act. Passive voice removes the actor, and in a
-procedure the actor is the whole point.
+## Separate actions at useful checkpoints
 
-## 4. Ambiguous participle
+Facts: in Shape Editor, choose Edit > Preferences, turn on Show grid and choose
+Apply. The destination supports plain Markdown.
 
-**Before:** Using the Contour tool, the nodes can be moved along the italic
-angle.
+Draft:
 
-**After:** If ==Contour > Coordinates > Follow Italic Angle== is turned on, and
-you move an anchor with the ++Up++ or ++Down++ arrow keys, the anchor movement
-follows the italic angle.
+> Open the preferences and show the grid and apply it.
 
-*Changed:* the participle had no subject. The rewrite names the setting, the
-actor, the keys, and the result, in that order.
+Revision:
 
-## 5. Condition before action
+> 1. Choose **Edit > Preferences**.
+> 2. Turn on **Show grid**.
+> 3. Choose **Apply**.
 
-**Before:** Double-click the Contour tool icon in the toolbar to open the
-toolbox and turn on the first icon, if Power Nudge is not already on.
+The ordered steps expose the exact route. No shortcut, confirmation message or
+unsupported highlight notation is added. A result can follow a step when the
+packet establishes it; this one supplies only the actions.
 
-**After:** To toggle Power Nudge, double-click the ==Contour== tool icon in the
-toolbar to open the toolbox, and turn on the first icon, or press ++Shift+C++.
+## Let an unknown method remain unknown
 
-*Changed:* the goal moved to the front so a reader who does not want it can
-abandon the step before performing it.
+Facts: spacing is adjustable, but the source names no control or input method.
 
-## 6. A sentence that is correctly long
+Capability statement:
 
-**Before:** Snapping works with zones and guides. It also works with hints and
-nodes. Angles, stem distances, continuation lines, perpendicular lines and
-centerlines are supported too.
+> Spacing can be adjusted.
 
-**After:** Dynamically snap to zones, guides, hints, nodes, angles, stem
-distances, continuation lines, perpendicular lines and centerlines.
+Working procedural text:
 
-*Changed:* nothing was too long. One enumerating sentence at 20 words reads as a
-list of what the feature covers; three sentences read as three separate
-features. Do not chop an enumeration to hit a cap.
+> [CONFIRM METHOD: control or command for adjusting spacing]
 
-## 7. STE and the house corpus pulling apart
+The first sentence may be sufficient for an overview. It cannot become a usable
+step by adding “press the arrow keys”. A requested procedure remains unfinished
+until its method is known.
 
-**Before, an STE-style rewrite:** Stroke allows different thickness on either
-side. Stroke does not allow diagonal contrast. Diagonal contrast is global
-thickness modulation along a diagonal axis. A broad-nib pen makes it.
+## Preserve the interval
 
-**After, the house sentence:** Stroke allows different thickness on either side,
-but does not allow diagonal contrast (global thickness modulation along a
-diagonal axis, like made by a broad-nib pen).
+Facts: preview updates remain paused for the whole time the Settings dialog is open.
 
-*Changed:* nothing, and that is the point. STE's 20-word cap would win if this
-were a numbered step. It is a concept paragraph, so the corpus wins: capability
-and limit in one sentence joined by "but", with the definition of the missing
-thing parked in a parenthesis the reader can skip. The rule: the cap stops the
-moment the sentence stops being something the reader executes.
+Draft:
 
-## 8. A limitation reframed as a positioning
+> Preview updates pause when Settings opens.
 
-**Before:** TransType focuses on producing reliable static output.
+Revision:
 
-**After:** TransType does not export a new variable font. The output is always
-static.
+> Preview updates stay paused while the Settings dialog is open.
 
-*Changed:* the negation came back. A buyer needs the restriction, and the
-reframe reads as a feature wearing a limitation's grammar.
+The revised sentence holds the state across the open interval. It adds no claim
+about what happens after closing. A conjunction should express supplied timing,
+not invent it.
 
-## 9. The invented closing paragraph
+## Put the consequence before the action
 
-**Before:** For precise control of the naming, please use ==File > Font Info==.
-#4933
+Facts: Clear notes permanently removes all notes from the current document and
+cannot be undone. No backup command is supplied.
 
-With these improvements, FontLab 8 gives you more control over glyph naming than
-ever before, so you can focus on what matters most: your design.
+Revision:
 
-**After:** For precise control of the naming, please use ==File > Font Info==.
-#4933
+> **Warning:** Clear notes permanently removes all notes from this document.
+> You cannot undo the command.
+>
+> Choose **Clear notes**.
 
-*Changed:* the terminal paragraph added no fact. House documents end on the last
-technical item, including a restriction or an issue number.
+The reader meets the consequence before the command. A decorative metaphor or
+an invented backup route would make this passage less dependable, not warmer.
+The example describes the operation; it does not claim the command was run.
 
-## 10. Adverbs as a symptom
+## Give a next step without inventing a cause
 
-**Before:** The new stroke engine works really smoothly and handles complex
-contours very efficiently.
+Facts: export stops with E17. Its cause is unknown. The supported next step is
+to send the error code and file version to support.
 
-**After:** The all-new stroke engine adds flexibility to how you specify outline
-strokes for existing contours, and allows you to create skeleton-based drawings.
+Draft:
 
-*Changed:* "really smoothly" and "very efficiently" were propping up verbs that
-said nothing. The replacement names what the engine does, which is what the
-adverbs were pretending to.
+> A damaged font causes E17. Reinstall the app to fix it.
 
-## 11. The metaphor budget
+Revision:
 
-**Before:** FontLab is an integrated font creation workhorse. It puts you in the
-driver's seat, gives you a Swiss army knife of drawing tools, and lets your
-creativity take flight.
+> If export stops with E17, send the error code and file version to support.
+> The cause has not been established.
 
-**After:** FontLab 8 is an integrated font creation workhorse.
+The revised passage retains a useful action while removing the diagnosis and
+remedy that the packet cannot support. Unknown cause does not mean there is
+nothing useful to tell the reader.
 
-Rapidly build glyphs from components or from always-editable element references.
-Automate complex glyphs with ==Auto layers==. Join design parts and add flair
-with ==Skin== and ==Glue==.
+## Keep polarity and scope
 
-*Changed:* one image, one vehicle, spent in sentence one. The three that
-followed were three vehicles fighting. The energy is paid back with named tools
-rather than more pictures.
+Facts: turning on Include stroke includes stroke thickness in the bounds
+calculation.
 
-## 12. Troubleshooting starts at the symptom
+Tooltip:
 
-**Before:** FontLab's font naming validation is designed to help you catch
-problems in a font's name records before conversion. When a font is flagged, it
-means the naming may require attention.
+> Include stroke thickness when calculating bounds.
 
-**After:** If TransType marks a font red, it wants you to review that font's
-naming. Check it before you convert.
+Keep “include” distinct from “ignore”. Shortening cannot reverse an option.
 
-*Changed:* the reader arrives holding a red row, not a curiosity about
-validation design. Start where they are, then say what to do.
+Separate fictional facts: Quick Find searches names and notes except archived
+notes. A supported sentence is:
 
-## 13. A tooltip is reference at fifteen words
+> Quick Find searches names and notes, except archived notes.
 
-**Before:** This useful option lets you control whether or not the stroke
-thickness will be taken into account when FontLab is calculating sidebearings.
+The last three words carry the boundary. Removing them to reach a length target
+changes the expected search scope.
 
-**After:** Ignore stroke thickness when calculating sidebearings.
+## Keep reference values attached to their meaning
 
-*Changed:* a tooltip has one job. The cadence rules do not apply below roughly
-40 words, but agency, accuracy and the interface conventions still do.
+Fictional facts: a parameter has a range of 0 to 100 percent and a default of
+50 percent. No recommended value or out-of-range behavior is supplied.
 
-## 14. Reference prose that hides the fact
+| Property | Value |
+|---|---|
+| Unit | Percent |
+| Range | 0 to 100 |
+| Default | 50 |
 
-**Before:** It is generally considered to be the case that the ascender
-dimension is something that can be described as the distance measured from the
-baseline up to the ascender line, and it can be important for spacing.
+This table does not explain what either endpoint does, or whether an invalid
+input is rejected or clamped. Keep those questions open. If you reorder the
+table, compare whole rows so that 50 remains a default rather than a limit.
 
-**After:** The distance from the baseline to the ascender line defines the
-ascender dimension. It may extend above cap height, depending on the design.
-FontLab uses it for vertical metrics and line spacing.
+## Give a code sample an inspectable result
 
-*Changed:* the fact moved into the first half of the first sentence, the hedge
-became a real caveat with a reason, and the vague "important for spacing" became
-the two things it is actually used for.
+Prerequisite: Python 3. This example counts three supplied names; it does not
+read a font or modify a file. Python’s built-in [len function](https://docs.python.org/3/builtins/functions.html#len)
+reports the number of items in the list.
+
+```python
+# this_file: count_glyph_names.py
+glyph_names = ["A", "Adieresis", "B"]
+print(len(glyph_names))
+```
+
+Output:
+
+```text
+3
+```
+
+The sample’s scope is small and visible. It does not establish a product API or
+count glyphs in an open document. A prose edit must not replace these literals
+or invent a FontLab method to make the example look more relevant.
+
+## Practice the instructional second pass
+
+Fictional facts: a viewer’s Show names option displays object names in the
+preview. Exported artwork omits those names. No renaming operation or menu path
+is supplied.
+
+Write a concept paragraph and a tooltip. Let the paragraph follow the names
+from preview to export; let the tooltip answer the option’s local question.
+A possible pair:
+
+> **Concept:** Show names adds object names to the preview, giving you a way to
+> identify what you are looking at. The names belong to that view; exported
+> artwork omits them.
+>
+> **Tooltip:** Display object names in the preview. Exported artwork omits them.
+
+The paragraph follows the names from their visible role to their absence in
+output. The tooltip keeps that distinction without a separate introduction.
+Neither adds renaming or an undocumented menu route.
+
+Then compare the two against the same facts. Retain the boundary while choosing
+a different amount of explanation. If a procedure is requested, mark the missing
+route instead of constructing one from the option’s name.

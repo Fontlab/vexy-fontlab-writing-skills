@@ -1,94 +1,183 @@
-# Moves: English that survives translation
+<!-- this_file: fontlab-localization/references/moves.md -->
 
-Ten worked pairs. Each one is about the English, not about any translation. The source sentence is plausible English that a reviewer would pass. The rewrite says the same thing and survives.
+# Localization: worked cases
 
-The line after each pair names the mechanism. "Confusing for translators" is not a mechanism. Word order, gender resolution, a slot with no readable name: those are mechanisms.
+A translation needs the source’s relationships as well as its words. These
+fictional exercises establish their facts before revision. They demonstrate
+source preparation and editorial choices; they do not certify a language review
+or behavior tested in an application.
 
-## 1. The long sentence
+## Give a comparison its two subjects
 
-**Source.** When you have finished adjusting the sidebearings of the glyph and you are satisfied that the spacing looks even across the whole alphabet, you can open the Kerning panel and begin adding the pair values that correct the combinations the sidebearings cannot handle on their own.
+Facts: A procedure compares the node counts of Light and Bold masters. The
+source requires matching counts before interpolation; it says nothing about
+other compatibility conditions.
 
-**Rewrite.** Adjust the sidebearings of the glyph. Check that the spacing looks even across the alphabet. Then open the Kerning panel and add pair values. Pair values correct the combinations that sidebearings cannot handle.
+Draft:
+> Compare Light with Bold and check that it has the same node count before interpolating.
 
-**What would have broken.** German holds the finite verb of a subordinate clause at the end, so a translator has to carry four stacked conditions before the verb arrives and tells the reader what to do with them. The sentence is readable in English only because English resolves early.
+Revision:
+> Before interpolating, check that the Light and Bold masters have the same node count.
 
-## 2. The idiom
+Both masters now share the same grammatical task. The reader can compare them
+without deciding what “it” meant. Matching counts remains a prerequisite in this
+packet; the revision does not make it a complete compatibility test.
 
-**Source.** Vexy Lines has your back when the source image is noisy, so you can blaze through the cleanup and ship in a breeze.
+## Remove a promise the facts cannot carry
 
-**Rewrite.** Vexy Lines removes most of the noise from a source image automatically, so the cleanup takes less time.
+Facts: The brief says only that Shape Editor supports manual image cleanup.
+No automatic noise reduction or timing measurement is supplied.
 
-**What would have broken.** "Has your back", "blaze through", and "ship in a breeze" have no equivalent in most target languages. A translator renders them literally, producing a sentence about someone standing behind you, or drops them and returns a sentence with no content, because the claim was carried entirely by the figures.
+Draft:
+> Shape Editor has your back: blaze through cleanup and ship in a breeze.
 
-## 3. The pronoun across clauses
+Revision:
+> Use Shape Editor for manual image cleanup.
 
-**Source.** Open the Layers and Masters panel, select the Light master, and check that it matches the number of nodes in the Bold master before you interpolate, because otherwise it will fail.
+The shorter revision has less flourish because the brief supplies little to
+develop. If the piece needs more interest, obtain a useful detail about the
+manual work. A translator should not have to invent automatic cleanup or a
+speed claim to make the original excitement plausible.
 
-**Rewrite.** Open the Layers and Masters panel and select the Light master. Check that the Light master has the same number of nodes as the Bold master. If the node counts differ, the interpolation fails.
+## Preserve positional placeholders
 
-**What would have broken.** The first "it" points at the Light master and the second at the interpolation, four and eight words back. German assigns each pronoun by grammatical gender, so both resolve to whichever preceding noun matches, and neither translator nor reviewer can see the error from the target text alone.
+Facts: The existing parser uses `%1`, `%2`, and `%3` for exported count, total
+count, and output folder. The task permits prose editing but no format migration.
 
-## 4. The stacked nouns
-
-**Source.** Set the font family name field label width in the export options dialog.
-
-**Rewrite.** In the Export options dialog, set the width of the label of the Font family name field.
-
-**What would have broken.** Six nouns in a row carry their relationships only in English word order. Every translator has to reconstruct which noun modifies which, and three translators reconstruct it three ways. The rewrite spells the relationships out with prepositions, so nothing is left to reconstruct.
-
-## 5. If against when
-
-**Source.** When the font contains no kerning, FontLab writes an empty `kern` feature.
-
-**Rewrite.** If the font contains no kerning, FontLab writes an empty `kern` feature.
-
-**What would have broken.** English "when" covers both the temporal sense and the conditional one. German has to choose between wenn and als, Polish between jeśli and kiedy, and a translator reading "when" will often pick the temporal word. The sentence then promises that a font will eventually contain no kerning, which is not what it says.
-
-## 6. The sentence assembled from separate strings
-
-**Source.** Two interface strings, concatenated at run time.
-
-```
-string_1 = "The font contains"
-string_2 = "glyphs with open contours."
+Source string:
+```text
+Exported %1 of %2 instances to %3.
 ```
 
-**Rewrite.** One string, one whole sentence, with a named placeholder.
+Keep the resource syntax. Explain that `%1` is the exported count, `%2` is the
+total count and `%3` is a folder path. The translator needs these relationships
+before arranging the sentence. Check whether the parser permits reordering;
+brace syntax would require a format change, even if its names look clearer.
 
+## Distinguish message design from translation
+
+Facts: A developer proposes a new count message. The message framework and
+plural syntax have not been chosen.
+
+Draft design:
+```text
+prefix = "The document contains"
+suffix = "objects."
 ```
-string_1 = "The font contains {contour_error_count} glyphs with open contours."
-```
 
-**What would have broken.** German puts the verb at the end of a subordinate clause and Japanese puts it at the end of the sentence, so the two halves cannot stay in the order the concatenation forces. Neither string is a sentence, so neither translator sees the whole thing, and no reviewer sees the joined result until it ships.
+Review: specify one complete grammatical message, the meaning of its count and
+the required plural cases. Then choose syntax the selected framework supports.
+Until that choice is made, `{count}` is a schematic label in the discussion,
+not an executable resource. Do not give a translator three fragments and ask
+them to recover the grammar between them.
 
-## 7. The positional placeholder
+## Preserve duration
 
-**Source.** `"Exported %1 of %2 instances to %3."`
+Facts: Updates remain paused throughout the time the Settings dialog is open.
 
-**Rewrite.** `"Exported {exported_count} of {total_count} instances to {output_folder}."`
+Draft:
+> Updates pause when Settings opens.
 
-**What would have broken.** A translator reading `%1` cannot tell whether it holds a number, a name, or a path, so any reordering the target language needs is a guess. A wrong guess swaps a count for a folder name and the string still compiles.
+Revision:
+> Updates remain paused while the Settings dialog is open.
 
-## 8. The tight button label
+The revised sentence holds the pause across the entire open interval. Preserve
+that duration in the target language; no particular English word is a universal
+solution. A shorter sentence that describes only the opening event loses it.
 
-**Source.** A button sized to fit the English label Remove Overlap and nothing more.
+## Do not invent a unit
 
-**Rewrite.** A button sized for the longest target string, with the English label filling roughly two thirds of it, and the control set to grow rather than truncate.
+Facts: A record gives “1250.5 units” without identifying the unit. The expiry
+date is explicitly 30 August 2026.
 
-**What would have broken.** German runs 20 to 35 percent longer than English, so the German label needs close to double the width. A control measured against English truncates it, and a truncated label reads as a different command. The English wording was never the problem; the English measurement was.
+Draft:
+> The license expires 08/30/26. The measured value is 1250.5 units.
 
-## 9. The contraction in an interface string
+Working revision:
+> The license expires on 30 August 2026. The measured value is 1250.5
+> [CONFIRM UNIT].
 
-**Source.** `"The font hasn't been saved. Don't close it yet."`
+The spelled-out date resolves a known fact. The marker preserves an unknown one.
+The target can use its normal display conventions once the unit is established,
+while retaining the actual quantity. Fluent wording cannot supply the unit.
 
-**Rewrite.** `"The font has not been saved. Do not close the font yet."`
+## Review contractions as wording
 
-**What would have broken.** Contractions break string extraction and matching, and the apostrophe arrives as three different characters depending on the editor that touched the file last. The rewrite also drops the "it", which had the same across-clause problem as move 3.
+Facts: The file is unsaved. The user asks for formal English wording; this is
+plain text, with no parser change.
 
-## 10. The ambiguous date and the bare number
+Draft:
+> The file hasn't been saved. Don't close it yet.
 
-**Source.** The license expires 08/30/26, and the export finished in 1,250.5 units.
+Revision:
+> The file has not been saved. Do not close the file yet.
 
-**Rewrite.** The license expires 2026-08-30. The export finished in 1250.5 font units.
+The expanded verbs fit the requested formality, and “the file” makes the final
+reference explicit. This is a wording revision. It establishes nothing about
+string extraction, parser behavior or whether contractions suit another surface.
 
-**What would have broken.** `08/30/26` reads as 30 August 2026 in the United States and as an impossible date almost everywhere else, so a translator either guesses or leaves it wrong. The comma in `1,250.5` is a decimal separator in German and Polish, which turns the number into something a thousand times smaller. Naming the unit as font units removes the second guess.
+## Test expansion instead of predicting it
+
+Facts: A button fits its English label exactly. Target translations have not
+yet been measured.
+
+Review: put the actual translated labels in the component at its supported
+widths and text sizes. If they do not fit, let the control grow or revise the
+wording without removing its meaning. An estimated expansion allowance is a
+planning aid, not an observed result.
+
+## Keep a proposal separate from approval
+
+Facts: A fictional catalog contains four terms: two approved translations, one
+proposed translation, and one decision to keep the source term. The project
+counts approved and do-not-translate terms as settled.
+
+Result: 3 of the 4 terms meet this project’s settled-status definition, giving
+75% terminology coverage. Keep the proposed translation visibly proposed. The
+count says which statuses exist; it does not independently establish their
+correctness, prose coverage or completed native review.
+
+## Keep an introduction’s movement
+
+Fictional facts: a viewer displays the same drawing against two background
+colors. Changing the background does not change the drawing data. Its interface
+label Background remains English in the target locale. No assessment or export
+behavior is supplied.
+
+Source introduction:
+
+> Follow the same line against two backgrounds. Background changes the preview
+> color while leaving the drawing data unchanged. The line is the same; its
+> surroundings have changed.
+
+Proposed Polish rendering, for editorial review:
+
+> Obejrzyj tę samą linię na dwóch tłach. Ustawienie Background zmienia kolor tła
+> podglądu, ale nie zmienia danych rysunku. Linia pozostaje ta sama; zmienia się
+> jej otoczenie.
+
+The proposal follows the line through a changed setting and retains the final
+contrast. Its sentence structure fits the target without adding a contrast
+assessment or export claim. Background remains the actual interface label.
+This is a worked proposal, not an approved project translation.
+
+For a local notice, both languages should answer more directly:
+
+> Background changes the preview background, not the drawing data.
+>
+> Ustawienie Background zmienia tło podglądu, ale nie dane rysunku.
+
+The shorter surface needs the boundary. The introduction gives the reader time
+to look. Do not preserve the introduction’s length merely to make the target
+resemble the source on the page.
+
+## Practice the second review
+
+Take a fresh fictional packet: a viewer shows a map with or without labels.
+Show labels is the exact untranslated control name. Source map data is unchanged;
+no editing or navigation behavior is supplied.
+
+Write a source introduction and a target-language proposal for an identified
+locale. First compare facts, labels and scope. Then read for the subject carried
+between sentences and the pace of the ending. Finally recheck the facts: a
+more natural phrase must not turn a viewing control into a map editor.

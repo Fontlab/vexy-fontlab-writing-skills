@@ -18,6 +18,12 @@
       "prompt": "Write a balanced customer notice for fictional Proof Viewer 4. Facts: version 3 owners pay EUR 29; version 2 owners are ineligible; the supplied next action is to contact support@example.com to request the upgrade. No deadline or new capability is documented. Keep it short.",
       "expected_output": "Cost, eligibility, and the verified action appear early. No invented feature, deadline, emotional padding, or selling the owned product.",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Write a balanced introduction in a patient, observant voice. Fictional facts: the viewer shows the selected drawing on a light or dark background; only the preview background changes; exported artwork is unchanged. No readability judgment or automatic comparison is supplied.",
+      "expected_output": "One concrete detail connects invitation, display mechanism and the unchanged exported artwork. Pace serves the thought; no invented readability, automation or export capability. Editing retains the useful aside and returns copy only. New writing develops the detail without borrowing an unsupported product claim.",
+      "files": []
     }
   ]
 }

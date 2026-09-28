@@ -4,56 +4,110 @@ this_file: fontlab-tldr/references/moves.md
 
 # TLDR reference notes
 
-## Neutral craft within a source's voice
+A shorter text should still have a way of looking. Preserve the source’s speaker,
+the detail that changes a judgment and the relationships that make its phrases
+mean something. Condensation can remove scenery; it should not remove the turn
+for which the scenery prepared us.
 
-Retain exact claims, conditions, names, and useful asides. Condense through
-elimination. Preserve the original perspective and structure instead of
-installing a product-first opening, second person, or present tense.
+The examples below are original fictional teaching material. Local examples of
+a sentence or transition demonstrate one choice; they do not claim to be complete
+20% condensations of an unseen source.
 
-A first-person memoir should still say “I”. A report about Mara should still
-name Mara. A release note saying a fix “may reduce” a symptom must not say it
-“eliminates” the symptom. A quoted joke stays exact, including words that would
-normally be removed from house prose.
+## Keep the qualification with the judgment
 
-## The STE fallback
+Source fragment:
+
+> I thought the second proof clearer, although its smaller caption still needed
+> work. I sent it back with a note about the caption.
+
+Faithful condensation:
+
+> I returned the second proof: I thought it clearer, but its smaller caption
+> still needed work.
+
+Distorted version:
+
+> I approved the clearer proof.
+
+The distorted version loses both the action and the reservation. The faithful
+version remains in first person and connects the return to the unfinished detail.
+It has not turned a provisional judgment into approval.
+
+## Keep the two ends of a recurrence
+
+Source fragment:
+
+> We put the spare key beside the door while we searched for the main one.
+> After an hour, we used the spare. It had spent the afternoon being available.
+
+A possible local condensation:
+
+> We searched an hour, then used the spare key beside the door. It had spent
+> the afternoon being available.
+
+The key’s availability is both a fact and the dry observation. Retaining only
+“We used the spare key” keeps the action but loses the narrator’s perspective.
+Adding a louder joke would supply a different voice.
+
+A longer source may not have room for this line. Choose by significance, then
+keep enough context for any line you do select.
+
+## Preserve presentation order
+
+Suppose a report first states a possible improvement, then describes an earlier
+test, then gives its limitations. Keep that order in the internal TOC and the
+condensed prose. The test’s earlier date does not require moving it to the opening.
+
+Likewise, a story may let a small detail reveal why an earlier decision was wrong.
+Do not place the explanation first merely because it produces a tidy summary.
+The order can be part of the source’s meaning.
+
+## Preserve relationships under pressure
+
+A source names a researcher, a test version and a qualified finding. Keep who
+reported what about which version. A dense list of the names is not equivalent.
+If a later round discovers an essential limitation, make room through tighter
+expression; do not silently discard the finding already retained.
+
+The five-word selection rule governs internal labels. It does not permit
+truncating an official name. Keep a longer identity intact, or omit it if it is
+inessential. Selected quotations retain their wording and meaningful attribution.
+
+## Keep the target fixed
+
+A 1,000-word source gives T = 200 in all three rounds. Each round includes a
+draft, a review against the six principles and one refined rewrite. The second
+round does not target 40 words, and the third does not target eight.
+
+Include final headings and quotations in the count. Use the same counting
+method throughout. When word segmentation is unsuitable, use a consistent unit
+and retain the ratio rather than switching between words and characters.
+
+For the eight-word source “The update may help; it cannot guarantee success”,
+a two-word slogan cannot preserve the possibility and the boundary. Return the
+shortest faithful text, with no explanation of the length tradeoff in the output.
+
+## Use the fallback without overwriting a voice
 
 The official source is [ASD-STE100 Issue 9](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf),
-dated 15 January 2025. The [maintenance group's website](https://www.asd-ste100.org/)
-identifies the current release. Check it when full conformity matters.
+dated 15 January 2025. The [maintenance group’s current information](https://asd-ste100.org/about_STE.html)
+identifies the issue; check it when conformity matters.
 
-The standard combines writing rules with a controlled dictionary. Rules 3.5
-and 3.6 address restricted verb forms and active voice. Sections 5 and 6
-distinguish procedural and descriptive writing. The short reminders in this
-skill are a practical fallback, not the complete standard or a certification.
-Keep exact source quotations and terms even when they fall outside that
-fallback. Do not add a compliance statement to the output.
+The standard includes writing rules and a controlled dictionary. Plain language
+alone does not establish compliance. Use the official material for detailed
+requirements and do not add a compliance claim to the TLDR.
 
-## Counting and rounds
+A recognizable source voice takes priority. Preserve an exact quoted joke,
+meaningful passive wording or literary personification rather than flattening
+it into the fallback. A non-English source keeps its language unless translation
+is requested.
 
-A 1,000-word source gives a 200-word target in every round. Round 2 does not
-target 40 words, and round 3 does not target eight. Each round has a draft,
-a six-principle critique, and one refined rewrite. Only the third refined
-rewrite is returned.
+## Review what the cut has changed
 
-If the first refined rewrite covers a named person, their action, and a
-qualified finding, keep those relationships in later rounds. Add a missing
-location or signature phrase by replacing waste. Do not trade away the finding
-to make space for more names.
+After the last refinement, read across the joins. Check who acts, which claim
+is qualified and whether two nearby events now appear causally linked when the
+source did not link them. Then listen for the source’s movement: the pause before
+a reply, the developing judgment or the quiet return to an earlier detail.
 
-For an eight-word source such as “The update may help; it cannot guarantee
-success”, an exact 20% target cannot preserve both uncertainty and the limit.
-Use the shortest faithful text instead of a misleading two-word slogan.
-
-## Structure and quotation cases
-
-A story may reveal a cause after the consequence. Keep that reveal order in
-the internal TOC and condensed text. Do not reorder it into chronology just
-because the resulting outline looks tidier.
-
-If a narrator writes “the clock had retired”, that four-word phrase may carry
-more of the voice than a longer description of the station. Keep the quote's
-wording and enough context for its referent. Do not put quotation marks around
-the entire TLDR; quotation marks around this retained phrase have a purpose.
-
-A five-word selection label does not authorize shortening a longer official
-name. Keep the identity intact or omit an inessential identity entirely.
+This final check does not start a fourth round. It checks the third round’s
+refined result against the original. Return only that result.
