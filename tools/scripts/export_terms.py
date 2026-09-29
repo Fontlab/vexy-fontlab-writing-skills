@@ -46,7 +46,7 @@ def read_core(path):
             else:
                 target = seg
                 note = (tuv.findtext("note") or "").strip()
-        units.append((props, source, target, note, definition))
+        units.append((props, source, target, note, definition))  # x-fallback lives in props
     return name, units
 
 
@@ -69,16 +69,19 @@ def render(code, name, units):
              "when it disagrees with this snapshot.", "",
              "A status of do-not-translate protects the English spelling; it does not approve a "
              "draft English name. The definition says what the term means in FontLab; the note "
-             "says why the translation was chosen or how to inflect it.", ""]
+             "says why the translation was chosen or how to inflect it. The fallback original "
+             "term is a plain English phrase to translate instead of the term when the term "
+             "itself will not travel (stem: main stroke; overshoot: optical surplus).", ""]
     for category in ORDER:
         entries = sorted(by_category.get(category, []), key=lambda u: u[1].lower().lstrip("."))
         if not entries:
             continue
         lines += [f"## {TITLES[category]}", "",
-                  f"| English | {name} | Status | Note | Definition |", "|---|---|---|---|---|"]
+                  f"| English | Fallback | {name} | Status | Note | Definition |",
+                  "|---|---|---|---|---|---|"]
         for props, source, target, note, definition in entries:
-            lines.append(f"| {cell(source)} | {cell(target)} | {props.get('x-status', '')} "
-                         f"| {cell(note)} | {cell(definition)} |")
+            lines.append(f"| {cell(source)} | {cell(props.get('x-fallback', ''))} | {cell(target)} "
+                         f"| {props.get('x-status', '')} | {cell(note)} | {cell(definition)} |")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 

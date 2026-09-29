@@ -10,7 +10,7 @@ description: >-
   an error typology. Language-specific rules live in fontlab-localization-de, -es, -fr and -pl.
 license: MIT
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
   family: fontlab-writing
 ---
 
@@ -234,6 +234,66 @@ linguistic sign-off separate from functional testing; run cosmetic and
 accessibility passes as well. Keep translation defects, layout defects, source
 defects and engineering defects apart, each with an owner. Legal text goes to
 counsel, not a translator. Details: `references/quality.md`.
+
+## Choose terms in the house voice
+
+These rules come from the founder's reviews of the German, Spanish, French and
+Polish catalogs (fl10n issues 133 and 146) and apply to every language.
+
+**The fallback original term.** A glossary term may carry, beside the English
+term, a plain English phrase to translate *instead of the term* when the term
+itself will not travel: *stem* carries *main stroke*, *overshoot* carries
+*optical surplus*, *Matchmaker* carries *master matcher*, *Cousins* carries
+*related glyphs shown alongside*. It is the `fallback` field of the term file
+and the `x-fallback` property of every core memory unit; the term tables in
+the language skills show it in their Fallback column. When no attested
+equivalent exists, translate the fallback into the profession's idiom and
+record the result as a proposal with its reason. A translation engine that
+meets an empty target and a fallback is told to translate the plain phrase.
+Brands have no fallback. If the best fallback would be the definition, the
+term has a definition problem; say so.
+
+**Humor and wordplay** are welcome when the information survives without the
+joke: Polish *swat* (the village matchmaker) for Matchmaker, *Pełna krasa*
+("in full glory") for True Fill, *wyczaruj* ("conjure up") for Dream Up.
+Prefer a snappy idiom to a description, and keep the joke intelligible.
+
+**Power names** (Power Brush, Power Guide, Power Nudge, Power Stroke) are
+power in the register of an energy drink or a superhero cartoon, not an
+industrial rating: Polish *Pędzel mocy*, *Prowadnica mocy*, *Obrys mocy*,
+*superholowanie*; German *Power-Schub*, *Power-Pinsel*. Keep the wink.
+
+**Smart features** take the native, simple word for sly or clever with a hint
+of peasant cunning, never *intelligent*: *schlau*, *astuto/a*, *futé/e*,
+*sprytny*, inflected normally.
+
+**Down to earth.** Prefer the everyday word to the sophisticated one: Nudge is
+Polish *holowanie* (towing), Servant nodes are *węzły usłużne* (obliging
+nodes), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
+*skórka*. Keep the English only where the language has no plain word for that
+exact thing, and record why. Operations with a fixed technical meaning keep a
+fixed name in every language: *Oblique*, *Flex*, *OT Def*.
+
+**Handyman verbs.** Knife, Scissors, Pencil, Brush, Eraser, Magnet and the
+Attach tool borrow real tools' names. Where the language has the verbs a
+craftsman uses with the real tool, use them for the digital tool's actions
+instead of a generic *apply* or *edit*.
+
+**Do-not-translate with restraint.** Protect brands, trademarks, service and
+domain names, format identifiers, tags and code (FontLab, FontAudit, Vexy,
+`kern`, `OS/2`, VFJ). A common noun built on a protected name inflects and
+translates around it: *jednostka unikodu* for a Unicode codepoint, *konto
+FontLab*, *żetony Vexy coin*, *tablica CVT*. A memory that marks such terms
+do-not-translate hides an undecided term; mark it translatable and decide.
+
+**Derive from the chosen noun.** Verbs, adjectives and compounds follow the
+settled noun, not the English: Polish *kernować* and *kernowy* from *kerning*
+(not *kerningować*), *hintować* and *hintowy*; native compounds
+(*autowarstwa*, *Auto-Ebene*); a collective noun when the plural is awkward
+(*kuzynostwo*); declined eponyms (*linia Tunniego*). Keep distinctions the
+profession makes even where English does not (font *tablica* versus interface
+*tabela*; stroke cap *zakończenie* versus terminal *zwieńczenie*), and record
+the whole family in the core memory note.
 
 ## Per-language skills
 

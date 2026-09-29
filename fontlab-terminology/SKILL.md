@@ -10,7 +10,7 @@ description: >-
   use newer supplied evidence when applicable and preserve naming status.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   family: fontlab-writing
 ---
 
@@ -126,7 +126,16 @@ category, products, status, definition, usage, collision information and
 translation policy, with optional aliases and related ids.
 
 Keep a styleguide definition within 100 words; there is no minimum. Move a
-longer explanation to a concept page. Include the relationship needed to
+longer explanation to a concept page. When the term is a coinage, an idiom or
+a word other professions use differently, also propose its **fallback
+original term**: a plain English phrase of at most six words that a translator
+can translate instead of the term (*stem*: *main stroke*; *overshoot*:
+*optical surplus*; *Matchmaker*: *master matcher*). It goes in the `fallback`
+field, never on a brand, and it is a second source text rather than a synonym
+or a definition. Mark a term `translatable: false` only for brands,
+trademarks, identifiers and formats; a common noun built on a protected name
+(*Unicode codepoint*, *FontLab account*) stays translatable around the
+protected part. Include the relationship needed to
 distinguish the term, without padding it with a benefit, workflow or technical
 detail the sources do not establish. Record research evidence privately rather
 than filling the published definition with a source ledger.

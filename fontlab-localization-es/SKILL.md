@@ -70,9 +70,12 @@ shorter says the same thing, record the exception and file a layout defect.
   English says *element references*; *par* for *pair*, not *par de kerning*.
 - ***smart* is *astuto/a***, inflected: *esquina astuta*, *filtro astuto*,
   *lápiz astuto*. Never *inteligente*.
-- **Product operation names stay:** *Oblique*, *Flex*, *OT Def*, *Genius*
-  (*nodo Genius*), *Servant*, *Cousins*, *Skin*, *Fusion*, *Power Brush*,
-  *Power Guide*.
+- **Feature names follow the house voice:** operations with a fixed technical
+  meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
+  power (*Empuje fuerte* for Power Nudge); *smart* is *astuto/a*; Genius, Servant, Cousins, Skin and
+  Sketchboard take a plain native word where one is attested, otherwise translate
+  the fallback original term in the term table (the Fallback column). See
+  `fontlab-localization`, section "Choose terms in the house voice".
 - **Established loans stay:** *kerning*, *tracking*, *hinting*, *máster*
   (with accent, plural *másteres*), *lookup*. *Interletraje* is prose, not
   the feature name.

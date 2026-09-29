@@ -5,12 +5,12 @@ description: >-
   Panel, manuals, release notes and store copy. Use when the user asks for a Polish translation,
   says "po polsku", "przetłumacz", "review the Polish", "Polish term for", or hands over a Polish
   catalog, ledger or translation memory. Carries the Polish register, headline-style compression,
-  the matryca/firet terminology decisions, the four plural categories and Qt's three numerus forms,
+  the matryca/firet/trzon terminology decisions, the four plural categories and Qt's three numerus forms,
   number formats, diacritics, mnemonics, key names, false friends and a portable copy of the Polish
   term table. Use with fontlab-localization for the rules shared by every language.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   family: fontlab-writing
   language: pl
 ---
@@ -71,37 +71,51 @@ constructions are the usual overruns; compress the phrase, not the meaning.
   small caps *kapitaliki*.
 - ***smart* is *sprytny***, inflected: *sprytny narożnik*, *sprytny filtr*,
   *sprytne wypełnienie*. Never *inteligentny*.
-- **Width:** advance width is *szerokość posuwu* (FontForge says *szerokość
-  znaku*; kept distinct from geometric *szerokość*); the width axis is
-  *szerokość* with *oś* named; tracking is *tracking* (Felici and FontForge;
-  InDesign's *światło* is the DTP word); line gap is *światło międzywierszowe*;
-  sidebearings *odsadka lewa/prawa*; kerning *kerning*, *para kerningowa*,
-  *klasa kerningowa*.
+- **Width:** advance width is *szerokość pola* and vertical advance *wysokość
+  pola* (founder's decision of 29 September 2026; FontForge says *szerokość
+  znaku*); the width axis is *szerokość* with *oś* named; tracking is
+  *tracking* (Felici and FontForge); line gap is *interlinia*; sidebearings
+  *odsadka lewa/prawa*; kerning *kerning*, *para kernowa*, *klasa kernowa*,
+  *wyjątek kernowy*, with the verb *kernować* and the adjective *kernowy*
+  (never *kerningować*); hinting gives *hintować*, *hintowy*, and
+  autohinting is *autohinting*.
 - **Drawing:** *kontur* (contour), *węzeł* (node), *uchwyt* (handle),
   *segment*, *krzywa*, *odcinek* (straight segment), *punkt kontrolny*,
   *kotwica* (anchor), *element*, *składnik* (component), *odniesienie*
   (reference), *warstwa* (layer), *maska* (mask), *pinezka* (pin).
-- **Type anatomy:** *szeryf*, *kreska główna* (stem; *kreska standardowa*
-  for a standard stem, *powiązanie kresek* for a stem link), *wydłużenie
-  górne/dolne* (ascender/descender), *wysokość x*, *wysokość wersalików*,
-  *linia pisma* (baseline; FontForge, Scribus, Bringhurst, Felici), *światło
-  wewnątrzliterowe* (counter; FontForge), *brzuszek* (bowl; Bringhurst),
-  *przewieszka* (overshoot), *interlinia* (leading). A drawn path is *obrys*
-  (stroke): *koniec obrysu* (cap), *połączenie obrysu* (join), *obrys na
-  kontury* (expand stroke). *Kreska* is the letter's stroke, *obrys* the path.
-- **Other reviewed decisions:** autotrace is *wektoryzacja* (FontForge:
-  *Wektoryzuj*); cursive attachment *złącze pisane*; nonspacing mark *znak
-  łączący zerowej szerokości*; variation selector *przełącznik wariantu*;
-  nudge stays *pchnięcie* (the founder's *Schub*); Power Nudge, Power Brush,
-  Power Guide, Power Stroke and Fusion stay English; master compatibility is
-  *zgodność matryc*.
+- **Type anatomy:** *szeryf*, *trzon* (stem; *trzon standardowy* for a
+  standard stem, *łącze trzonu* for a stem link), *zwieńczenie* (terminal;
+  a stroke cap stays *zakończenie*), *wydłużenie górne/dolne*
+  (ascender/descender), *wysokość x*, *wysokość wersalików*, *linia pisma*
+  (baseline), *światło wewnątrzliterowe* (counter), *brzuszek* (bowl),
+  *naddatek* (overshoot, the optical surplus), *pułapka* (ink trap). A drawn
+  path is *obrys* (stroke): *zakończenie* (cap), *łącze obrysu* (join),
+  *utrwal obrys* (expand stroke), *utrwal filtr* (expand filter). *Kreska* is
+  a letter's stroke, *obrys* the path.
+- **Other reviewed decisions:** autotrace is *wektoryzacja*; mark is
+  *diakrytyk*, mark attachment *przyłączanie diakrytyków*, cursive attachment
+  *przyłączanie pisankowe*, nonspacing mark *diakrytyk bez szerokości pola*;
+  variation selector *przełącznik wariantu*; lookup is *podprogram zecerski*,
+  feature code *kod funkcji zecerskiej*; Unicode codepoint *jednostka
+  unikodu*, glyph index *indeks glifu*; font tables are *tablica CVT*,
+  *tablica OS/2* (an interface table stays *tabela*); axis map *mapa osi*;
+  auto layer *autowarstwa*; color flag *barwa flagi*; Remove Overlap *usuń
+  nakładki*; spacing controls *regulatory świateł*; waterfall *kaskada*;
+  Tunni line *linia Tunniego*; master compatibility *zgodność matryc*.
 - ***font*, *krój*, *czcionka*:** *font* is the file and the profession's
   word; *krój* (*krój pisma*) is the typeface design; *czcionka* is the metal
   sort and the everyday word. The catalog says *font* for the file and *krój*
   for the design; never *czcionka* in the UI.
-- **Product operation names stay:** *Oblique*, *Flex*, *OT Def*, *Genius*
-  (*węzeł Genius*), *Servant*, *Cousins*, *Skin*, *Fusion*, *Power Brush*,
-  *Power Guide*, *Power Nudge*. The generic noun beside them is translated.
+- **Feature names follow the house voice** (founder's decisions of 29
+  September 2026): Nudge is *holowanie*, Power Nudge *superholowanie*, Power
+  Brush *Pędzel mocy*, Power Guide *Prowadnica mocy*, Power Stroke *Obrys
+  mocy*; Matchmaker *swat*; True Fill *Pełna krasa*; Sketchboard
+  *szkicownik*; Skin *skórka*; Cousins *kuzynostwo* (singular *kuzyn*);
+  Servant node *węzeł usłużny*; Dream Up *wyczaruj*; FontLab account *konto
+  FontLab*; Vexy coins *żetony Vexy coin*. Operations with a fixed technical
+  meaning keep their name: *Oblique*, *Flex*, *OT Def*, *Genius* (*węzeł
+  Genius*), *Fusion*. When a term has no plain Polish word, translate the
+  fallback original term shown in the term table.
 - **Established loans stay:** *kerning*, *hinting*, *tracking* (feature),
   *lookup*, *glif*, *font*, *interfejs*, *panel*, *eksport*, *import*.
   Calques such as *aplikować* for *apply* (use *zastosuj*) or *suportować*

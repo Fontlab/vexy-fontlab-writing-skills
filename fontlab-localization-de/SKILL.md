@@ -88,9 +88,12 @@ an exception).
 - ***smart* is *schlau***, inflected: *schlaue Ecke*, *Schlauen Filter
   hinzufügen*. Clever with a hint of Bauernschläue; never *intelligent*, which
   now reads as a claim about AI.
-- **Product operation names stay:** *Oblique*, *Flex*, *OT Def*, *Genius*,
-  *Servant*, *Cousins*, *Skin*, *Fusion*, *Power Brush*, *Power Guide*. The
-  generic noun beside them is translated: *Power-Schub*, *Power-Strich*.
+- **Feature names follow the house voice:** operations with a fixed technical
+  meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
+  power (*Power-Schub*, *Power-Pinsel*, *Power-Strich*, *Power-Hilfslinie*); *smart* is *schlau*; Genius, Servant, Cousins, Skin and
+  Sketchboard take a plain native word where one is attested, otherwise translate
+  the fallback original term in the term table (the Fallback column). See
+  `fontlab-localization`, section "Choose terms in the house voice".
 - **Overshoot is *Überstand***; *old style figures* are *Mediävalziffern*;
   *stem* is *Stamm* (hint) or *Strich* (drawing) by context; check the table.
 - **Standard commands follow the platform:** *Abbrechen*, *Kopieren*,

@@ -71,9 +71,12 @@ says the same thing.
   English says *element references*; *paire* for *pair*.
 - ***smart* is *futé/e***, inflected: *coin futé*, *variation futée*, *filtre
   futé*. Never *intelligent*.
-- **Product operation names stay:** *Oblique*, *Flex*, *OT Def*, *Genius*
-  (*nœud Genius*), *Servant*, *Cousins*, *Skin*, *Fusion*, *Power Brush*,
-  *Power Guide*.
+- **Feature names follow the house voice:** operations with a fixed technical
+  meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
+  power (*poussée forte* for Power Nudge); *smart* is *futé/e*; Genius, Servant, Cousins, Skin and
+  Sketchboard take a plain native word where one is attested, otherwise translate
+  the fallback original term in the term table (the Fallback column). See
+  `fontlab-localization`, section "Choose terms in the house voice".
 - **Loans:** *kerning* is *crénage* because the French profession says so;
   *hinting* stays *hinting* (with *optimisation pour l'écran* as a gloss in
   prose); *master* is *master* (with *maître* only where the FontLab
