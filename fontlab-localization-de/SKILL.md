@@ -19,16 +19,23 @@ metadata:
 
 # FontLab localization: German
 
-German for readers in Germany. Austrian and Swiss terminology, spelling and
-number formats need their own decisions. This skill holds what is specific to
-German; the shared rules for Qt strings, memories, machine drafts and error
-typology are in `fontlab-localization`, and the house rules are at the end.
+German for Germany. Use the supplied current core memory and
+`references/terms.md` for terminology, definitions and review status. Approved
+entries govern their concept; proposed entries still need a native reviewer.
+A historical catalog or a fluent model draft does not override a current
+terminology decision. Inflect the chosen term to fit its grammatical role.
 
-The FontLab 9 German catalog was reviewed end to end in 2026 (issues 132 and
-133 of the `fl10n` repository): 10,587 messages, 1,943 changed, every change
-recorded with its reason. The decisions below are the ones that generalize.
-The full record is the German localization guide of the writing guide; the term
-table travels with this skill in `references/terms.md`.
+The shared Qt, memory and review rules are in `fontlab-localization`. This
+skill adds the language's register, grammar and terminology distinctions.
+
+## Follower node terminology
+
+Use **Anhänger-Knoten**, with short label **Anhänger**, and X/Y labels
+**X-Anhänger** and **Y-Anhänger**. *Anhänger* carries the fan/supporter sense;
+use *Anhänger-Knoten* for both singular and plural, with the surrounding
+sentence supplying number. Interpret legacy English **Servant** labels as
+**Follower**, never as a domestic servant. Source keys remain unchanged.
+Lexical sense: [Duden](https://www.duden.de/rechtschreibung/Anhaenger).
 
 ## Register and address
 
@@ -90,7 +97,7 @@ an exception).
   now reads as a claim about AI.
 - **Feature names follow the house voice:** operations with a fixed technical
   meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
-  power (*Power-Schub*, *Power-Pinsel*, *Power-Strich*, *Power-Hilfslinie*); *smart* is *schlau*; Genius, Servant, Cousins, Skin and
+  power (*Power-Schub*, *Power-Pinsel*, *Power-Strich*, *Power-Hilfslinie*); *smart* is *schlau*; Genius, Follower, Cousins, Skin and
   Sketchboard take a plain native word where one is attested, otherwise translate
   the fallback original term in the term table (the Fallback column). See
   `fontlab-localization`, section "Choose terms in the house voice".
@@ -140,8 +147,8 @@ einer Datei*. Do not copy English title case onto adjectives.
   reader; *Notiz* is a note the reader writes.
 - **Case:** never let code uppercase a translated string (*ß*). Umlauts sort
   as base letters in dictionary order; phone-book order is a different rule.
-- **Legal:** comparative claims about a rival product are constrained by
-  German competition law; route them to counsel.
+- **Claims:** preserve the scope and evidence of comparisons. Flag
+  unsupported claims for the responsible owner.
 
 ## Placeholders and agreement
 

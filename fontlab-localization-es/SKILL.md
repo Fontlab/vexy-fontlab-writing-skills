@@ -19,18 +19,23 @@ metadata:
 
 # FontLab localization: Spanish
 
-Latin American Spanish, catalog locale `es_MX`, written so that every
-Spanish-speaking country can read it. Spain (`es-ES`) differs in address,
-vocabulary and number format and is a separate locale decision. This skill
-holds what is specific to Spanish; the shared rules for Qt strings, memories,
-machine drafts and error typology are in `fontlab-localization`, and the house
-rules are at the end.
+Latin American Spanish, using es-419 terminology and the es_MX application catalog. Use the supplied current core memory and
+`references/terms.md` for terminology, definitions and review status. Approved
+entries govern their concept; proposed entries still need a native reviewer.
+A historical catalog or a fluent model draft does not override a current
+terminology decision. Inflect the chosen term to fit its grammatical role.
 
-The FontLab 9 Spanish catalog was reviewed in 2026 (issues 132 and 133 of the
-`fl10n` repository) through ordinal 7,199 of 10,587 messages, 1,940 changed,
-every change recorded with its reason. The decisions below generalize. The
-full record is the Spanish localization guide of the writing guide; the term
-table travels with this skill in `references/terms.md`.
+The shared Qt, memory and review rules are in `fontlab-localization`. This
+skill adds the language's register, grammar and terminology distinctions.
+
+## Follower node terminology
+
+Use **nodo seguidor**, plural **nodos seguidores**; short labels are
+**seguidor**, **seguidor X** and **seguidor Y**. The intended sense is a fan
+or supporter, not a servant. Interpret legacy English **Servant** as
+**Follower**. Use *propiedad de seguidor* when naming the property in prose.
+Source keys remain unchanged.
+Lexical sense: [RAE](https://dle.rae.es/seguidor).
 
 ## Register and address
 
@@ -72,7 +77,7 @@ shorter says the same thing, record the exception and file a layout defect.
   *lápiz astuto*. Never *inteligente*.
 - **Feature names follow the house voice:** operations with a fixed technical
   meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
-  power (*Empuje fuerte* for Power Nudge); *smart* is *astuto/a*; Genius, Servant, Cousins, Skin and
+  power (*Empuje fuerte* for Power Nudge); *smart* is *astuto/a*; Genius, Follower, Cousins, Skin and
   Sketchboard take a plain native word where one is attested, otherwise translate
   the fallback original term in the term table (the Fallback column). See
   `fontlab-localization`, section "Choose terms in the house voice".

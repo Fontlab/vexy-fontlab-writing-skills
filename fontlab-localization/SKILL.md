@@ -182,7 +182,8 @@ corrections while identifying unresolved decisions.
 
 Qt looks a translation up by context, source text and comment, so rewording a
 shipped English string orphans its translation in every catalog; a source edit
-needs a behavioral reason. Keep exactly one `&` mnemonic per label, on a letter
+needs a behavioral reason. Preserve one `&` mnemonic when the source label has one; do not add one to
+a label without it. Place it on a letter
 that exists in the translation and is unique within its menu or dialog; avoid
 descenders and accented letters; standard commands keep the platform's letter.
 Never change a function-key shortcut; change a letter shortcut only when the
@@ -273,8 +274,7 @@ of peasant cunning, never *intelligent*: *schlau*, *astuto/a*, *futé/e*,
 *sprytny*, inflected normally.
 
 **Down to earth.** Prefer the everyday word to the sophisticated one: Nudge is
-Polish *holowanie* (towing), Servant nodes are *węzły usłużne* (obliging
-nodes), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
+Polish *holowanie* (towing), Follower nodes are *węzły typu Zwolennik* (supporter nodes), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
 *skórka*. Keep the English only where the language has no plain word for that
 exact thing, and record why. Operations with a fixed technical meaning keep a
 fixed name in every language: *Oblique*, *Flex*, *OT Def*.
@@ -299,6 +299,21 @@ settled noun, not the English: Polish *kernować* and *kernowy* from *kerning*
 profession makes even where English does not (font *tablica* versus interface
 *tabela*; stroke cap *zakończenie* versus terminal *zwieńczenie*), and record
 the whole family in the core memory note.
+
+## Follower nodes
+
+For localization, interpret the English labels **Servant node** and **Servant**
+as **Follower node** and **Follower**, in the sense of a fan or supporter.
+The servant metaphor is obsolete. This is a naming decision, not a change to
+Power Nudge: these nodes still follow neighboring key nodes. Keep English
+catalog sources, resource keys and the `servant-node` glossary identifier stable
+until a separate source-code migration changes them. Translate the visible
+labels, their X/Y variants, tooltips and help with the supporter terminology.
+
+Use German *Anhänger-Knoten*, Spanish *nodo seguidor*, French *nœud adepte*
+and Polish *węzeł zwolennik*. The short labels are *Anhänger*, *seguidor*,
+*adepte* and *Zwolennik*. Do not retain the English label as a brand name.
+Inflect running text and keep the labels in help consistent with the UI.
 
 ## Per-language skills
 

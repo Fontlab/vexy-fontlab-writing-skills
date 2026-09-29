@@ -19,18 +19,23 @@ metadata:
 
 # FontLab localization: French
 
-French for readers in France. Canadian French differs in vocabulary, spacing
-and address and is a separate locale decision. This skill holds what is
-specific to French; the shared rules for Qt strings, memories, machine drafts
-and error typology are in `fontlab-localization`, and the house rules are at
-the end.
+French for France. Use the supplied current core memory and
+`references/terms.md` for terminology, definitions and review status. Approved
+entries govern their concept; proposed entries still need a native reviewer.
+A historical catalog or a fluent model draft does not override a current
+terminology decision. Inflect the chosen term to fit its grammatical role.
 
-Yannis Haralambous, *Fontes et codages*, is the model source for French font
-technology terms; Adrian Frutiger's *Typefaces: the complete works* in its
-French edition supplies the type-design vocabulary. The FontLab 9 French
-catalog received targeted corrections in 2026 (issues 132 and 133 of the
-`fl10n` repository) and is under full review. The term table travels with this
-skill in `references/terms.md`.
+The shared Qt, memory and review rules are in `fontlab-localization`. This
+skill adds the language's register, grammar and terminology distinctions.
+
+## Follower node terminology
+
+Use **nœud adepte**, plural **nœuds adeptes**; short labels are **adepte**,
+**X-adepte** and **Y-adepte**. *Adepte* conveys an adherent or supporter.
+Interpret legacy English **Servant** as **Follower**, not as a servant.
+Use *propriété d’adepte* in prose. Source keys remain unchanged. Do not replace
+the ordinary French participle *servant* in unrelated prose.
+Lexical sense: [Larousse](https://www.larousse.fr/dictionnaires/francais/adepte/1057).
 
 ## Register and address
 
@@ -73,14 +78,14 @@ says the same thing.
   futé*. Never *intelligent*.
 - **Feature names follow the house voice:** operations with a fixed technical
   meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
-  power (*poussée forte* for Power Nudge); *smart* is *futé/e*; Genius, Servant, Cousins, Skin and
-  Sketchboard take a plain native word where one is attested, otherwise translate
-  the fallback original term in the term table (the Fallback column). See
+  power (*poussée forte* for Power Nudge); *smart* is *futé/e*; the current table gives *nœud Genius*, *nœud adepte*,
+  *Cousins*, *Skin* and *Plan de travail*. Do not replace these with a new
+  coinage. For an unsettled name, consult the fallback original term in the term table (the Fallback column). See
   `fontlab-localization`, section "Choose terms in the house voice".
 - **Loans:** *kerning* is *crénage* because the French profession says so;
   *hinting* stays *hinting* (with *optimisation pour l'écran* as a gloss in
-  prose); *master* is *master* (with *maître* only where the FontLab
-  interface already uses it: check the table); *lookup* stays.
+  prose); *master* is *master*; *lookup* stays. Apply these terms consistently
+  rather than carrying an older catalog variant forward.
 - ***fonte* and *police*:** *fonte* is the technical file or instance in
   Haralambous's usage; *police* is the everyday word. The table decides per
   concept; do not alternate for variety.
@@ -90,15 +95,14 @@ says the same thing.
   *Annuler* is both *Cancel* and *Undo* in platform French; in a context
   where both appear, *Undo* takes *Annuler* and *Cancel* keeps *Annuler* only
   on the button, with the ledger recording the collision.
-- **Absolute claims are a legal risk** in France, Belgium and Canada
-  (*totalement sécurisé*, *résout tous les problèmes*). Record them as a
-  source defect; do not soften the French quietly.
+- **Preserve the scope of claims.** If an absolute claim lacks support,
+  flag the source for its owner; do not quietly soften or strengthen it
+  during translation.
 
-## Decisions from the September 2026 review
+## Current interface decisions
 
-The full catalog, the Help Panel and the welcome tips were reviewed against
-the Haralambous and Frutiger translation memories with attestation counts.
-Apply these without re-deriving them:
+These decisions follow the current core memory and the terminology attested
+in Haralambous and Frutiger. Apply them consistently:
 
 - *glyphe composé*, never *glyphe composite*; *composante* for the component.
 - *nom de glyphe* is translated; only literal names such as *a.sc* stay.
@@ -116,9 +120,7 @@ Apply these without re-deriving them:
   is Redo); *Valider* for Commit.
 - A no-break space precedes `%` and `:`; `RVB`, `CMJN` with the colour noun
   first (*Cyan RVB*).
-- Command scripts: `fl10n review_catalog` candidates are accepted only after
-  human sampling; every applied change is in the ledger
-  `data-fontlab-cpp/i18n/review/2026-09-28-fr-issue-145-*.json`.
+
 
 ## Typography and spacing
 
@@ -133,7 +135,8 @@ list separator is `;` because the decimal separator is a comma.
 - **Plurals:** *one* (0, 1 and fractions below 2), *many* (exact millions and
   larger round numbers, which take *de*) and *other*. *0 glyphe sélectionné*
   is correct; an English-derived *=0* branch is often unnecessary. Qt
-  numerus strings carry two forms. Test 0, 1, 1,5, 2 and 21.
+  numerus strings carry two forms. Test integer values 0, 1, 2 and 21 in Qt. Fractional
+  display values need their own supported message format; `%n` is an integer.
 - **Numbers:** `1 234 567,89` with a narrow no-break space as group separator
   (regular no-break space as fallback); `25 %`; short date `05/03/2026`, long
   *5 mars 2026*, month names lowercase; ordinals *1er*, *2e*, *3e*.

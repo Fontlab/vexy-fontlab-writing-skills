@@ -17,6 +17,11 @@ npx skills add Fontlab/vexy-fontlab-writing-skills -s fontlab-neutral
 npx skills add Fontlab/vexy-fontlab-writing-skills --all
 ```
 
+Current localization guidance follows the core memories. Language pages state
+the current decisions; dated review ledgers and Git history retain earlier
+wording. Term tables are regenerated from the core memories, including their
+notes and approval status.
+
 ## The skills
 
 | Skill | Use it for |

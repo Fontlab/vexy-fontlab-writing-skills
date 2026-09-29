@@ -4,6 +4,53 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-09-29: Follower node terminology
+
+The user retired the servant metaphor for localization. Interpret the legacy
+English Servant node/Servant source as Follower node/Follower, in the sense of
+a fan or supporter. Targets: German Anhänger-Knoten; Spanish nodo seguidor;
+French nœud adepte; Polish węzeł zwolennik. Each language guide and skill
+records short labels, X/Y forms and inflection. Dictionary links support the
+lexical senses; this is the requested naming decision, not a claim of a new
+native review. Source labels and identifiers stay compatible.
+
+Updated the canonical definition, alias list, fallback and four core targets,
+plus the related Genius definition and term seeding records. Regenerated core
+memories, generated guides and portable term tables. Refreshed only affected
+project-memory target records from the edited application catalogs through
+Localizzy's TMX reader/writer: 21 records per language; other records and all
+source text/properties are unchanged. Application delivery includes 84 TS
+translations, 64 extended helptips, 12 Help Panel entries, regenerated JSON
+glossary, four rebuilt QPH files and refreshed prompt instructions/embeddings.
+The exact before/after ledger is Proteus/i18n/review/follower-terminology-2026-09-29.json.
+
+Verification: the new four-language meaning/target regression failed before
+the data update, then passed; all 26 styleguide tests and four skill tests pass.
+Strict build: 7.66 seconds, publication guard and 225 HTML-page link/asset
+checks pass. All four TS catalogs compile with Qt 5 lrelease. One pre-existing
+German unfinished translation is preserved. Independent comparisons confirm
+unchanged English files, TS metadata and states, JSON keys, markup and tokens,
+and unrelated translations (including ordinary French participles). QPH
+embeddings are byte-identical. No publication or source-code rename performed.
+
+
+## 2026-09-29: current localization rules and term tables
+
+Updated all four language skills to use current terminology authority and
+explicit proposal status, removing dated review-progress summaries. Removed
+the Polish lookup loan contradiction, clarified current French feature names
+and master terminology, and aligned shared mnemonic and French command-collision
+rules with the writing guide. Regenerated all four portable term tables from
+the refreshed core memories, including definitions and cleaned translator notes.
+No target translation or approval status changed.
+
+Verification: shared-block parity, local path checks and all four unit tests
+pass. The styleguide's 25 tests and strict build pass. Scanned active guides,
+core data, portable skills and rendered files for the identified superseded
+terms: no hits. Qt Linguist prompts in Proteus/i18n carry these current rules
+and the complete refreshed phrase books, verified byte for byte.
+
+
 ## 2026-09-29: fl10n issue 147, house-voice terminology rules
 
 Added the shared "Choose terms in the house voice" section, updated the four

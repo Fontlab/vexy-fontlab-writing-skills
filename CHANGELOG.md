@@ -4,6 +4,25 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-09-29: Follower node translations
+
+Retired the servant meaning in DE/ES/FR/PL localization. The legacy source now
+maps to Anhänger-Knoten, nodo seguidor, nœud adepte and węzeł zwolennik, using
+the fan/supporter meaning. Updated canonical data, current guides, portable
+skills, derived memories and phrase books. English lookup keys remain stable.
+Documented singular/plural and X/Y forms, with a regression for all four terms.
+The application catalogs and localized help use the same terminology.
+
+
+## 2026-09-29: current localization guidance
+
+Language skills now present current rules and proposal status without stale
+review-progress summaries. Corrected Polish lookup guidance, French feature
+names and master usage, and shared mnemonic/collision rules. Regenerated all
+four portable tables after removing superseded terms from core-memory notes
+and synchronizing definitions with the current glossary. All checks pass.
+
+
 ## 2026-09-29: terms in the house voice and the fallback original term
 
 `fontlab-localization` 1.2.0 adds "Choose terms in the house voice": the

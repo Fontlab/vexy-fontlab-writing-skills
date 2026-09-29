@@ -2,7 +2,7 @@
 
 # Interface strings
 
-*Portable copy of the FontLab writing guide's localization page of the same name, snapshot of 28 September 2026. The live page and the term tables it links to are in the `vexy-fontlab-writing-styleguide` repository; use newer supplied project data when it disagrees.*
+*Portable copy of the FontLab writing guide's localization page of the same name, snapshot of 29 September 2026. The live page and the term tables it links to are in the `vexy-fontlab-writing-styleguide` repository; use newer supplied project data when it disagrees.*
 
 
 The localization principles say how a term is chosen and how
@@ -39,7 +39,9 @@ and record the request in the source review. Until it lands, choose the form
 that fits the most visible control and note the compromise in the ledger.
 
 The reverse failure is silent: two source strings in one context collapsing
-into one translation. *Cancel* and *Undo* must not both become *Annuler*. The
+into one translation. Check that distinct actions remain distinguishable. French legitimately uses
+*Annuler* for both *Cancel* and *Undo* on different controls; assess the
+control and context rather than banning the platform term. The
 verification scripts flag duplicate targets within a context; treat each hit as
 a question, not an error, because *Font* and *Fonts* may legitimately share a
 form in a language without number agreement.
@@ -49,7 +51,8 @@ form in a language without number agreement.
 An ampersand marks the mnemonic letter of a menu item, button or label. The
 German catalog carries about four hundred of them.
 
-- Keep exactly one ampersand per label. A literal ampersand in running text is
+- Preserve one mnemonic ampersand when the source label has one. Do not add
+  a mnemonic to a label that has none. A literal ampersand in running text is
   written `&&`.
 - Choose a letter that exists in the translation. *File* takes *D* in *Datei*,
   not *F*. It need not be the first letter.
@@ -76,8 +79,7 @@ is an engineering change: the label and the binding move together, and the
 change is recorded as a source defect, not a translation choice.
 
 Key names come from the platform, not from the catalog: German *Umschalt*,
-French *Maj*, Polish *Shift* on macOS but *Shift* or *Wielkie litery* by
-context. A shortcut named in prose (*press Ctrl+Q*) keeps the platform's
+French *Maj*, Polish *Shift* on both macOS and Windows. A shortcut named in prose (*press Ctrl+Q*) keeps the platform's
 spelling of the modifier.
 
 ## Placeholders and assembled sentences

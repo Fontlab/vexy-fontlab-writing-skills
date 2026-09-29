@@ -19,18 +19,25 @@ metadata:
 
 # FontLab localization: Polish
 
-Polish for readers in Poland. This skill holds what is specific to Polish; the
-shared rules for Qt strings, memories, machine drafts and error typology are
-in `fontlab-localization`, and the house rules are at the end.
+Polish for Poland. Use the supplied current core memory and
+`references/terms.md` for terminology, definitions and review status. Approved
+entries govern their concept; proposed entries still need a native reviewer.
+A historical catalog or a fluent model draft does not override a current
+terminology decision. Inflect the chosen term to fit its grammatical role.
 
-The Polish FontLab catalog is the first full localization produced with the
-core memory as glossary and the reviewed German, Spanish and French catalogs
-as models. Its terminology follows the Polish typographic literature (the
-Polish editions of Bringhurst, Hochuli, Manguel and McLuhan in the company's
-translation memories) and the Polish interfaces of FontForge, InDesign,
-Illustrator, Scribus and Apple's font tools. The term table travels with this
-skill in `references/terms.md`; entries marked *proposed* await a native
-reviewer.
+The shared Qt, memory and review rules are in `fontlab-localization`. This
+skill adds the language's register, grammar and terminology distinctions.
+
+## Follower node terminology
+
+Use **węzeł zwolennik**, with short type label **Zwolennik** and variants
+**Zwolennik X** and **Zwolennik Y**. This is a fan/supporter metaphor. In prose,
+use *węzeł typu Zwolennik*, *węzły typu Zwolennik*, *węzła typu Zwolennik*
+and *węzłami typu Zwolennik* to keep the type label stable while declining the
+surrounding noun. Interpret legacy English **Servant** as **Follower**.
+Use *tryb Zwolennik* and *właściwość typu Zwolennik* for the behavior.
+Source keys remain unchanged.
+Lexical sense: [WSJP PAN](https://wsjp.pl/haslo/podglad/4042/zwolennik/4968119/dialogu).
 
 ## Register and address
 
@@ -51,7 +58,7 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 Polish has no articles, so compression comes from dropping the copula and the
 verb where the reader supplies it: *Jeśli maska aktywna*, *Zaznacz tę samą
 etykietę*, *Pędzel na kontury*. Keep case endings: a compressed label is still
-a grammatical phrase. The Measurements panel stays as short as the English;
+a grammatical phrase. The Measurements panel aims to stay as short as the English;
 use the profession's abbreviations (*wers.*, *min.*) and record any fixed term
 one character longer as an exception. Distances read from–to: *Od wydłużenia
 dolnego do wysokości firetu*.
@@ -111,13 +118,14 @@ constructions are the usual overruns; compress the phrase, not the meaning.
   Brush *Pędzel mocy*, Power Guide *Prowadnica mocy*, Power Stroke *Obrys
   mocy*; Matchmaker *swat*; True Fill *Pełna krasa*; Sketchboard
   *szkicownik*; Skin *skórka*; Cousins *kuzynostwo* (singular *kuzyn*);
-  Servant node *węzeł usłużny*; Dream Up *wyczaruj*; FontLab account *konto
+  Follower node *węzeł zwolennik*; Dream Up *wyczaruj*; FontLab account *konto
   FontLab*; Vexy coins *żetony Vexy coin*. Operations with a fixed technical
   meaning keep their name: *Oblique*, *Flex*, *OT Def*, *Genius* (*węzeł
   Genius*), *Fusion*. When a term has no plain Polish word, translate the
   fallback original term shown in the term table.
 - **Established loans stay:** *kerning*, *hinting*, *tracking* (feature),
-  *lookup*, *glif*, *font*, *interfejs*, *panel*, *eksport*, *import*.
+  *glif*, *font*, *interfejs*, *panel*, *eksport*, *import*.
+  In FontLab, *lookup* is *podprogram zecerski*, as specified above.
   Calques such as *aplikować* for *apply* (use *zastosuj*) or *suportować*
   are errors.
 - **Standard commands follow the platform:** *Anuluj*, *Kopiuj*, *Wklej*,
@@ -183,18 +191,6 @@ rather than a calque? Recheck the facts after any stylistic edit. Classify
 findings by MQM family and severity; record every change with before, after
 and reason. Report only checks performed; a proposed term remains proposed
 until a native reviewer approves it.
-
-## The first catalog
-
-The Polish catalog, Help Panel and welcome tips were generated in September
-2026 by claude-opus-5-5 through `fl10n localize pl` with the core memory, the
-attested seed glossary (`data-fontlab-cpp/i18n/glossary/pl-seed.tmx`) and
-the style sheet `data-fontlab-cpp/i18n/prompts/pl.md`, then checked by the
-placeholder, markup and three-form plural QA and compiled with `lrelease`.
-Treat every string as a draft for a native editorial pass: review it against
-the source, the term table and the rules above, record every change in a
-ledger with its reason, and approve or replace the remaining *proposed* core
-units before building the project memory with `fl10n build_ui pl`.
 
 ## References
 
