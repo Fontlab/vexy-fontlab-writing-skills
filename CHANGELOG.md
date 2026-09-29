@@ -4,6 +4,34 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-09-30: German UI review preferences
+
+Integrated the supplied German catalog diff: 547 translation changes after
+excluding XML and location churn. German guidance now covers compact hinzu,
+the synchron family and Synchronsprecher, weight/thickness/stem distinctions,
+readable tool/window compounds, contextual omissions and separator wordplay.
+Regenerated German terminology outputs with existing review statuses intact.
+Apparent typos and partial plural edits remain evidence, not general rules.
+The writing guide retains the complete before/after ledger and review scope in
+`dev/german-ui-2026-09-30/`. No application catalog or dependency was changed
+by this task.
+
+Verification: 27 writing-guide tests, four skill tests, both strict site builds,
+and direct TMX/table/QPH parity checks. Runtime UI review is not claimed.
+
+
+## 2026-09-29: German weight and thickness
+
+Clarified Weight as Stärke in UI strings, with Strichstärke permitted in
+clarifying strings; Thickness is Dicke and Stroke thickness is Strichdicke.
+Stem thickness may be translated as Stammstärke.
+Removed the conflicting stroke-thickness example from the canonical German
+core note and regenerated its term table and portable skill reference.
+The Proteus German prompt, phrase book and i18n README carry the same rule.
+
+Verification: 26 styleguide tests and all four skill tests pass; generated
+term tables, QPH notes and the rendered AI prompt match the canonical rule.
+
 ## 2026-09-29: Follower nodes follow movement
 
 Supersedes the earlier fan/supporter naming decision. The fallback original

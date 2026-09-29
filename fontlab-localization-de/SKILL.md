@@ -10,7 +10,7 @@ description: >-
   fontlab-localization for the rules shared by every language.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   family: fontlab-writing
   language: de
 ---
@@ -73,6 +73,69 @@ no German label may be longer than the English one (*UC*, *lc* stay; a fixed
 term one character longer, such as *Oberlänge* for *Ascender*, is recorded as
 an exception).
 
+## Compact command forms
+
+Use **hinzu** for *add* in compact buttons, menus, dialog titles and history
+labels: *Achse hinzu*, *Schlauen Filter hinzu*, *Glyphen zur Klasse hinzu*.
+Keep the object's case and number. This is an intentional house abbreviation,
+not a general replacement inside sentences: *FontLab kann Features hinzufügen*
+keeps the verb. A sentence quoting a control uses its exact label, *„Glyphen
+hinzu“ erzeugt die fehlenden Glyphen*. Apply the choice to every plural form.
+
+Let the surrounding interface carry repeated context: *Werte runden auf* in
+a kerning dialog, *Toleranz* in Vektorisieren, *Referenzen* in an element menu.
+Omit an implied action: *Nach links*, *In den Papierkorb*, *X-Zuordnung nach Y*.
+Keep the full term when the text must stand alone. This permits dropping a
+source noun that the screen already supplies; it does not permit losing a
+condition, a direction or the distinction between two controls.
+
+Prefer *wenn aus*, *ein-/aus* and *Alt: alle Paletten speichern* in compact
+hints. *+Alt: Schleife erzeugen* records a modifier gesture; *Umsch+Ziehen*
+is a compact form of *Umschalt+Ziehen*. Preserve the key and action. Use a slash
+for short alternatives (*Glyphe / Paar*, *Grafik einfügen / importieren*) and
+shared endings (*Ober-/Unterlänge*, *Versal-/x-Höhe*) where both parts remain
+clear. Do not replace consequential logical conditions with punctuation.
+
+Choose the grammatical form for the control: *Glatt* is a state, *Glätten*
+an action; *Umbruch* names the setting. Short forms such as *Live*, *Weitere
+Infos* and *vorläufig installieren* can work on their reviewed controls.
+The last does not replace the exact lifetime, *bis zum Beenden von FontLab*,
+where a reader needs it. Start continuation labels in lowercase where their
+sentence calls for it: *nach Namen*, *hier ablegen*.
+
+## Matching, actions and wordplay
+
+Use **Synchronsprecher** for Matchmaker and **Synchronsprecher-Werkzeug**
+for its tool label. The dubbing-actor word plays on *synchron*; the surrounding
+help must still explain matching masters. Keep this family together:
+
+| English role | German |
+|---|---|
+| Match Masters / Match Kerning | Master synchron / Kerning synchron |
+| Matching operation in prose | Master synchronisieren / Kerning synchronisieren |
+| Matching masters / axes | synchrone Master / Achsen |
+| Auto-matching | Autosynchronisierung |
+| Match Edits | Synchrones Arbeiten |
+| Match Moves | Synchrone Verschiebungen |
+| Audit Match | Synchronisierung prüfen |
+
+These forms describe correspondence or coordinated editing, not network
+synchronization. *Master-Kompatibilität* still names the interpolation
+requirement; *Variationskompatibilität* remains valid explanatory language.
+Do not translate every unrelated occurrence of *match* as *synchron*.
+
+Prefer **umwandeln** for conversion, **balancieren** for Balance and
+**unbalanciert** for Unbalanced, **Kontur brechen** for Break contour,
+**Auto-Zurichtung** for Autospacing and **kernen** as the verb. Use **Erneut**
+for Repeat last command, keeping Redo (*Wiederholen*) and Echo text (*Text
+wiederholen*) distinct. **Knoten-Links** is the Node Links label; it does not
+rename every kind of Verknüpfung. Removing metrics links is *Metriken entknüpfen*.
+
+The copy-text labels **Leer zeichen getrennt** and **Komma,getrennt** illustrate
+their separators. Preserve that deliberate, local wordplay when quoting those
+controls; ordinary German still writes *Leerzeichen*. A typo such as *under*
+for *unter* does not establish a spelling preference.
+
 ## Terminology decisions that generalize
 
 - **One meaning, one translation.** Where a concept had two renderings, the
@@ -80,22 +143,30 @@ an exception).
   *Metrikausschluss*, *Geviertauflösung*, *Dezimalkoordinaten*, *Text
   wiederholen*, *Schub*, *Zusammenklappen*, *Schnittmenge*, *Pflichtglyphen*.
 - **No added specificity.** *pair* is *Paar*, not *Kerningpaar*; *cloud* is
-  *Wolke*; *references* are *Referenzen* and only *element references* are
-  *Element-Referenzen*; *mask* is *Maske* even though a FontLab mask is a
+  *Wolke*; *references* are *Referenzen*; *element references* may also be
+  *Referenzen* when the element context is already visible; *mask* is *Maske* even though a FontLab mask is a
   layer. Compounds are where translators add detail by reflex.
 - **Width has four German words.** Advance width is *Dickte*; geometric width
   *Breite*; the width axis *Weite* (*Schriftweite* only where the short form
-  is ambiguous); tracking *Laufweite*. Weight axis: *Stärke*, *Strichstärke*
-  where needed. Sidebearings: *Vorbreite*, *Nachbreite*.
+  is ambiguous); tracking *Laufweite*. Sidebearings: *Vorbreite*, *Nachbreite*.
+- **Weight and thickness are distinct.** Translate *Weight* as *Stärke* in UI
+  strings, including the weight axis. In clarifying strings, *Strichstärke*
+  may be used for *Weight*. Use *Stärkenklasse* and *Stärkewert*.
+  *Thickness* is *Dicke* generically, *Strichdicke* for strokes and
+  *Stammstärke* for stems, even when the source label omits the noun.
+  Use *Standardstammstärke* for its measurement and *Standardstamm* for
+  the stem itself. When help quotes a UI label, keep *Stärke*.
 - **UPM is *Geviertauflösung*:** units per em, the em being the *Geviert*.
   *Descender to UPM* is a distance and reads *Unterlänge bis Gevierthöhe*.
-  PPM is *Pixel pro Geviert* in prose and stays *PPM* in hinting fields.
+  PPM is *Pixel pro Geviert* in prose and stays *PPM* in compact hinting
+  and rasterization fields. *UPM height from descender* is
+  *Gevierthöhe ab Unterlänge*, not a resolution setting.
 - **Professional loans stay:** *Kerning*, *Master*, *Hinting*, *Lookup*,
   *Tracking* in the axis sense is *Laufweite* though. *Kerning* over
   *Unterschneidung*, because the UI, the manual and the literature say so.
 - **Panels are *Bedienfelder***, after Adobe; a *Fenster* is a window.
 - ***smart* is *schlau***, inflected: *schlaue Ecke*, *Schlauen Filter
-  hinzufügen*. Clever with a hint of Bauernschläue; never *intelligent*, which
+  hinzu*. Clever with a hint of Bauernschläue; never *intelligent*, which
   now reads as a claim about AI.
 - **Feature names follow the house voice:** operations with a fixed technical
   meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
@@ -109,13 +180,25 @@ an exception).
   *Einfügen*, *Rückgängig*, *Wiederholen*, *Beenden*, *Einstellungen*, *Im
   Finder anzeigen*. Qt's own `qtbase_de` catalog uses the same words.
 
+For points, use *Punkt außerhalb der Kurve* in explanation and *Punkte außer
+Kurve* in the compact display label. *Anfasserpunkt* remains appropriate for
+the reviewed drawing-tool hint; *Knoten auf der Kurve* names the on-curve node.
+Use *Autohinting* and *TT-Autohinting*, including action labels.
+
 ## Compounds, loanwords and spelling
 
-Native compounds are closed: *Glyphenfenster*, *Dicktenausdruck*, *Dateiname*,
-*Schriftfamilie*. A compound whose first part is a thinly loaned English word is
+Ordinary compounds stay closed: *Dicktenausdruck*, *Dateiname*,
+*Schriftfamilie*. FontLab UI names deliberately use **Schrift-Fenster**,
+**Glyphen-Fenster** and **Kontur-Werkzeug**, with the same hyphen for other
+*-Werkzeug* names, including **Synchronsprecher-Werkzeug**. Use
+*Strich-Eigenschaften*, *Element-Transformation* and *Glyphennamen-Suffix*
+where these labels occur. This is a readability convention for named UI
+objects, not permission to hyphenate every German compound. A compound whose first part is a thinly loaned English word is
 hyphenated: *Kerning-Klasse*, *Kerning-Paar*, *Demo-Modus*, *Master-Dickten*,
 *Code-Editor*, *Stil-Gruppe*, *Element-Referenz*, *OpenType-Funktion*. The test:
 would a native reader see one word, or a borrowed word with a suffix?
+An exact UI name takes precedence over that general test; **Frei
+Transformieren** keeps its reviewed label capitalization.
 
 A protected product name never inflects or joins a compound: *in FontLab*,
 *Einstellungen von Vexy Lines*, never *im FontLab* or *FontLab-Einstellungen*

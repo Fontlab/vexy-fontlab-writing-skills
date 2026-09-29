@@ -327,6 +327,16 @@ every language and the language skill for the language.
 
 Worked cases: `references/moves.md`.
 
+## Learn from a reviewed catalog diff
+
+Compare message identity and individual plural texts, excluding location and
+formatting churn. Separate repeated terminology choices, contextual short
+labels, deliberate wordplay and apparent defects. Record before, after and
+scope. A compact German *hinzu* does not replace *hinzufügen* in sentences;
+a shortened control may inherit a noun from the screen. Apply a chosen pattern
+to every plural form. Update canonical memory and language guidance, then
+regenerate portable tables and phrase books. Preserve status and source keys.
+
 <!-- fontlab:shared:start -->
 ## House rules
 
