@@ -4,6 +4,13 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-09-29: fl10n issue 147, house-voice terminology rules
+
+Added the shared "Choose terms in the house voice" section, updated the four
+language skills and the terminology skill, regenerated the term tables with
+the Fallback column (de/es/fr 222, pl 231). `bash tools/scripts/check_all.sh`
+passes.
+
 ## 2026-09-28: fl10n issue 145, first localization pass
 
 Added the shared localization references and the four per-language skills;

@@ -4,6 +4,20 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-09-29: terms in the house voice and the fallback original term
+
+`fontlab-localization` 1.2.0 adds "Choose terms in the house voice": the
+fallback original term, humor and wordplay, playful Power names, plain words
+for Smart features, down-to-earth terms, handyman verbs, do-not-translate with
+restraint, and derivation from the chosen noun, all from the founder's reviews
+in fl10n issues 133 and 146. `fontlab-terminology` 1.1.0 asks for a fallback
+when proposing a coinage. The German, Spanish and French skills replace their
+"product operation names stay" rule with the house-voice rule; the Polish
+skill (1.1.0) carries the 29 September decisions (*trzon*, *podprogram
+zecerski*, *klasa kernowa*, *interlinia*, *diakrytyk*, *jednostka unikodu*,
+*kuzynostwo*, *szkicownik*, *Pędzel mocy* and the rest). The four term tables
+are regenerated with a Fallback column by `export_terms.py`.
+
 ## 2026-09-28: localization knowledge and four language skills
 
 `fontlab-localization` 1.1.0 adds three sections and three references

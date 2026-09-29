@@ -250,8 +250,13 @@ the language skills show it in their Fallback column. When no attested
 equivalent exists, translate the fallback into the profession's idiom and
 record the result as a proposal with its reason. A translation engine that
 meets an empty target and a fallback is told to translate the plain phrase.
-Brands have no fallback. If the best fallback would be the definition, the
-term has a definition problem; say so.
+Write one when a literal translation would mislead, when the English is an
+idiom or a coinage, or when languages keep stumbling on the term; a shared
+professional term may carry one for the languages that lack the loan. At most
+six words. Brands, eponyms and operations that keep their name everywhere
+(*Flex*) have none. If the best fallback would be the definition, the term has
+a definition problem; say so. Do not protect feature names as if they were
+brands: only brands and trademarks stay English.
 
 **Humor and wordplay** are welcome when the information survives without the
 joke: Polish *swat* (the village matchmaker) for Matchmaker, *Pełna krasa*
