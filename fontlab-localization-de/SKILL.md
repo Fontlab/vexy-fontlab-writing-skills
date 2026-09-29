@@ -30,12 +30,14 @@ skill adds the language's register, grammar and terminology distinctions.
 
 ## Follower node terminology
 
-Use **Anhänger-Knoten**, with short label **Anhänger**, and X/Y labels
-**X-Anhänger** and **Y-Anhänger**. *Anhänger* carries the fan/supporter sense;
-use *Anhänger-Knoten* for both singular and plural, with the surrounding
-sentence supplying number. Interpret legacy English **Servant** labels as
-**Follower**, never as a domestic servant. Source keys remain unchanged.
-Lexical sense: [Duden](https://www.duden.de/rechtschreibung/Anhaenger).
+Use **Folgeknoten** for singular and plural, also as the compact UI label;
+use **Folgeknoten X** and **Folgeknoten Y** for the axis variants.
+The compound names a node that follows the movement of leading key nodes.
+In prose use *Folgeknoten* and *Folgeknoten-Verhalten*. Interpret legacy
+English **Servant** as **Follower** in this physical sense. The earlier
+fan/supporter reading is obsolete. Keep English source keys unchanged.
+The house term is formed from *folgen*; its physical sense is documented in
+[Duden](https://www.duden.de/rechtschreibung/folgen).
 
 ## Register and address
 

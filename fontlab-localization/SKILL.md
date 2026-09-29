@@ -274,7 +274,7 @@ of peasant cunning, never *intelligent*: *schlau*, *astuto/a*, *futé/e*,
 *sprytny*, inflected normally.
 
 **Down to earth.** Prefer the everyday word to the sophisticated one: Nudge is
-Polish *holowanie* (towing), Follower nodes are *węzły typu Zwolennik* (supporter nodes), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
+Polish *holowanie* (towing), Follower nodes are *węzły typu Naśladowca* (nodes that follow movement), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
 *skórka*. Keep the English only where the language has no plain word for that
 exact thing, and record why. Operations with a fixed technical meaning keep a
 fixed name in every language: *Oblique*, *Flex*, *OT Def*.
@@ -302,18 +302,20 @@ the whole family in the core memory note.
 
 ## Follower nodes
 
-For localization, interpret the English labels **Servant node** and **Servant**
-as **Follower node** and **Follower**, in the sense of a fan or supporter.
-The servant metaphor is obsolete. This is a naming decision, not a change to
-Power Nudge: these nodes still follow neighboring key nodes. Keep English
-catalog sources, resource keys and the `servant-node` glossary identifier stable
-until a separate source-code migration changes them. Translate the visible
-labels, their X/Y variants, tooltips and help with the supporter terminology.
+For localization, interpret legacy English **Servant node** and **Servant**
+as **Follower node** and **Follower**, physically following a leader.
+The node follows the movement of neighboring key nodes under Power Nudge.
+The servant and social fan/supporter metaphors are obsolete. The glossary's
+fallback original term is **Follower node**. Keep English catalog sources,
+resource keys and the `servant-node` identifier stable. Translate visible
+labels, X/Y variants, tooltips and help consistently.
 
-Use German *Anhänger-Knoten*, Spanish *nodo seguidor*, French *nœud adepte*
-and Polish *węzeł zwolennik*. The short labels are *Anhänger*, *seguidor*,
-*adepte* and *Zwolennik*. Do not retain the English label as a brand name.
-Inflect running text and keep the labels in help consistent with the UI.
+Use German *Folgeknoten*, Spanish *nodo seguidor*, French *nœud suiveur*
+and Polish *węzeł naśladowca*. Compact labels are *Folgeknoten*, *seguidor*,
+*suiveur* and *Naśladowca*. Inflect running text naturally. Spanish keeps
+its spelling because *seguidor* also names physical following; German and
+French use terms that directly express following movement. The Polish term
+is the user's explicit choice.
 
 ## Per-language skills
 

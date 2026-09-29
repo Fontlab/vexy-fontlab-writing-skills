@@ -31,11 +31,12 @@ skill adds the language's register, grammar and terminology distinctions.
 ## Follower node terminology
 
 Use **nodo seguidor**, plural **nodos seguidores**; short labels are
-**seguidor**, **seguidor X** and **seguidor Y**. The intended sense is a fan
-or supporter, not a servant. Interpret legacy English **Servant** as
-**Follower**. Use *propiedad de seguidor* when naming the property in prose.
-Source keys remain unchanged.
-Lexical sense: [RAE](https://dle.rae.es/seguidor).
+**seguidor**, **seguidor X** and **seguidor Y**. Keep this term: *seguir*
+includes physically going after someone. Here the node follows the movement
+of leading key nodes. Interpret legacy English **Servant** as **Follower**
+in this physical sense. Use *propiedad de seguidor* in prose. The earlier
+fan/supporter reading is obsolete. Keep English source keys unchanged.
+Lexical sense: [RAE, seguir](https://dle.rae.es/seguir).
 
 ## Register and address
 

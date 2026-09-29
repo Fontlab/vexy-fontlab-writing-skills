@@ -4,6 +4,33 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-09-29: Follower nodes follow movement
+
+Supersedes the earlier fan/supporter naming decision. The fallback original
+term is now exactly `Follower node`, defined as physically following a leader:
+a node follows the movement of neighboring key nodes under Power Nudge.
+Current terms: German Folgeknoten (also the compact label; Folgeknoten X/Y),
+Spanish nodo seguidor (seguidor X/Y), French nœud suiveur (suiveur X/Y),
+Polish węzeł naśladowca (type label Naśladowca; Naśladowca X/Y).
+Spanish already expresses physical following, so its UI and project-memory
+strings are retained after review; its definition and translator guidance change.
+Updated canonical fallback/definition, core notes, guides, skills, generated
+term tables, project memories, application glossary and all four QPH/prompt
+pairs. The DE/FR/PL application changes cover 21 catalog strings, 16 extended
+helptips and three Help Panel entries per language. English source keys stay
+unchanged. Dictionary links document physical senses; Folgeknoten is the house
+compound and the Polish term is the user's explicit choice.
+
+Verification: the updated meaning/target/fallback regression failed before
+the data changes. All 26 styleguide tests pass; strict documentation build
+and link/asset checks on 225 HTML pages pass. All four skill tests and shared
+block/path checks pass. Four Qt catalogs compile. Independent baseline
+comparisons verify unchanged source text, message metadata/states, unrelated
+translations, English help, placeholders, markup and mnemonic counts; German
+and French X/Y mnemonics remain on X/Y. All 897 phrase pairs match core TMX,
+and prompt embeddings match QPH bytes. The before/after ledger and verification
+counts are in `Proteus/i18n/review/follower-motion-2026-09-29.json`.
+
 ## 2026-09-29: Follower node translations
 
 Retired the servant meaning in DE/ES/FR/PL localization. The legacy source now

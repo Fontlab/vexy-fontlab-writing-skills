@@ -30,14 +30,15 @@ skill adds the language's register, grammar and terminology distinctions.
 
 ## Follower node terminology
 
-Use **węzeł zwolennik**, with short type label **Zwolennik** and variants
-**Zwolennik X** and **Zwolennik Y**. This is a fan/supporter metaphor. In prose,
-use *węzeł typu Zwolennik*, *węzły typu Zwolennik*, *węzła typu Zwolennik*
-and *węzłami typu Zwolennik* to keep the type label stable while declining the
-surrounding noun. Interpret legacy English **Servant** as **Follower**.
-Use *tryb Zwolennik* and *właściwość typu Zwolennik* for the behavior.
-Source keys remain unchanged.
-Lexical sense: [WSJP PAN](https://wsjp.pl/haslo/podglad/4042/zwolennik/4968119/dialogu).
+Use **węzeł naśladowca**, with short type label **Naśladowca** and variants
+**Naśladowca X** and **Naśladowca Y**. The node follows the movement of
+leading key nodes. Interpret legacy English **Servant** as **Follower**
+in this physical sense. The earlier fan/supporter reading is obsolete.
+In prose use *węzeł typu Naśladowca*, *węzły typu Naśladowca*,
+*węzła typu Naśladowca* and *węzłami typu Naśladowca* to keep the type label
+stable while declining the surrounding noun. Use *tryb Naśladowca* and
+*właściwość typu Naśladowca* for the behavior. Keep English source keys
+unchanged. This term follows the user's explicit naming decision.
 
 ## Register and address
 
@@ -118,7 +119,7 @@ constructions are the usual overruns; compress the phrase, not the meaning.
   Brush *Pędzel mocy*, Power Guide *Prowadnica mocy*, Power Stroke *Obrys
   mocy*; Matchmaker *swat*; True Fill *Pełna krasa*; Sketchboard
   *szkicownik*; Skin *skórka*; Cousins *kuzynostwo* (singular *kuzyn*);
-  Follower node *węzeł zwolennik*; Dream Up *wyczaruj*; FontLab account *konto
+  Follower node *węzeł naśladowca*; Dream Up *wyczaruj*; FontLab account *konto
   FontLab*; Vexy coins *żetony Vexy coin*. Operations with a fixed technical
   meaning keep their name: *Oblique*, *Flex*, *OT Def*, *Genius* (*węzeł
   Genius*), *Fusion*. When a term has no plain Polish word, translate the

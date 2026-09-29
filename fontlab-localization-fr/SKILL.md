@@ -30,12 +30,14 @@ skill adds the language's register, grammar and terminology distinctions.
 
 ## Follower node terminology
 
-Use **nœud adepte**, plural **nœuds adeptes**; short labels are **adepte**,
-**X-adepte** and **Y-adepte**. *Adepte* conveys an adherent or supporter.
-Interpret legacy English **Servant** as **Follower**, not as a servant.
-Use *propriété d’adepte* in prose. Source keys remain unchanged. Do not replace
-the ordinary French participle *servant* in unrelated prose.
-Lexical sense: [Larousse](https://www.larousse.fr/dictionnaires/francais/adepte/1057).
+Use **nœud suiveur**, plural **nœuds suiveurs**; short labels are
+**suiveur**, **suiveur X** and **suiveur Y**. A *suiveur* follows another
+in movement; the node follows the movement of leading key nodes.
+Interpret legacy English **Servant** as **Follower** in this physical sense.
+Use *propriété de suiveur* in prose. The earlier adherent/supporter reading
+is obsolete. Keep English source keys unchanged. Ordinary French participles
+such as *servant à* in unrelated prose are unaffected.
+Lexical sense: [Académie française](https://www.dictionnaire-academie.fr/article/A9S3342).
 
 ## Register and address
 
@@ -78,7 +80,7 @@ says the same thing.
   futé*. Never *intelligent*.
 - **Feature names follow the house voice:** operations with a fixed technical
   meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
-  power (*poussée forte* for Power Nudge); *smart* is *futé/e*; the current table gives *nœud Genius*, *nœud adepte*,
+  power (*poussée forte* for Power Nudge); *smart* is *futé/e*; the current table gives *nœud Genius*, *nœud suiveur*,
   *Cousins*, *Skin* and *Plan de travail*. Do not replace these with a new
   coinage. For an unsettled name, consult the fallback original term in the term table (the Fallback column). See
   `fontlab-localization`, section "Choose terms in the house voice".
