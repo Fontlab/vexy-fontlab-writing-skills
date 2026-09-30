@@ -411,3 +411,10 @@ the Qt source key while translating the verified current route.
 Updated all three portable localization skills. Verification: four tests and
 shared-rule synchronization checks pass.
 Catalog/memory parity passes; the wider editorial review continues.
+
+## 2026-09-30: Localization checkpoint 031
+
+Added the source-verified rule that tr() strings may still be literal program
+parameters: preserve .round exactly in TrueType link commands. All three guides
+and skills agree; rendered guide text verified. ES/FR project memories reflect
+the corrected tokens and Spanish standard-stem wording. Verification: four tests and shared-rule synchronization checks pass. Core terms and approval states unchanged.

@@ -50,6 +50,8 @@ an infinitive.
 
 ## Headline style in compact strings
 
+Strings passed through translation can still be program data. Trace their consumers before translating punctuation-led tokens: `.round` is a literal TrueType command parameter, not a caption. Preserve it exactly, even when `tr()` marks it as translatable; localize the surrounding explanation instead.
+
 A navigation path in the English source can be outdated. Verify the live
 control binding and current page titles before copying it. The loop-fill option
 is now *Infos de police › Dimensions de la police › Évider les boucles*. Preserve the Qt source key while
