@@ -56,6 +56,12 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+A selector can complete a sentence: its value and the menu action that supplies
+that value may deliberately start lowercase. Inspect the adjoining label before
+capitalizing every QAction. Keep units, identifiers and literal case examples
+unchanged. In long hints, remove repeated wording while preserving both branches
+of a condition, every allowed character and each file-format exception.
+
 Check casing from the UI role even when the English source starts lowercase.
 The standalone action *show Fonts* is *Pokaż fonty*; literal case examples
 and sentence fragments need their own treatment. Distinguish glyph tags

@@ -51,6 +51,12 @@ Use *usted* only where a surface's brief asks for it, and then consistently.
 
 ## Headline style in compact strings
 
+A selector can complete a sentence: its value and the menu action that supplies
+that value may deliberately start lowercase. Inspect the adjoining label before
+capitalizing every QAction. Keep units, identifiers and literal case examples
+unchanged. In long hints, remove repeated wording while preserving both branches
+of a condition, every allowed character and each file-format exception.
+
 Check casing from the UI role even when the English source starts lowercase.
 A standalone action such as *show Fonts* is *Mostrar fuentes*; literal case
 examples and sentence fragments need their own treatment. Preserve scope words

@@ -392,3 +392,8 @@ the new noun/verb-role rule.
 
 Added role-based casing guidance for lowercase English sources to Spanish,
 French and Polish guides/skills. Four tests and synchronization checks pass; new paragraphs match the canonical guides.
+
+## 2026-09-30: localization checkpoint 020
+
+Documented inline-selector casing exceptions and preservation of conditions,
+allowed characters and format exceptions when shortening hints. Guide/skill paragraphs match; four tests and synchronization checks pass.
