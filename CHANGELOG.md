@@ -4,6 +4,32 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-09-30: issue 153 expanded terminology, in progress
+
+The current issue contains 149 explicit DE/ES/FR/PL term pairs beyond the earlier
+Nudge delivery. All 149 now match the canonical core memories, including approval
+from the explicit request. Added 29 English source entries and retained the prior
+Nudge decisions. The new complete-pair regression failed on 117 cases before the
+update and passes afterward. The historical Nudge verification does not cover
+this expanded scope and must not be used as its completion evidence.
+
+Regenerated glossary pages and all four portable skill term tables. Fixed the
+skills exporter, whose obsolete localization/tm path caused all four exports to
+fail; its isolated CLI regression reproduces the failure and passes with the fix.
+Ran localization/sync_all.py: 986 QPH entries and 71,501 derived UI/help units.
+These derived memories still reflect application translations pending review.
+
+Preserved current application inputs and hashes under
+fl10n/private-data/issue-153/expanded/. Source-term triage found 22,468 candidate
+rows (DE 6,310; ES 5,825; FR 5,169; PL 5,164). This is a review queue, not a
+linguistic completeness claim: inflections, compound words, protected literals
+and related terms need contextual review. No application translation was changed
+in this checkpoint. Checks pass: 31 styleguide tests, 8 sync tests, 5 skill
+tests, terminology schema and core/project separation. The fl10n baseline has
+251 passing tests and one environment-dependent extraction skip. Language-guide and skill prose reconciliation, application
+retranslation, final rebuild and final acceptance remain open.
+
+
 ## 2026-09-30: ES/FR/PL compact UI guidance
 
 Updated the three language skills to version 1.1.0 with contextual shortening,

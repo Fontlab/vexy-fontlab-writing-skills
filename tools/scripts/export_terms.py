@@ -3,7 +3,7 @@
 """Write the portable term table of each per-language localization skill.
 
 Reads the core translation memories of the writing guide
-(`localization/tm/<code>-core.tmx` in the vexy-fontlab-writing-styleguide
+(`localization/<code>-core.tmx` in the vexy-fontlab-writing-styleguide
 repository) and writes `fontlab-localization-<code>/references/terms.md`: one
 table per category with the English term, the translation, its status and the
 translator note. The English definition is included so the skill can work
@@ -62,7 +62,7 @@ def render(code, name, units):
     lines = [f"<!-- this_file: fontlab-localization-{code}/references/terms.md -->", "",
              f"# {name} terms", "",
              f"Portable term table, snapshot of {date.today():%d %B %Y}, generated from the core "
-             f"translation memory `localization/tm/{code}-core.tmx` of the FontLab writing guide "
+             f"translation memory `localization/{code}-core.tmx` of the FontLab writing guide "
              f"by `tools/scripts/export_terms.py`. {covered} of {len(units)} terms are approved or "
              "protected; a proposed translation is a candidate for a native reviewer, and the "
              "English term is the fallback until it is approved. Use newer supplied project data "
@@ -91,7 +91,7 @@ def main():
     parser.add_argument("--styleguide", type=Path, default=DEFAULT_STYLEGUIDE)
     parser.add_argument("codes", nargs="*", default=["de", "es", "fr", "pl"])
     args = parser.parse_args()
-    tm = args.styleguide / "localization" / "tm"
+    tm = args.styleguide / "localization"
     status = 0
     for code in args.codes:
         source = tm / f"{code}-core.tmx"

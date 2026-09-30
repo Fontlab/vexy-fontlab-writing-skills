@@ -39,6 +39,14 @@ fan/supporter reading is obsolete. Keep English source keys unchanged.
 The house term is formed from *folgen*; its physical sense is documented in
 [Duden](https://www.duden.de/rechtschreibung/folgen).
 
+## Thickness depends on the control
+
+Use *Dicke* for general thickness, *Strichdicke* for confirmed stroke thickness,
+and *Stammstärke* for confirmed stem thickness. The English label may be just
+*Thickness*: read the surrounding controls and their actual function before
+choosing. A stroke-width control and a stem-width control must keep distinct
+labels. Inflect the term within the complete sentence.
+
 ## Register and address
 
 Use **Sie** in product help, dialogs and support, with **Sie**, **Ihnen** and

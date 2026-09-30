@@ -40,6 +40,19 @@ stable while declining the surrounding noun. Use *tryb Naśladowca* and
 *właściwość typu Naśladowca* for the behavior. Keep English source keys
 unchanged. This term follows the user's explicit naming decision.
 
+## Stroke, thickness and grammatical context
+
+In the application UI, *stroke* is *obrys*. Use *tęgość* only for stroke
+thickness, *grubość trzonu* for stem thickness, and *grubość* for general
+thickness. A short English *Thickness* label does not establish which meaning
+applies: inspect the actual control and the surrounding labels.
+
+Treat glossary entries as lemmas. Use *Przekształć* for a command and
+*Transformacja* for a panel, settings group or history entry; use *Kadruj*
+for the crop command. A checkbox describing a font takes *Nieproporcjonalny*,
+not the plural *nieproporcjonalne*. Keep cases and agreement in complete help
+sentences, including *tęgość obrysu*, *tęgości obrysu* and *grubość trzonu*.
+
 ## Register and address
 
 Use the direct second person singular in product help and dialogs, without a
@@ -158,8 +171,7 @@ menu paths. Retain necessary conditions and precise technical terms.
   (baseline), *światło wewnątrzliterowe* (counter), *brzuszek* (bowl),
   *naddatek* (overshoot, the optical surplus), *pułapka* (ink trap). A drawn
   path is *obrys* (stroke): *zakończenie* (cap), *łącze obrysu* (join),
-  *utrwal obrys* (expand stroke), *utrwal filtr* (expand filter). *Kreska* is
-  a letter's stroke, *obrys* the path.
+  *utrwal obrys* (expand stroke), *utrwal filtr* (expand filter).
 - **Other reviewed decisions:** autotrace is *wektoryzacja*; mark is
   *diakrytyk*, mark attachment *przyłączanie diakrytyków*, cursive attachment
   *przyłączanie pisankowe*, nonspacing mark *diakrytyk bez szerokości pola*;
