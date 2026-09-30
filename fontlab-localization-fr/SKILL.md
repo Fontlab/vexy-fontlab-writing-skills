@@ -90,6 +90,8 @@ or change its casing to shorten the sentence.
 
 A confirmation may ask *Continuer ?* without a polite lead-in. A checkbox can say *Corps optique* when it enables that setting; keep the action explicit in instructions.
 
+Review every same-source counterpart after changing a translation, including strings shorter than the reference language. Generated property-type and property-instance descriptions usually describe the same setting and should agree. Keep justified differences for label versus tooltip, grammatical context and distinct meanings. Compare plural forms by position; do not count a single message’s singular and plural forms as inconsistencies.
+
 Use the edited German label to find redundant wording, not as a hard length
 limit. Compare the same Qt context, source, comment and plural form. Count
 visible characters without markup or mnemonic markers; a count cannot prove

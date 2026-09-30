@@ -91,6 +91,8 @@ or change its casing to shorten the sentence.
 
 A dialog-local checkbox may say *No volver a mostrar*; the message is already visible. An optical-size checkbox can use *Tamaño óptico*. Keep the full condition in explanatory text.
 
+Review every same-source counterpart after changing a translation, including strings shorter than the reference language. Generated property-type and property-instance descriptions usually describe the same setting and should agree. Keep justified differences for label versus tooltip, grammatical context and distinct meanings. Compare plural forms by position; do not count a single message’s singular and plural forms as inconsistencies.
+
 Use the edited German label to find redundant wording, not as a hard length
 limit. Compare the same Qt context, source, comment and plural form. Count
 visible characters without markup or mnemonic markers; a count cannot prove

@@ -418,3 +418,12 @@ Added the source-verified rule that tr() strings may still be literal program
 parameters: preserve .round exactly in TrueType link commands. All three guides
 and skills agree; rendered guide text verified. ES/FR project memories reflect
 the corrected tokens and Spanish standard-stem wording. Verification: four tests and shared-rule synchronization checks pass. Core terms and approval states unchanged.
+
+## Localization checkpoint 064
+
+Added same-source follow-through guidance: review shorter counterparts after
+every edit, align generated property descriptions, preserve genuine contextual
+variants and compare plural forms by position. ES/FR/PL project memories hold
+35 consistency fixes. Six writer, 28 styleguide and four skills tests pass;
+strict documentation build verifies 225 pages and the rendered new rule.
+Final catalog/UI acceptance remains open.
