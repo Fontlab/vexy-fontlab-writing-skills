@@ -358,3 +358,7 @@ Final catalog/UI acceptance remains open.
 
 - Include .pef-generated labels and enum choices in language-specific casing
   audits; distinguish glossary forms from standalone labels.
+
+## Localization checkpoint 068
+
+- Check tool hints against actual localized action names and renamed labels.

@@ -69,6 +69,8 @@ capitalizing every QAction. Keep units, identifiers and literal case examples
 unchanged. In long hints, remove repeated wording while preserving both branches
 of a condition, every allowed character and each file-format exception.
 
+Review each action’s visible label and tooltip together. When a hint names the tool, use its localized action name without the mnemonic marker; keep grammatical inflection in a functional description. Do not leave an older tool name in the hint after renaming the action.
+
 Include generated property display names and enum choices in casing audits; inspect their .pef definitions and TS disambiguation comments as well as .ui files. A lowercase glossary term may need an initial capital as a standalone label. Preserve case-sensitive identifiers such as uniXXXX and mark/mkmk.
 
 Check casing from the UI role even when the English source starts lowercase.

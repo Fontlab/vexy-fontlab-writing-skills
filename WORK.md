@@ -432,3 +432,8 @@ Final catalog/UI acceptance remains open.
 
 Added generated displayName/enum role checks and protected-identifier rules
 to ES/FR/PL localization skills. Four tests and all skill checks pass.
+
+## Localization checkpoint 068
+
+Added action-label/tooltip naming follow-through to ES/FR/PL skills, preserving
+grammatical functional descriptions. Four tests and all skill checks pass.
