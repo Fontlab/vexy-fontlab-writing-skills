@@ -276,3 +276,9 @@ causality, and visible limitations. Default path checks now include both skills.
 
 Verified metadata, shared-rule synchronization, paths, a negative missing-path
 case, and six direct writing/editing trials. Existing skills remain unchanged.
+
+## 2026-09-30: proposed Polish transformation term
+
+Regenerated the Polish term reference: utrwal przekształcenie agrees with
+Przekształcenie. The term remains proposed. Four tests and all shared-rule/path
+checks pass.

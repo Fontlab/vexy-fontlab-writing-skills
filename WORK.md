@@ -342,3 +342,9 @@ styleguide checkout holds the outputs in its dated balanced-skill trial record.
 No dependency change, global install, or remote release was needed. All six
 pre-existing SKILL.md files remain byte-identical. No pending task remains in
 this addition.
+
+## 2026-09-30: proposed Polish transformation term
+
+Regenerated the Polish term reference: utrwal przekształcenie agrees with
+Przekształcenie. The term remains proposed. Four tests and all shared-rule/path
+checks pass.
