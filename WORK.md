@@ -402,3 +402,12 @@ allowed characters and format exceptions when shortening hints. Guide/skill para
 
 Documented compact PANOSE no-fit definitions while preserving numeric states
 and updating every disambiguated occurrence. Guide/skill paragraphs match; four tests and synchronization checks pass.
+
+## 2026-09-30: Localization checkpoint 022
+
+Documented source-verified navigation paths when English UI hints are stale.
+The loop-fill setting now points to Font Dimensions in ES/FR/PL; preserve
+the Qt source key while translating the verified current route.
+Updated all three portable localization skills. Verification: four tests and
+shared-rule synchronization checks pass.
+Catalog/memory parity passes; the wider editorial review continues.

@@ -51,6 +51,11 @@ Use *usted* only where a surface's brief asks for it, and then consistently.
 
 ## Headline style in compact strings
 
+A navigation path in the English source can be outdated. Verify the live
+control binding and current page titles before copying it. The loop-fill option
+is now *Información de la fuente › Dimensiones de la fuente › Vaciar bucles*. Preserve the Qt source key while
+using the verified localized route; do not silently invent a replacement path.
+
 When a choice repeats its own definition, keep one complete explanation.
 For PANOSE, use *Ningún valor adecuado [1]* without a second no-fit phrase.
 Keep the numeric value and its distinction from variable/any [0]; update every

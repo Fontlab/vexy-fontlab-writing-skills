@@ -56,6 +56,11 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+A navigation path in the English source can be outdated. Verify the live
+control binding and current page titles before copying it. The loop-fill option
+is now *Informacje o foncie › Wymiary fontu › Bez wypełnienia pętli*. Preserve the Qt source key while
+using the verified localized route; do not silently invent a replacement path.
+
 When a choice repeats its own definition, keep one complete explanation.
 For PANOSE, use *Żadna wartość nie pasuje [1]* without a second no-fit phrase.
 Keep the numeric value and its distinction from variable/any [0]; update every
