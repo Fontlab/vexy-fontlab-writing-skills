@@ -323,3 +323,8 @@ French and Polish guides/skills. Four tests and synchronization checks pass; new
 
 Documented inline-selector casing exceptions and preservation of conditions,
 allowed characters and format exceptions when shortening hints. Guide/skill paragraphs match; four tests and synchronization checks pass.
+
+## 2026-09-30: localization checkpoint 021
+
+Documented compact PANOSE no-fit definitions while preserving numeric states
+and updating every disambiguated occurrence. Guide/skill paragraphs match; four tests and synchronization checks pass.

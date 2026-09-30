@@ -56,6 +56,11 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+When a choice repeats its own definition, keep one complete explanation.
+For PANOSE, use *Żadna wartość nie pasuje [1]* without a second no-fit phrase.
+Keep the numeric value and its distinction from variable/any [0]; update every
+disambiguated occurrence and the explanatory paragraph together.
+
 A selector can complete a sentence: its value and the menu action that supplies
 that value may deliberately start lowercase. Inspect the adjoining label before
 capitalizing every QAction. Keep units, identifiers and literal case examples
