@@ -50,6 +50,8 @@ an infinitive.
 
 ## Headline style in compact strings
 
+A confirmation may ask *Continuer ?* without a polite lead-in. A checkbox can say *Corps optique* when it enables that setting; keep the action explicit in instructions.
+
 Use the edited German label to find redundant wording, not as a hard length
 limit. Compare the same Qt context, source, comment and plural form. Count
 visible characters without markup or mnemonic markers; a count cannot prove

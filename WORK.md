@@ -348,3 +348,9 @@ this addition.
 Regenerated the Polish term reference: utrwal przekształcenie agrees with
 Przekształcenie. The term remains proposed. Four tests and all shared-rule/path
 checks pass.
+
+## 2026-09-30: dialog-local compact labels
+
+Added Spanish, French and Polish examples for concise dialog questions and
+checkbox labels while preserving standalone warning scope. Canonical guides
+and portable skills agree. Four tests and all synchronization/path checks pass.

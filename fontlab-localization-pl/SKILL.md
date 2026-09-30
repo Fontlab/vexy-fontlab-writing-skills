@@ -56,6 +56,8 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+In a message dialog use *Nie pokazuj ponownie*; the visible message supplies the object. An optical-size checkbox can say *Rozmiar optyczny*. Do not shorten a standalone warning by removing its scope or consequences.
+
 Use the edited German label to find redundant wording, not as a hard length
 limit. Compare the same Qt context, source, comment and plural form. Count
 visible characters without markup or mnemonic markers; a count cannot prove

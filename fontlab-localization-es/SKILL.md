@@ -51,6 +51,8 @@ Use *usted* only where a surface's brief asks for it, and then consistently.
 
 ## Headline style in compact strings
 
+A dialog-local checkbox may say *No volver a mostrar*; the message is already visible. An optical-size checkbox can use *Tamaño óptico*. Keep the full condition in explanatory text.
+
 Use the edited German label to find redundant wording, not as a hard length
 limit. Compare the same Qt context, source, comment and plural form. Count
 visible characters without markup or mnemonic markers; a count cannot prove
