@@ -10,7 +10,7 @@ description: >-
   rules shared by every language.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   family: fontlab-writing
   language: es
 ---
@@ -31,7 +31,7 @@ skill adds the language's register, grammar and terminology distinctions.
 ## Follower node terminology
 
 Use **nodo seguidor**, plural **nodos seguidores**; short labels are
-**seguidor**, **seguidor X** and **seguidor Y**. Keep this term: *seguir*
+**Seguidor**, **Seguidor X** and **Seguidor Y**. Keep this term: *seguir*
 includes physically going after someone. Here the node follows the movement
 of leading key nodes. Interpret legacy English **Servant** as **Follower**
 in this physical sense. Use *propiedad de seguidor* in prose. The earlier
@@ -51,15 +51,29 @@ Use *usted* only where a surface's brief asks for it, and then consistently.
 
 ## Headline style in compact strings
 
-Carry the English compression over: *Si máscara activa*, *Seleccionar misma
-marca*, *Tema oscuro en celdas si activo*. Drop articles and the copula in a
-label; keep them in explanatory prose. The Measurements panel abbreviates
-*may.* and *min.* and stays as short as the English. Distances read from–to:
-*Del descendente a la altura de eme*.
+Use the edited German label to find redundant wording, not as a hard length
+limit. Compare the same Qt context, source, comment and plural form. Count
+visible characters without markup or mnemonic markers; a count cannot prove
+that a label fits its control.
 
-Spanish grows by about a fifth to a quarter; *Aceptar* for *OK* is the
-classic short-string case. Compress the label, not the meaning; when nothing
-shorter says the same thing, record the exception and file a layout defect.
+Let a visible parent supply an obvious object: *Referencias* in the element
+menu, *Por espacios* in Copy Text, *Tolerancia* in the tracing dialog. Keep
+infinitives for actions: *Añadir guía*, *Vectorizar*. Do not copy German clipped
+verbs or remove an article that the Spanish phrase needs. Keep warnings,
+conditions, quantities and the distinction between a font layer and a glyph
+layer. A fixed term such as *ancho de avance* may exceed the German label.
+
+Use sentence case: *Nodos y manejadores*, *Capas y másteres*. Standalone type
+labels start with a capital: *Seguidor X*, *Seguidor Y*. Lowercase in prose
+(*nodo seguidor*) and literal lowercase examples are deliberate. In the
+Measurements panel use established *may.* and *min.* abbreviations. Record a
+layout exception when a faithful label still cannot fit.
+
+Check every occurrence of a repaired concept, including mnemonic-split source
+words and quoted menu paths. *Snap* in drawing is *ajustar*, not *chasquear*;
+Power names are *guía Power*, *pincel Power* and *trazo Power*. A compact
+*anotación* can stand for *anotación visual* when its purpose is already clear.
+Preserve literal `masters/` paths when correcting prose to *másteres*.
 
 ## Terminology decisions that generalize
 
@@ -72,8 +86,9 @@ shorter says the same thing, record the exception and file a layout defect.
 - **One meaning, one translation:** *coordenadas decimales*, *repetir texto*,
   *empuje* and *Empuje fuerte* (Power Nudge), *glifos obligatorios*, *capa
   automática*.
-- **No added or dropped detail:** *referencias de elementos* only where the
-  English says *element references*; *par* for *pair*, not *par de kerning*.
+- **No added detail:** *par* for *pair*, not *par de kerning*. Shorten
+  *referencias de elementos* to *referencias* only when the visible parent
+  already identifies the elements.
 - ***smart* is *astuto/a***, inflected: *esquina astuta*, *filtro astuto*,
   *lápiz astuto*. Never *inteligente*.
 - **Feature names follow the house voice:** operations with a fixed technical
@@ -134,6 +149,13 @@ not name; *No se pudo abrir %1* is safe, *%1 no es válido* is not when %1 can
 be feminine. Recast as label and value (*%1: valor no válido*) or ask for one
 string per case. A trailing space or a fragment means runtime assembly:
 report it.
+
+Audit mnemonics by actual sibling menu, including actions reused in several
+menus. Keep visible wording and technical terms intact. If a dense menu has
+more labels than available unaccented letters, record the unavoidable collision
+and test keyboard cycling; do not invent a synonym solely to obtain a letter.
+Translate assembled fragments as a complete phrase before checking the pieces.
+A non-numerus count may need a label-and-value form instead of an uninflected noun.
 
 ## Review the Spanish
 

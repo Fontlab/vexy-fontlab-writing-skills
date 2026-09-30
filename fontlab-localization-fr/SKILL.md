@@ -10,7 +10,7 @@ description: >-
   fontlab-localization for the rules shared by every language.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   family: fontlab-writing
   language: fr
 ---
@@ -31,7 +31,7 @@ skill adds the language's register, grammar and terminology distinctions.
 ## Follower node terminology
 
 Use **nœud suiveur**, plural **nœuds suiveurs**; short labels are
-**suiveur**, **suiveur X** and **suiveur Y**. A *suiveur* follows another
+**Suiveur**, **Suiveur X** and **Suiveur Y**. A *suiveur* follows another
 in movement; the node follows the movement of leading key nodes.
 Interpret legacy English **Servant** as **Follower** in this physical sense.
 Use *propriété de suiveur* in prose. The earlier adherent/supporter reading
@@ -50,16 +50,29 @@ an infinitive.
 
 ## Headline style in compact strings
 
-Carry the English compression over: *Si masque actif*, *Thème sombre dans les
-cellules si actif*, *Choisir les langues OCR*. Drop articles and the copula in
-a label; keep them in explanatory prose. The Measurements panel abbreviates
-*cap.* and *bdc*, uses *inclinaison* for the italic angle, and no label exceeds
-the English length. Distances read from–to: *Des descendantes à la hauteur de
-cadratin*.
+Use the edited German label to find redundant wording, not as a hard length
+limit. Compare the same Qt context, source, comment and plural form. Count
+visible characters without markup or mnemonic markers; a count cannot prove
+that a label fits its control.
 
-French grows by about a sixth to a fifth. Compress the label, not the
-meaning; record an exception and file a layout defect when nothing shorter
-says the same thing.
+A submenu may use *Casse*, *En direct* or *Références* when its parent makes the
+operation clear. In the tracing dialog, *Tolérance* needs no repeated process
+name. Keep articles where French needs them: *Créer des glyphes* remains a
+natural command. Do not mechanically remove *le*, *la* or *des*. Keep full
+conditions and grammar in explanations; keep *chasse*, *largeur*, *graisse*
+and *épaisseur* distinct even when German uses a shorter word.
+
+Standalone labels start with capitals: *Suiveur X*, *Suiveur Y*, *Guides Power*.
+Use lowercase in prose and retain the accents on capitals. Preserve literal
+case examples. Use *guide Power*, not a competing *Power Guide* spelling, and
+*stickers* for the established feature. A stroke's *cap* is an *extrémité*, not
+the height of capital letters.
+
+The Measurements panel uses *cap.*, *bdc* and *inclinaison*. Other controls can
+keep *PPM* after the unit is established. Preserve nonbreaking punctuation
+spaces while shortening. Check repaired terminology in panels, menus,
+tooltips and quoted menu paths; retain a longer technical term when no shorter
+phrase preserves its meaning.
 
 ## Terminology decisions that generalize
 
@@ -74,8 +87,8 @@ says the same thing.
 - **One meaning, one translation:** *coordonnées décimales*, *répéter le
   texte*, *poussée* and *poussée forte* (Power Nudge), *glyphes
   obligatoires*, *calque automatique*.
-- **No added or dropped detail:** *références d'éléments* only where the
-  English says *element references*; *paire* for *pair*.
+- **No added detail:** *paire* for *pair*. Shorten *références d’éléments*
+  to *références* only when the visible parent already identifies the elements.
 - ***smart* is *futé/e***, inflected: *coin futé*, *variation futée*, *filtre
   futé*. Never *intelligent*.
 - **Feature names follow the house voice:** operations with a fixed technical
@@ -155,6 +168,13 @@ list separator is `;` because the decimal separator is a comma.
 - **Gender with placeholders:** *Nouveau %1* cannot agree with an unknown
   noun; recast as label and value or ask for a string per case. *%1 existe
   déjà. Le remplacer ?* hides a pronoun.
+
+Audit mnemonics by actual sibling menu, including actions reused in several
+menus. Keep visible wording and technical terms intact. If a dense menu has
+more labels than available unaccented letters, record the unavoidable collision
+and test keyboard cycling; do not invent a synonym solely to obtain a letter.
+Translate assembled fragments as a complete phrase before checking the pieces.
+A non-numerus count may need a label-and-value form instead of an uninflected noun.
 
 ## Review the French
 

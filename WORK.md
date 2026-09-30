@@ -4,6 +4,15 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-09-30: ES/FR/PL compact UI guidance
+
+Updated the three language skills to version 1.1.0 with contextual shortening,
+sentence casing, inflection, terminology and actual-menu mnemonic checks.
+Regenerated all three term references from canonical core memories.
+Verification: four tests, shared-rule synchronization and path checks pass.
+The full editorial review remains ongoing in Proteus.
+
+
 ## 2026-09-30: German UI review preferences
 
 Integrated the supplied German catalog diff: 547 translation changes after

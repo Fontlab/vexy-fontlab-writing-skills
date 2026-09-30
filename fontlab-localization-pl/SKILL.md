@@ -56,16 +56,30 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
-Polish has no articles, so compression comes from dropping the copula and the
-verb where the reader supplies it: *Jeśli maska aktywna*, *Zaznacz tę samą
-etykietę*, *Pędzel na kontury*. Keep case endings: a compressed label is still
-a grammatical phrase. The Measurements panel aims to stay as short as the English;
-use the profession's abbreviations (*wers.*, *min.*) and record any fixed term
-one character longer as an exception. Distances read from–to: *Od wydłużenia
-dolnego do wysokości firetu*.
+Use the edited German label to find redundant wording, not as a hard length
+limit. Compare the same Qt context, source, comment and plural form. Count
+visible characters without markup or mnemonic markers; a count cannot prove
+that a label fits its control.
 
-Polish grows about as much as German. Count phrases and *nie udało się*
-constructions are the usual overruns; compress the phrase, not the meaning.
+Polish has no articles. Drop a repeated object or an obvious verb: *Dodaj
+odniesienie* in an element dialog, *Na wierzch* for stacking order, *Spacjami*
+in the Copy Text submenu. Preserve case endings. A standalone object is
+*Ramka*, not *Ramkę*; the command is *Utwórz Prowadnicę mocy*, not *Utwórz
+Prowadnica mocy*. Commands use imperatives: *Wektoryzuj* performs an action,
+*Wektoryzacja* names a process. Ordinary sentences keep full grammar.
+
+Use sentence case and established feature-name capitalization. *Usuń nakładki*
+starts with a capital as a menu command; an intentional lowercase letter-case
+example stays lowercase. Match Edits and Match Moves are *Synchronizuj edycję*
+and *Synchronizuj przesunięcia*. Master compatibility remains *zgodność matryc*;
+copying German's synchron family must not erase that distinction.
+
+A construction recipe is *przepis*: *Edytuj przepis*, *w przepisie*, *przepisy
+autowarstw*. Keep *bez szerokości pola* for nonspacing elements even when it is
+longer than German. The property excludes the element from metrics; it does
+not delete its contours. Measurements may use *wers.* and *min.*. Check every
+occurrence of a repaired concept, including mnemonic-split sources and quoted
+menu paths. Retain necessary conditions and precise technical terms.
 
 ## Terminology decisions that generalize
 
@@ -179,6 +193,13 @@ space is acceptable.
 - **Capitalization:** months, weekdays, languages and nationalities as
   adjectives are lowercase (*polski*), nationalities as nouns are capitalized
   (*Polak*). No English title case.
+
+Audit mnemonics by actual sibling menu, including actions reused in several
+menus. Keep visible wording and technical terms intact. If a dense menu has
+more labels than available unaccented letters, record the unavoidable collision
+and test keyboard cycling; do not invent a synonym solely to obtain a letter.
+Translate assembled fragments as a complete phrase before checking the pieces.
+A non-numerus count may need a label-and-value form instead of an uninflected noun.
 
 ## Review the Polish
 
