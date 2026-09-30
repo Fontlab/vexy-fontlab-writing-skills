@@ -51,6 +51,11 @@ Use *usted* only where a surface's brief asks for it, and then consistently.
 
 ## Headline style in compact strings
 
+Check casing from the UI role even when the English source starts lowercase.
+A standalone action such as *show Fonts* is *Mostrar fuentes*; literal case
+examples and sentence fragments need their own treatment. Preserve scope words
+such as *todos* when shortening preference labels.
+
 Resolve ambiguous English nouns and verbs from the control's role. The
 *Export Profiles* settings-window title is *Perfiles de exportación*, a name for
 the profiles, not a command to export them. Check the .ui property and handler

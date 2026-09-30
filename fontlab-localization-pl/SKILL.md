@@ -56,6 +56,11 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+Check casing from the UI role even when the English source starts lowercase.
+The standalone action *show Fonts* is *Pokaż fonty*; literal case examples
+and sentence fragments need their own treatment. Distinguish glyph tags
+(*tagi*) from OpenType feature tags by inspecting the affected object.
+
 Resolve ambiguous English nouns and verbs from the control's role. The
 *Export Profiles* settings-window title is *Profile eksportu*, a name for
 the profiles, not a command to export them. Check the .ui property and handler

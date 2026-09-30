@@ -313,3 +313,8 @@ window's profiles, rather than commanding profile export. The ES/FR/PL
 guides and portable skills use the verified localized titles. Project memories
 carry the 16 French/Polish catalog corrections, including the completed Polish
 follower-property wording. Core terminology and approval status are unchanged.
+
+## 2026-09-30: localization checkpoint 019
+
+Added role-based casing guidance for lowercase English sources to Spanish,
+French and Polish guides/skills. Four tests and synchronization checks pass; new paragraphs match the canonical guides.

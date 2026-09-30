@@ -50,6 +50,11 @@ an infinitive.
 
 ## Headline style in compact strings
 
+Check casing from the UI role even when the English source starts lowercase.
+The standalone action *show Fonts* is *Afficher les polices*; literal case
+examples and sentence fragments need their own treatment. A prompt can use
+*Que faire ?* after a complete explanation of what changed.
+
 Resolve ambiguous English nouns and verbs from the control's role. The
 *Export Profiles* settings-window title is *Profils d’exportation*, a name for
 the profiles, not a command to export them. Check the .ui property and handler

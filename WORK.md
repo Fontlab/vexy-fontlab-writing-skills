@@ -387,3 +387,8 @@ follower-property wording. Core terminology and approval status are unchanged.
 Checkpoint 018 downstream checks: 28 styleguide tests, strict site build and
 225-page link/asset checks pass; all three rendered localization pages contain
 the new noun/verb-role rule.
+
+## 2026-09-30: localization checkpoint 019
+
+Added role-based casing guidance for lowercase English sources to Spanish,
+French and Polish guides/skills. Four tests and synchronization checks pass; new paragraphs match the canonical guides.
