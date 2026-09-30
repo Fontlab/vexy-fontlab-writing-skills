@@ -297,3 +297,11 @@ check from same-source groups. Guide and portable-skill wording matches.
 Styleguide project memories contain all eight current sentence corrections;
 core terms and approval statuses are unchanged. Verification: 28 styleguide
 tests, four skill tests, strict site build and 225-page link/asset check pass.
+
+## Localization checkpoint 017
+
+Added a source-effect rule to all three localization guides and portable skills:
+clearing follower state preserves the nodes, so translation must not imply node
+deletion. Refreshed project memories with the 17 reviewed catalog corrections.
+All changed memory targets and mirrored catalogs match; core terms and approval
+statuses remain unchanged.

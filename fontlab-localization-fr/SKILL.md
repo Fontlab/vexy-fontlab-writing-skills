@@ -50,6 +50,10 @@ an infinitive.
 
 ## Headline style in compact strings
 
+Check the effect of *clear* before choosing a deletion verb. Clearing follower
+state leaves the nodes in place; name the property or disable the behavior.
+A short label must not imply that the objects themselves will be removed.
+
 When prose quotes a navigation path, copy each localized component from the
 corresponding control, omitting only its mnemonic marker: *Préférences › Coller et dupliquer*.
 Check embedded paths separately from same-source consistency groups, because
