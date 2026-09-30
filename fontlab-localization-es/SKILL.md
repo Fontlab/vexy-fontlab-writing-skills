@@ -51,6 +51,12 @@ Use *usted* only where a surface's brief asks for it, and then consistently.
 
 ## Headline style in compact strings
 
+When prose quotes a navigation path, copy each localized component from the
+corresponding control, omitting only its mnemonic marker: *Preferencias › Pegar y duplicar*.
+Check embedded paths separately from same-source consistency groups, because
+the full sentence has a different source key. Do not retranslate a page title
+or change its casing to shorten the sentence.
+
 A dialog-local checkbox may say *No volver a mostrar*; the message is already visible. An optical-size checkbox can use *Tamaño óptico*. Keep the full condition in explanatory text.
 
 Use the edited German label to find redundant wording, not as a hard length

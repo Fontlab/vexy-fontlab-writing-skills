@@ -50,6 +50,12 @@ an infinitive.
 
 ## Headline style in compact strings
 
+When prose quotes a navigation path, copy each localized component from the
+corresponding control, omitting only its mnemonic marker: *Préférences › Coller et dupliquer*.
+Check embedded paths separately from same-source consistency groups, because
+the full sentence has a different source key. Do not retranslate a page title
+or change its casing to shorten the sentence.
+
 A confirmation may ask *Continuer ?* without a polite lead-in. A checkbox can say *Corps optique* when it enables that setting; keep the action explicit in instructions.
 
 Use the edited German label to find redundant wording, not as a hard length

@@ -288,3 +288,12 @@ checks pass.
 Added Spanish, French and Polish examples for concise dialog questions and
 checkbox labels while preserving standalone warning scope. Canonical guides
 and portable skills agree. Four tests and all synchronization/path checks pass.
+
+## Localization checkpoint 016
+
+Added an exact-navigation-path check to the ES/FR/PL localization guidance,
+with verified current page-title examples. Embedded paths require a separate
+check from same-source groups. Guide and portable-skill wording matches.
+Styleguide project memories contain all eight current sentence corrections;
+core terms and approval statuses are unchanged. Verification: 28 styleguide
+tests, four skill tests, strict site build and 225-page link/asset check pass.

@@ -56,6 +56,12 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+When prose quotes a navigation path, copy each localized component from the
+corresponding control, omitting only its mnemonic marker: *Preferencje › Otwieranie fontów*.
+Check embedded paths separately from same-source consistency groups, because
+the full sentence has a different source key. Do not retranslate a page title
+or change its casing to shorten the sentence.
+
 In a message dialog use *Nie pokazuj ponownie*; the visible message supplies the object. An optical-size checkbox can say *Rozmiar optyczny*. Do not shorten a standalone warning by removing its scope or consequences.
 
 Use the edited German label to find redundant wording, not as a hard length
