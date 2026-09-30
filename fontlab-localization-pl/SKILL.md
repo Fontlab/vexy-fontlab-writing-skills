@@ -56,6 +56,11 @@ Distinguish the message states: *Zapisz plik* (label), *Zapisz plik.*
 
 ## Headline style in compact strings
 
+Resolve ambiguous English nouns and verbs from the control's role. The
+*Export Profiles* settings-window title is *Profile eksportu*, a name for
+the profiles, not a command to export them. Check the .ui property and handler
+before applying an action-style translation to a title.
+
 Check the effect of *clear* before choosing a deletion verb. Clearing follower
 state leaves the nodes in place; name the property or disable the behavior.
 A short label must not imply that the objects themselves will be removed.

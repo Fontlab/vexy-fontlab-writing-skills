@@ -375,3 +375,15 @@ statuses remain unchanged.
 Checkpoint 017 downstream validation: 28 styleguide tests, strict documentation
 build and 225-page link/asset checks pass. The new rule is present in all three
 built localization pages.
+
+## Localization checkpoint 018
+
+Added a concrete noun/verb-role check: Export Profiles names the settings
+window's profiles, rather than commanding profile export. The ES/FR/PL
+guides and portable skills use the verified localized titles. Project memories
+carry the 16 French/Polish catalog corrections, including the completed Polish
+follower-property wording. Core terminology and approval status are unchanged.
+
+Checkpoint 018 downstream checks: 28 styleguide tests, strict site build and
+225-page link/asset checks pass; all three rendered localization pages contain
+the new noun/verb-role rule.

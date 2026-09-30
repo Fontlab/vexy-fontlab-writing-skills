@@ -305,3 +305,11 @@ clearing follower state preserves the nodes, so translation must not imply node
 deletion. Refreshed project memories with the 17 reviewed catalog corrections.
 All changed memory targets and mirrored catalogs match; core terms and approval
 statuses remain unchanged.
+
+## Localization checkpoint 018
+
+Added a concrete noun/verb-role check: Export Profiles names the settings
+window's profiles, rather than commanding profile export. The ES/FR/PL
+guides and portable skills use the verified localized titles. Project memories
+carry the 16 French/Polish catalog corrections, including the completed Polish
+follower-property wording. Core terminology and approval status are unchanged.
