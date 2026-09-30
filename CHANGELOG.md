@@ -353,3 +353,8 @@ variants and compare plural forms by position. ES/FR/PL project memories hold
 35 consistency fixes. Six writer, 28 styleguide and four skills tests pass;
 strict documentation build verifies 225 pages and the rendered new rule.
 Final catalog/UI acceptance remains open.
+
+## Localization checkpoint 066
+
+- Include .pef-generated labels and enum choices in language-specific casing
+  audits; distinguish glossary forms from standalone labels.

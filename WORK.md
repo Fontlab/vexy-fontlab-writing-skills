@@ -427,3 +427,8 @@ variants and compare plural forms by position. ES/FR/PL project memories hold
 35 consistency fixes. Six writer, 28 styleguide and four skills tests pass;
 strict documentation build verifies 225 pages and the rendered new rule.
 Final catalog/UI acceptance remains open.
+
+## Localization checkpoint 066
+
+Added generated displayName/enum role checks and protected-identifier rules
+to ES/FR/PL localization skills. Four tests and all skill checks pass.

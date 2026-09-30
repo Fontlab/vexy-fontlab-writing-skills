@@ -68,6 +68,8 @@ capitalizing every QAction. Keep units, identifiers and literal case examples
 unchanged. In long hints, remove repeated wording while preserving both branches
 of a condition, every allowed character and each file-format exception.
 
+Include generated property display names and enum choices in casing audits; inspect their .pef definitions and TS disambiguation comments as well as .ui files. A lowercase glossary term may need an initial capital as a standalone label. Preserve case-sensitive identifiers such as uniXXXX and mark/mkmk.
+
 Check casing from the UI role even when the English source starts lowercase.
 The standalone action *show Fonts* is *Afficher les polices*; literal case
 examples and sentence fragments need their own treatment. A prompt can use
