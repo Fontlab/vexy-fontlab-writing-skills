@@ -265,7 +265,7 @@ Report only checks performed.
   memory `fr-core.tmx` of the writing guide.
 - The French localization guide and the French language guide of the writing
   guide hold the decision record and the general writing rules; the
-  Haralambous and Frutiger translation memories in the `fl10n` repository
+  Haralambous and Frutiger translation memories of the localization project
   supply attested terminology.
 
 ## Related skills

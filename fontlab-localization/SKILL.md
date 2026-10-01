@@ -239,7 +239,7 @@ counsel, not a translator. Details: `references/quality.md`.
 ## Choose terms in the house voice
 
 These rules come from the founder's reviews of the German, Spanish, French and
-Polish catalogs (fl10n issues 133 and 146) and apply to every language.
+Polish catalogs in September 2026 and apply to every language.
 
 **The fallback original term.** A glossary term may carry, beside the English
 term, a plain English phrase to translate *instead of the term* when the term
