@@ -10,7 +10,7 @@ translator note. The English definition is included so the skill can work
 without the guide installed.
 
 Usage:
-    python3 tools/scripts/export_terms.py [--styleguide PATH] [de es fr pl]
+    python3 tools/scripts/export_terms.py [--styleguide PATH] [de es fr pl zh ...]
 """
 import argparse
 import sys
@@ -26,6 +26,8 @@ TITLES = {"brand": "Names", "type-design": "Type design", "font-engineering": "F
           "opentype": "OpenType", "file-format": "File formats", "interface": "Interface",
           "vector": "Vector drawing"}
 ORDER = list(TITLES)
+CODES = ["de", "es", "fr", "pl", "zh", "zh-hant", "ru", "pt", "ar", "hi", "ja", "it", "id", "ko", "tr",
+         "vi", "th", "uk", "cs"]
 
 
 def read_core(path):
@@ -89,7 +91,7 @@ def render(code, name, units):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--styleguide", type=Path, default=DEFAULT_STYLEGUIDE)
-    parser.add_argument("codes", nargs="*", default=["de", "es", "fr", "pl"])
+    parser.add_argument("codes", nargs="*", default=CODES)
     args = parser.parse_args()
     tm = args.styleguide / "localization"
     status = 0

@@ -38,6 +38,21 @@ notes and approval status.
 | `fontlab-localization-es` | Latin American Spanish (`es_MX`): register, dialect discipline, terminology, plural and number facts, mnemonics, key names, and the Spanish term table. |
 | `fontlab-localization-fr` | French: register, the Haralambous-based terminology, typographic spacing, plural and number facts, mnemonics, key names, and the French term table. |
 | `fontlab-localization-pl` | Polish: register, case and gender with placeholders, the matryca and firet decisions, four plural categories against Qt's three forms, diacritics, and the Polish term table. |
+| `fontlab-localization-zh` | Simplified Chinese (`zh_CN`): register without pronouns, verb-object labels, the single plural form with classifiers, mainland punctuation and vocabulary, appended mnemonics, false friends, and the Simplified Chinese term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-zh-hant` | Traditional Chinese (`zh_TW`): register, Taiwan's punctuation and character forms, the single plural form with classifiers, appended mnemonics, false friends, and the Traditional Chinese term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-ru` | Russian (`ru_RU`): the вы register, sentence case, three plural forms, mnemonics on Cyrillic letters, alphabet mixing, false friends, and the Russian term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-pt` | Brazilian Portuguese (`pt_BR`): the você register, the 1990 orthography, two plural forms under the `pt_BR` rule, mnemonics on unaccented letters, false friends, and the Portuguese term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-ar` | Arabic (`ar`): Modern Standard Arabic, verbal-noun commands, six plural forms, mnemonics on Arabic letters, bidirectional rules, false friends, and the Arabic term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-hi` | Hindi (`hi_IN`): the आप register, two plural forms, appended mnemonics, Devanagari encoding and spelling, false friends, and the Hindi term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-ja` | Japanese (`ja_JP`): the です・ます register, counters and the single plural form, Japanese–Latin spacing, appended mnemonics, katakana loans, false friends, and the Japanese term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-it` | Italian (`it_IT`): the tu register, two plural forms and their agreement, mnemonics on unaccented letters, names and loans, false friends, and the Italian term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-id` | Indonesian (`id_ID`): the Anda register, the single plural form without reduplication, mnemonics, names and loans, false friends, and the Indonesian term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-ko` | Korean (`ko_KR`): the 하세요 register, counters and the single plural form, appended mnemonics, Hangul-only spelling, false friends, and the Korean term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-tr` | Turkish (`tr_TR`): the siz register, the single plural form with singular nouns after numbers, the dotted and dotless i, mnemonics, false friends, and the Turkish term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-vi` | Vietnamese (`vi_VN`): the bạn register, the single plural form, mnemonics on unmarked letters, tone-mark placement, false friends, and the Vietnamese term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-th` | Thai (`th_TH`): register without pronouns or particles, classifiers and the single plural form, appended mnemonics, line breaking and character order, false friends, and the Thai term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-uk` | Ukrainian (`uk_UA`): the ви register, the 2019 orthography, three plural forms, mnemonics on Cyrillic letters, the apostrophe letter, false friends, and the Ukrainian term table. Machine-drafted guidance and proposed term table; no native review yet. |
+| `fontlab-localization-cs` | Czech (`cs_CZ`): vykání, sentence case, three plural forms, mnemonics on a letter of the translation, false friends, and the Czech term table. Machine-drafted guidance and proposed term table; no native review yet. |
 | `fontlab-partners` | Content for partners.fontlab.com, where the traps are structural rather than stylistic. |
 
 Each skill is self-contained. It installs on its own, carries every rule it enforces, and reads no file outside its own directory.
@@ -81,6 +96,7 @@ or identify an author.
 The shared block lives once, in `tools/house-rules.md`, and is copied into each skill between markers. Never edit it inside a skill.
 
 ```bash
+python3 tools/scripts/new_language_skills.py  # rewrite the fifteen machine-drafted language skills from the guide
 python3 tools/scripts/export_terms.py         # regenerate the per-language term tables from ../vexy-fontlab-writing-styleguide
 python3 tools/scripts/sync_shared.py          # write the block into every skill
 python3 tools/scripts/sync_shared.py --check  # fail if any skill is out of date
@@ -88,7 +104,18 @@ python3 tools/scripts/check_paths.py          # fail on an unresolvable path or 
 bash tools/scripts/check_all.sh               # all of the above
 ```
 
-The combined check also runs the measurement CLI tests. Punctuation choices
+The German, Spanish, French and Polish skills are hand-written and reviewed.
+The other fifteen language skills are generated. `new_language_skills.py`
+reads each language's localization guide in `../vexy-fontlab-writing-styleguide`
+and writes the skill: a statement of the draft status, the guide's sections
+before "Current terminology", and a pointer to the term table. It turns
+relative links into plain text, keeps the house-rules block already in the
+file, and refuses `de`, `es`, `fr` and `pl`. To change a generated skill, edit
+the guide and run the script again. Pass language codes to limit a run, as
+with `export_terms.py`. Once a native reviewer takes a language over, move its
+code to the script's refused list and maintain the skill by hand.
+
+The combined check also runs the script tests. Punctuation choices
 need editorial review; a dash alone does not fail the structural checks.
 
 ## Licence

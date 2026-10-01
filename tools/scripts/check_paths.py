@@ -21,7 +21,9 @@ SKILLS = ["fontlab-neutral", "fontlab-technical", "fontlab-marketing",
           "fontlab-terminology", "fontlab-localization", "fontlab-partners",
           "fontlab-write", "fontlab-rewrite", "fontlab-tldr",
           "fontlab-localization-de", "fontlab-localization-es",
-          "fontlab-localization-fr", "fontlab-localization-pl"]
+          "fontlab-localization-fr", "fontlab-localization-pl"] + [
+    f"fontlab-localization-{code}" for code in (
+        "zh", "zh-hant", "ru", "pt", "ar", "hi", "ja", "it", "id", "ko", "tr", "vi", "th", "uk", "cs")]
 LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 BACKTICK = re.compile(r"`([^`\n]+)`")
 POINTER_SECTION = re.compile(

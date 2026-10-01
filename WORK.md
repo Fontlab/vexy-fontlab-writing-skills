@@ -4,6 +4,34 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-10-01: fl10n issue 154, fifteen machine-drafted language skills
+
+Added `fontlab-localization-<code>` skills for Simplified Chinese (zh),
+Traditional Chinese (zh-hant), Russian, Brazilian Portuguese (pt), Arabic,
+Hindi, Japanese, Italian, Indonesian, Korean, Turkish, Vietnamese, Thai,
+Ukrainian and Czech. The new `tools/scripts/new_language_skills.py` writes each
+SKILL.md from the language's localization guide in the writing guide: front
+matter, a statement of the draft status, the guide's introduction and its
+sections before "Current terminology", and a pointer to `references/terms.md`.
+Relative links become plain text. The script keeps a synced house-rules block,
+so a second run changes nothing, and it refuses de, es, fr and pl.
+
+Each new term table holds 286 terms from the language's core memory: 232
+proposed translations and 54 protected names. No term is approved and no
+native reviewer has read any of the fifteen languages. The interface catalogs
+are unfinished machine drafts. No runtime test is claimed.
+
+`export_terms.py` now covers all nineteen languages by default, and
+`check_paths.py` checks the fifteen new skills. The SKILL.md files and term
+tables of German, Spanish, French and Polish were not regenerated. README
+lists the new skills and documents the generator.
+
+`bash tools/scripts/check_all.sh` passes: the shared block is in sync in all
+28 skills, every path resolves, and 12 tests pass, seven of them new in
+`tests/test_new_language_skills.py`. Not done: the description of
+`fontlab-localization` still names only the four reviewed language skills.
+
+
 ## 2026-10-01: issue 305 master matching terminology
 
 Polish now uses dopasować/pasować and Swatka, Spanish casar and Casamentero,
@@ -12,6 +40,58 @@ state, participle, noun and agreement rules, the naming rationale, and exclusion
 for other senses and literal compatible. Updated the shared wordplay example
 and regenerated the three portable term tables from the core memories.
 German guidance and terminology remain unchanged.
+
+
+## 2026-10-01: German sharp-node terminology
+
+Added approved canonical entries sharp → spitz and sharp node → spitzer Knoten.
+Corrected six catalog messages with adjective inflection (spitze Ecken, einen
+spitzen Knoten, an spitzen Knoten). Reviewed all 13 whole-word sharp messages;
+all use spitz forms, and no German translation contains Spitzenknoten. Image
+sharpening remains schärfen. Updated German guidance and its portable skill.
+
+The 33 styleguide tests and five skill tests pass. The complete application
+verifier checks 72,614 strings and all seven ordered edit ledgers; the expanded
+application diff now contains 1,164 strings. German lrelease compiles 10,517
+translations. Sync rebuilt 988 phrases and 71,500 UI/help units. Evidence:
+fl10n/private-data/issue-153/expanded/de-sharp-{changes,verification}.json.
+This specific correction is verified; the broader issue-153 review remains open.
+
+
+## 2026-10-01: issue 153 contextual application review, in progress
+
+Applied 175 initial label revisions in DE/ES/FR/PL, followed by German panel,
+selector and nonspacing corrections. The user's follow-ups exposed overly broad
+label substitutions. Corrected them by reading the source controls and complete
+help text, and recorded the subsequent corrections separately in the edit chain.
+
+Polish application Stroke is obrys. Tęgość is limited to confirmed stroke
+thickness; stem controls use grubość trzonu. German uses Dicke generally,
+Strichdicke for stroke controls and Stammstärke for stem controls. All 15 standalone
+Thickness controls in each DE/PL catalog were classified and checked. The
+extrusion field was confirmed as outline-stroke width after inspecting
+ActionBase::_extrude and its help. General engraving-line and brush-size fields
+retain general thickness wording. Polish panel/group/history headings use
+Transformacja, the command Przekształć; crop uses Kadruj and the font checkbox
+uses singular Nieproporcjonalny. Guidance and canonical notes now record these
+contextual distinctions; the original issue-list test fixture includes the
+user's later overrides for Polish stroke and general thickness.
+
+Current application diff: 1,158 complete strings against the expanded-scope
+snapshot. Six ordered ledgers explain every change. The verifier checks all
+72,614 strings across 16 files, preserves all source text, XML metadata, JSON
+structure, placeholders, HTML and URLs, and proves the ledger replay matches
+current files. All four Qt catalogs compile to 10,517 translations each.
+The fl10n suite passes 252 tests with extraction enabled; styleguide tests pass
+32 cases and writing-skill checks pass 5. Sync regenerated 986 phrases and
+71,501 UI/help units. No native layout or menu-collision review is claimed.
+
+Evidence: fl10n/private-data/issue-153/expanded/{application-verification,
+context-verification}.json and its six *-changes.json ledgers. The styleguide's
+dev/issue-153/context-amendments.md records the user's contextual overrides.
+The broader four-language contextual review, contradictory prose/related-term
+reconciliation and final build/acceptance audit remain open. This checkpoint
+does not establish completion of issue 153.
 
 
 ## 2026-09-30: issue 153 expanded terminology, in progress
@@ -473,3 +553,60 @@ to ES/FR/PL localization skills. Four tests and all skill checks pass.
 
 Added action-label/tooltip naming follow-through to ES/FR/PL skills, preserving
 grammatical functional descriptions. Four tests and all skill checks pass.
+
+## 2026-10-01 — Issue 153: French metrics and redo/repeat review
+
+Changed 522 French UI/help strings from the old métriques terminology to mesures.
+Preserved feminine plural agreement; recast données métriques as données de mesure,
+window/tab labels with de mesures, and the comparison with celles du calque actuel.
+Added contextual examples to the French guide and portable language skill.
+Recorded 108 Spanish/French redo/repeat rows with retained wording and review
+reasons; other terms within those rows remain in the broader review scope.
+
+French lrelease: 10,517 finished translations. Full structural/provenance check:
+72,614 strings, 16 files, 1,878 changes from baseline, all accounted for.
+sync_all.py regenerated the four UI memories. Broader contextual retranslation
+and final acceptance remain pending.
+
+## 2026-10-01 — Issue 153: French nonspacing and canonical notes
+
+Corrected 17 French UI/help strings for the Sans-chasse property. The action
+help now explains exclusion of elements from metrics calculations, rather than
+claiming to set glyph advance width to zero. Descriptive prose retains the
+grammatical phrase élément sans chasse; property references name Sans-chasse.
+Updated Spanish/French core notes with the precise command names and behavior;
+removed the obsolete Spanish Detectar exclusión de métricas instruction.
+Rebuilt the glossary pages, exported portable skill term references and ran
+sync_all.py. The initial system-Python invocation lacked PyYAML; the locked
+project environment successfully performed canonical writes and generation.
+
+Fresh checks: French lrelease 10,517 finished entries; full application audit
+72,614 strings / 16 files / 1,937 changes; 33 guide tests and all skill checks
+(including five tests) passed. Contextual review and final Proteus commit/push
+remain pending.
+
+## 2026-10-01 — Issue 153: Polish nonspacing
+
+Corrected 44 Polish strings to bezmetryczny/bezmetryczność and contextual
+komponent forms. A second grammatical pass corrected component genitives,
+plurals and adjective agreement. Removed false claims that the action sets
+glyph advance width to zero. Updated the canonical note and its existing
+regression test to the current command Wyłącz bezmetryczność and explicit
+behavior, rebuilt glossary/skill references and synchronized UI memories.
+Validation: 33 guide tests pass; Polish compiles 10,517 finished strings; full
+16-file audit passes on 72,614 strings and 2,498 baseline differences. Broader
+review and final Proteus commit/push remain pending.
+
+
+## 2026-10-01 — Issue 153 stroke-context note
+
+Regenerated locale term references after correcting Proportional Thickness in German stroke controls to Proportionale Strichdicke. All skill checks and five tests passed. Broader issue review remains pending.
+
+
+## 2026-10-01 — Issue 153 contextual terminology completion
+
+- Reconciled Polish object references versus geometric reference points, diacritics, guides and components; applied grammatical case and command phrasing. Distinguished stroke, stem and general thickness in German and Polish, and sharp nodes from image sharpening.
+- Reconciled autohinting labels, French weight and OpenType compounds, German OpenType feature grammar, glyph variants, cusp/crop labels, Spanish defaults, and German/Polish Nudge help. Preserved literal code, identifiers and legitimate general-language meanings.
+- Regenerated canonical term pages, skill reference tables, all four UI memories and phrasebooks. Removed contradictory recommendations from the language guides and skills.
+- Verification: 72,614 strings across 16 resources; 4,722 differ from the saved baseline, with every edit accounted for by ordered ledgers. Source metadata, placeholders, markup and URLs preserved. All four Qt catalogs compile: 10,517 finished, zero unfinished each. Localization tests: 252 passed; styleguide tests: 33 passed; skills tests: 5 passed. Built 225 HTML pages with local links/assets and publication checks passing. All generated memory pairs match sources and synchronization is idempotent.
+- Proteus delivery: a6568d22c and 4a7c0b911. Issue 304 is the next user-requested task and includes another final Proteus push. The candidate-string inventory remains a regex discovery aid, not evidence that every unrelated UI sentence has received complete linguistic proofreading.
