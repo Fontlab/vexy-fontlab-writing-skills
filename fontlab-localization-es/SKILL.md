@@ -28,6 +28,29 @@ terminology decision. Inflect the chosen term to fit its grammatical role.
 The shared Qt, memory and review rules are in `fontlab-localization`. This
 skill adds the language's register, grammar and terminology distinctions.
 
+
+## Matching masters for interpolation
+
+Use *casar* for the action: *Casar masters*, *Casar kerning*. States are
+*Los masters casan* and *Los masters no casan*; status labels are *Casan*
+and *No casan*. The participle is *casados*; adjectives are *que casan*
+and *que no casan*. There is no noun: recast noun phrases with the verb,
+using *no casan* for mismatch. Never use *casamiento*, *match* or *hacer match*.
+
+The tool is **Casamentero**, masculine. *Casar* means both to marry and to
+make two things correspond; *Casamentero* is a matchmaker from the same stem.
+
+These terms apply when masters are matched for interpolation. Keep the current
+translations of master, kerning and all other terms; inflect the match term and
+follow the command form already used in the file. Tool names are proper nouns
+and start with a capital letter. Preserve placeholders, accelerator marks,
+punctuation, capitalization style and file format. Keep English source strings,
+German and other languages unchanged. If the source says *compatible*, retain
+the translation of *compatible*. Leave other senses, such as search matching,
+and uncertain senses unchanged. This decision supersedes earlier terms for
+this sense, including compatibility and synchronization wording.
+
+
 ## Follower node terminology
 
 Use **nodo seguidor**, plural **nodos seguidores**; short labels are

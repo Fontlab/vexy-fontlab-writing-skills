@@ -260,7 +260,7 @@ a definition problem; say so. Do not protect feature names as if they were
 brands: only brands and trademarks stay English.
 
 **Humor and wordplay** are welcome when the information survives without the
-joke: Polish *swat* (the village matchmaker) for Matchmaker, *Pełna krasa*
+joke: Polish *Swatka* (the matchmaker) for Matchmaker, *Pełna krasa*
 ("in full glory") for True Fill, *wyczaruj* ("conjure up") for Dream Up.
 Prefer a snappy idiom to a description, and keep the joke intelligible.
 

@@ -4,6 +4,16 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-10-01: issue 305 master matching terminology
+
+Polish now uses dopasować/pasować and Swatka, Spanish casar and Casamentero,
+and French accorder/accord and Accordeur. Each language skill records command,
+state, participle, noun and agreement rules, the naming rationale, and exclusions
+for other senses and literal compatible. Updated the shared wordplay example
+and regenerated the three portable term tables from the core memories.
+German guidance and terminology remain unchanged.
+
+
 ## 2026-09-30: issue 153 expanded terminology, in progress
 
 The current issue contains 149 explicit DE/ES/FR/PL term pairs beyond the earlier

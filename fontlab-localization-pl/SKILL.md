@@ -28,6 +28,31 @@ terminology decision. Inflect the chosen term to fit its grammatical role.
 The shared Qt, memory and review rules are in `fontlab-localization`. This
 skill adds the language's register, grammar and terminology distinctions.
 
+
+## Matching masters for interpolation
+
+Use *dopasować* for the action, *pasować* for the state: *Dopasuj mastery*,
+*Dopasuj kerning*, *Mastery pasują*, *Mastery nie pasują*. Status labels are
+*Pasują* and *Nie pasują*; the participle is *dopasowane*, adjectives are
+*pasujące* and *niepasujące*, nouns are *dopasowanie* and *niedopasowanie*.
+Never use *pasuj* as a command or *pasowanie* as the noun. Do not change
+*Dopasuj* where it translates another operation, such as *Fit*.
+
+The tool is **Swatka**, feminine: *Swatki*, *Swatkę*, *Swatką*. The everyday
+phrase *pasować do siebie* describes a couple that is a good match;
+*dopasować* names the action from the same stem, and *Swatka* is a matchmaker.
+
+These terms apply when masters are matched for interpolation. Keep the current
+translations of master, kerning and all other terms; inflect the match term and
+follow the command form already used in the file. Tool names are proper nouns
+and start with a capital letter. Preserve placeholders, accelerator marks,
+punctuation, capitalization style and file format. Keep English source strings,
+German and other languages unchanged. If the source says *compatible*, retain
+the translation of *compatible*. Leave other senses, such as search matching,
+and uncertain senses unchanged. This decision supersedes earlier terms for
+this sense, including compatibility and synchronization wording.
+
+
 ## Follower node terminology
 
 Use **węzeł naśladowca**, with short type label **Naśladowca** and variants
@@ -129,8 +154,8 @@ Prowadnica mocy*. Commands use imperatives: *Wektoryzuj* performs an action,
 
 Use sentence case and established feature-name capitalization. *Usuń nakładki*
 starts with a capital as a menu command; an intentional lowercase letter-case
-example stays lowercase. Match Edits and Match Moves are *Synchronizuj edycję*
-and *Synchronizuj przesunięcia*. Master compatibility remains *zgodność matryc*;
+example stays lowercase. Match Edits and Match Moves are *Dopasuj edycję*
+and *Dopasuj przesunięcia*. Master compatibility remains *zgodność matryc*;
 copying German's synchron family must not erase that distinction.
 
 A construction recipe is *przepis*: *Edytuj przepis*, *w przepisie*, *przepisy

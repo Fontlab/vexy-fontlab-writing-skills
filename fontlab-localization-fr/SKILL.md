@@ -28,6 +28,32 @@ terminology decision. Inflect the chosen term to fit its grammatical role.
 The shared Qt, memory and review rules are in `fontlab-localization`. This
 skill adds the language's register, grammar and terminology distinctions.
 
+
+## Matching masters for interpolation
+
+Use the regular -er verb *accorder*: *Accorder les masters*,
+*Accorder le crénage*. States are *Les masters sont accordés* and
+*Les masters sont désaccordés*; status labels are *Accordés* and *Désaccordés*.
+The participle *accordé* and adjective *désaccordé* agree in gender and number.
+The nouns are *accord* and *désaccord*. Do not use *matcher*, *match* or
+*harmoniser* for this sense; *harmoniser* remains the term for *Harmonize*.
+
+The tool is **Accordeur**, masculine, replacing the earlier *Marieuse*.
+*Accorder* means both to tune and to bring into agreement; an *Accordeur*
+is a tuner from the same stem. Tuning does not make two strings identical:
+it makes them agree.
+
+These terms apply when masters are matched for interpolation. Keep the current
+translations of master, kerning and all other terms; inflect the match term and
+follow the command form already used in the file. Tool names are proper nouns
+and start with a capital letter. Preserve placeholders, accelerator marks,
+punctuation, capitalization style and file format. Keep English source strings,
+German and other languages unchanged. If the source says *compatible*, retain
+the translation of *compatible*. Leave other senses, such as search matching,
+and uncertain senses unchanged. This decision supersedes earlier terms for
+this sense, including compatibility and synchronization wording.
+
+
 ## Follower node terminology
 
 Use **nœud suiveur**, plural **nœuds suiveurs**; short labels are
