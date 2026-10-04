@@ -7,8 +7,8 @@ description: >-
   catalogs, ledgers or translation memories. A machine-researched first draft that no native
   reviewer has approved: carries draft guidance on register, the grammar of interface strings,
   plurals, punctuation, mnemonics, key names and false friends, and a portable copy of the Japanese
-  term table, in which every translated term is proposed. Use with fontlab-localization for the
-  rules shared by every language.
+  term table with each term’s approval status. Use with fontlab-localization for the rules shared by
+  every language.
 license: MIT
 metadata:
   version: "0.1.0"
@@ -23,8 +23,8 @@ metadata:
 
 A first draft for Japanese. A model researched the guidance below and the
 term table in `references/terms.md`; no native reviewer has approved the
-language. Every translated term has the status proposed, and a name marked
-do-not-translate keeps its English spelling. The Japanese interface catalogs
+language as a whole. Individual terms carry their own approval status; a
+proposed term remains proposed, and a protected name keeps its glossary spelling. The Japanese interface catalogs
 are unfinished machine drafts: a string found in one settles neither a term
 nor a rule.
 
@@ -206,6 +206,17 @@ The term table gives the term. These are the senses to reject:
 5. Form by role; no だ・である, no *あなた*, no excess 敬語.
 6. Terms match the term table.
 7. Would a Japanese type designer say it this way?
+
+
+## FontLab terminology and compact labels
+
+Preserve deliberately uppercase source labels using the language’s case rules. Keep numeric controls compact with UPM, PPM and LSB/RSB (French AG/AD); explain the full terms in help. The Family Dimensions “Units Per eM:” label is an intentional expanded exception.
+
+Use the current core memory and its approval status. OpenType *lookup* defaults to the translation of *procedure*, with a different term only when strong OpenType-specific evidence supports it. Explicit choices are German *Lookup*, French *lookup*, Polish *procedura* and Russian *процедура*. Ordinary searches, individual rules and OpenType features are separate concepts. Preserve literal code keywords and identifiers.
+
+Translate Fusion with the fallback *Welder*. Use the core's phonetic FontAudit transliteration in non-Latin scripts, including Chinese; preserve `FontAudit` in code. Proposed spellings remain proposed. Before rebuilding a QPH, recover team edits and import their terms and notes into the core memory.
+
+Compare mnemonic-split terms with unmarked labels. Keep labels compact, aiming for 120% of the English length in Dimensions and Glyph Window preferences without losing meaning. Omit redundant font, color or command wording when context supplies it. TTH labels can omit “use” and abbreviate TrueType hinting; help can explain more. A full harmonization requires three complete catalog reviews, then reconciliation of help with the final UI and verification of generated resources.
 
 ## References
 

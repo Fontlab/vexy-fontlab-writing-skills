@@ -89,7 +89,7 @@ def front_matter(code, name, phrases):
         f"over {name} catalogs, ledgers or translation memories. A machine-researched first "
         f"draft that no native reviewer has approved: carries draft guidance on register, the grammar of "
         f"interface strings, plurals, punctuation, mnemonics, key names and false friends, and a "
-        f"portable copy of the {name} term table, in which every translated term is proposed. "
+        f"portable copy of the {name} term table with each term’s approval status. "
         f"Use with fontlab-localization for the rules shared by every language.")
     folded = textwrap.fill(description, width=100, initial_indent="  ", subsequent_indent="  ",
                            break_on_hyphens=False, break_long_words=False)
@@ -101,8 +101,8 @@ def opening(name):
     return textwrap.dedent(f"""\
         A first draft for {name}. A model researched the guidance below and the
         term table in `references/terms.md`; no native reviewer has approved the
-        language. Every translated term has the status proposed, and a name marked
-        do-not-translate keeps its English spelling. The {name} interface catalogs
+        language as a whole. Individual terms carry their own approval status; a
+        proposed term remains proposed, and a protected name keeps its glossary spelling. The {name} interface catalogs
         are unfinished machine drafts: a string found in one settles neither a term
         nor a rule.
 

@@ -7,8 +7,8 @@ description: >-
   Italian catalogs, ledgers or translation memories. A machine-researched first draft that no native
   reviewer has approved: carries draft guidance on register, the grammar of interface strings,
   plurals, punctuation, mnemonics, key names and false friends, and a portable copy of the Italian
-  term table, in which every translated term is proposed. Use with fontlab-localization for the
-  rules shared by every language.
+  term table with each term’s approval status. Use with fontlab-localization for the rules shared by
+  every language.
 license: MIT
 metadata:
   version: "0.1.0"
@@ -23,8 +23,8 @@ metadata:
 
 A first draft for Italian. A model researched the guidance below and the
 term table in `references/terms.md`; no native reviewer has approved the
-language. Every translated term has the status proposed, and a name marked
-do-not-translate keeps its English spelling. The Italian interface catalogs
+language as a whole. Individual terms carry their own approval status; a
+proposed term remains proposed, and a protected name keeps its glossary spelling. The Italian interface catalogs
 are unfinished machine drafts: a string found in one settles neither a term
 nor a rule.
 
@@ -75,10 +75,12 @@ Italian style guide. Untagged examples are constructed.
 - **Sentence case** in every label, as Apple, Microsoft, Adobe and Qt do:
   *Incolla sopra* (AI), not *Alternative Contestuali* (G3).
 - Standard commands take the words of Qt's catalog: *Annulla* (both Undo
-  and Cancel), *Rifai*, *Taglia*, *Copia*, *Incolla*, *Elimina* (Delete),
+  and Cancel), *Ripristina* (Redo), *Taglia*, *Copia*, *Incolla*, *Elimina* (Delete),
   *Seleziona tutto*, *Esci*, *Ripristina* (Reset),
   *Preferenze*. Save As is *Salva con nome…*, as on Windows and at Adobe.
-  macOS and Adobe say *Ripristina* for Redo; FontLab keeps it for Reset.
+  The canonical core follows macOS and Adobe with *Ripristina* for Redo.
+  Reset also uses *Ripristina*, with its object or *valori predefiniti* when
+  needed to distinguish the action. Do not reintroduce *Rifai* from older Qt text.
   Remove is *Rimuovi*, Clear *Cancella*.
 
 ## Compact labels
@@ -201,6 +203,17 @@ Check in this order, and report only checks performed:
 6. Mnemonics: unique per menu, on unaccented letters.
 7. Type terms against the term table; *carattere*, *font*, *glifo*.
 8. Numbers, percent, quotation marks, key names.
+
+
+## FontLab terminology and compact labels
+
+Preserve deliberately uppercase source labels using the language’s case rules. Keep numeric controls compact with UPM, PPM and LSB/RSB (French AG/AD); explain the full terms in help. The Family Dimensions “Units Per eM:” label is an intentional expanded exception.
+
+Use the current core memory and its approval status. OpenType *lookup* defaults to the translation of *procedure*, with a different term only when strong OpenType-specific evidence supports it. Explicit choices are German *Lookup*, French *lookup*, Polish *procedura* and Russian *процедура*. Ordinary searches, individual rules and OpenType features are separate concepts. Preserve literal code keywords and identifiers.
+
+Translate Fusion with the fallback *Welder*. Use the core's phonetic FontAudit transliteration in non-Latin scripts, including Chinese; preserve `FontAudit` in code. Proposed spellings remain proposed. Before rebuilding a QPH, recover team edits and import their terms and notes into the core memory.
+
+Compare mnemonic-split terms with unmarked labels. Keep labels compact, aiming for 120% of the English length in Dimensions and Glyph Window preferences without losing meaning. Omit redundant font, color or command wording when context supplies it. TTH labels can omit “use” and abbreviate TrueType hinting; help can explain more. A full harmonization requires three complete catalog reviews, then reconciliation of help with the final UI and verification of generated resources.
 
 ## References
 

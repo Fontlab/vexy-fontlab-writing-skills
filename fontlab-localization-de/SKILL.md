@@ -39,6 +39,12 @@ fan/supporter reading is obsolete. Keep English source keys unchanged.
 The house term is formed from *folgen*; its physical sense is documented in
 [Duden](https://www.duden.de/rechtschreibung/folgen).
 
+## Sharp nodes
+
+Use *spitz* for sharp geometry and *spitzer Knoten* for a sharp node, never
+*Spitzenknoten*. Inflect the adjective: *einen spitzen Knoten*, *spitze Knoten*,
+*an spitzen Knoten*. Image sharpening is a different operation: *schärfen*.
+
 ## Thickness depends on the control
 
 Use *Dicke* for general thickness, *Strichdicke* for confirmed stroke thickness,
@@ -148,8 +154,8 @@ for *unter* does not establish a spelling preference.
 
 - **One meaning, one translation.** Where a concept had two renderings, the
   shorter and more elegant one won everywhere, including help and manual:
-  *Metrikausschluss*, *Geviertauflösung*, *Dezimalkoordinaten*, *Text
-  wiederholen*, *Schub*, *Zusammenklappen*, *Schnittmenge*, *Pflichtglyphen*.
+  *dicktenneutral*, *Geviertauflösung*, *Dezimalkoordinaten*, *Text
+  wiederholen*, *Schubs*, *Zusammenklappen*, *Schnittmenge*, *Pflichtglyphen*.
 - **No added specificity.** *pair* is *Paar*, not *Kerningpaar*; *cloud* is
   *Wolke*; *references* are *Referenzen*; *element references* may also be
   *Referenzen* when the element context is already visible; *mask* is *Maske* even though a FontLab mask is a
@@ -172,18 +178,18 @@ for *unter* does not establish a spelling preference.
 - **Professional loans stay:** *Kerning*, *Master*, *Hinting*, *Lookup*,
   *Tracking* in the axis sense is *Laufweite* though. *Kerning* over
   *Unterschneidung*, because the UI, the manual and the literature say so.
-- **Panels are *Bedienfelder***, after Adobe; a *Fenster* is a window.
+- **Panels are *Panels***; a *Fenster* is a window.
 - ***smart* is *schlau***, inflected: *schlaue Ecke*, *Schlauen Filter
   hinzu*. Clever with a hint of Bauernschläue; never *intelligent*, which
   now reads as a claim about AI.
 - **Feature names follow the house voice:** operations with a fixed technical
-  meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
-  power (*Power-Schub*, *Power-Pinsel*, *Power-Strich*, *Power-Hilfslinie*); *smart* is *schlau*; Genius, Follower, Cousins, Skin and
+  meaning keep their name (*oblique*, *Flex*, *OT Def*); Power names are playful
+  power (*Power-Schubs*, *Power-Pinsel*, *Power-Strich*, *Power-Hilfslinie*); *smart* is *schlau*; Genius, Follower, Cousins, Skin and
   Sketchboard take a plain native word where one is attested, otherwise translate
   the fallback original term in the term table (the Fallback column). See
   `fontlab-localization`, section "Choose terms in the house voice".
 - **Overshoot is *Überstand***; *old style figures* are *Mediävalziffern*;
-  *stem* is *Stamm* (hint) or *Strich* (drawing) by context; check the table.
+  *stem* is *Stamm* and its thickness is *Stammstärke*; a drawn stroke is *Strich* and its thickness is *Strichdicke*; check the table.
 - **Standard commands follow the platform:** *Abbrechen*, *Kopieren*,
   *Einfügen*, *Rückgängig*, *Wiederholen*, *Beenden*, *Einstellungen*, *Im
   Finder anzeigen*. Qt's own `qtbase_de` catalog uses the same words.
@@ -203,14 +209,15 @@ Ordinary compounds stay closed: *Dicktenausdruck*, *Dateiname*,
 where these labels occur. This is a readability convention for named UI
 objects, not permission to hyphenate every German compound. A compound whose first part is a thinly loaned English word is
 hyphenated: *Kerning-Klasse*, *Kerning-Paar*, *Demo-Modus*, *Master-Dickten*,
-*Code-Editor*, *Stil-Gruppe*, *Element-Referenz*, *OpenType-Funktion*. The test:
+*Code-Editor*, *Stil-Gruppe*, *Element-Referenz*, *OpenType-Feature*. The test:
 would a native reader see one word, or a borrowed word with a suffix?
 An exact UI name takes precedence over that general test; **Frei
 Transformieren** keeps its reviewed label capitalization.
 
-A protected product name never inflects or joins a compound: *in FontLab*,
-*Einstellungen von Vexy Lines*, never *im FontLab* or *FontLab-Einstellungen*
-as a label. Borrowed nouns take the established gender and endings: *der
+A protected product name keeps its spelling: *in FontLab*,
+*Einstellungen von Vexy Lines*. Compact German UI compounds may join the
+unchanged brand with a hyphen, as in *FontLab-Konto* and *FontLab-Projekt*.
+Do not expand an established compact label solely to avoid that hyphen. Borrowed nouns take the established gender and endings: *der
 Server*, *des Servers*, *des Ordners*; do not apply a universal *-s* plural.
 Borrowed verbs conjugate as German: *gechattet*, *der gelikte Beitrag*. Keep
 *ß* and umlauts; in capitals *STRASSE* or *STRAẞE*, never a blanket *ẞ*.
@@ -275,6 +282,16 @@ without evidence.
 product names and the nouns that mean different things in different
 applications; `fontlab-technical` for German help text that must also follow
 the technical-writing rules.
+
+## FontLab terminology and compact labels
+
+Preserve deliberately uppercase source labels using the language’s case rules. Keep numeric controls compact with UPM, PPM and LSB/RSB (French AG/AD); explain the full terms in help. The Family Dimensions “Units Per eM:” label is an intentional expanded exception.
+
+Use the current core memory and its approval status. OpenType *lookup* defaults to the translation of *procedure*, with a different term only when strong OpenType-specific evidence supports it. Explicit choices are German *Lookup*, French *lookup*, Polish *procedura* and Russian *процедура*. Ordinary searches, individual rules and OpenType features are separate concepts. Preserve literal code keywords and identifiers.
+
+Translate Fusion with the fallback *Welder*. Use the core's phonetic FontAudit transliteration in non-Latin scripts, including Chinese; preserve `FontAudit` in code. Proposed spellings remain proposed. Before rebuilding a QPH, recover team edits and import their terms and notes into the core memory.
+
+Compare mnemonic-split terms with unmarked labels. Keep labels compact, aiming for 120% of the English length in Dimensions and Glyph Window preferences without losing meaning. Omit redundant font, color or command wording when context supplies it. TTH labels can omit “use” and abbreviate TrueType hinting; help can explain more. A full harmonization requires three complete catalog reviews, then reconciliation of help with the final UI and verification of generated resources.
 
 <!-- fontlab:shared:start -->
 ## House rules

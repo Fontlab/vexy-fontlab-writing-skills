@@ -267,14 +267,16 @@ Prefer a snappy idiom to a description, and keep the joke intelligible.
 **Power names** (Power Brush, Power Guide, Power Nudge, Power Stroke) are
 power in the register of an energy drink or a superhero cartoon, not an
 industrial rating: Polish *Pędzel mocy*, *Prowadnica mocy*, *Obrys mocy*,
-*superholowanie*; German *Power-Schub*, *Power-Pinsel*. Keep the wink.
+*Mocny szturch*; German *Power-Schubs*, *Power-Pinsel*. Keep the wink.
+
+For styled uppercase labels and compact metrics, follow the application convention. Preserve deliberately uppercase source labels using the language’s case rules. Keep numeric controls compact with UPM, PPM and LSB/RSB (French AG/AD); explain the full terms in help. The Family Dimensions “Units Per eM:” label is an intentional expanded exception.
 
 **Smart features** take the native, simple word for sly or clever with a hint
 of peasant cunning, never *intelligent*: *schlau*, *astuto/a*, *futé/e*,
-*sprytny*, inflected normally.
+*sprytny*, inflected normally. Smart Filters are an explicit exception in Russian (*умный фильтр*) and Ukrainian (*розумний фільтр*); other Smart features retain their existing names.
 
 **Down to earth.** Prefer the everyday word to the sophisticated one: Nudge is
-Polish *holowanie* (towing), Follower nodes are *węzły typu Naśladowca* (nodes that follow movement), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
+Polish *Szturch*, Follower nodes are *węzły naśladowcy* (nodes that follow movement), Cousins is *kuzynostwo*, Sketchboard is *szkicownik*, Skin is
 *skórka*. Keep the English only where the language has no plain word for that
 exact thing, and record why. Operations with a fixed technical meaning keep a
 fixed name in every language: *Oblique*, *Flex*, *OT Def*.
@@ -285,11 +287,37 @@ craftsman uses with the real tool, use them for the digital tool's actions
 instead of a generic *apply* or *edit*.
 
 **Do-not-translate with restraint.** Protect brands, trademarks, service and
-domain names, format identifiers, tags and code (FontLab, FontAudit, Vexy,
+domain names, format identifiers, tags and code (FontLab, Vexy,
 `kern`, `OS/2`, VFJ). A common noun built on a protected name inflects and
 translates around it: *jednostka unikodu* for a Unicode codepoint, *konto
 FontLab*, *żetony Vexy coin*, *tablica CVT*. A memory that marks such terms
 do-not-translate hides an undecided term; mark it translatable and decide.
+
+FontAudit is an explicit exception: transliterate the visible name into
+non-Latin writing systems, including Chinese, using the supplied glossary.
+Keep `FontAudit` in code and identifiers. Fusion uses the fallback *Welder*;
+Polish uses *Spawacz*.
+
+OpenType lookup uses the fallback *procedure* unless there is strong evidence
+for a different established font term. Prefer Glyphs where translated prose or
+UI attests it. Explicit choices: German *Lookup*, French *lookup*, Polish
+*procedura*, Russian *процедура*. Keep code keywords and structure names literal.
+Preserve approved contextual Rules panel names and distinguish individual rules
+from the procedures that group them.
+
+Before regenerating phrasebooks, preserve existing QPH and compare them with
+the canonical glossary. Import team-approved additions, targets and notes
+upstream first; only then rebuild QPH. Regeneration replaces a phrasebook and
+does not reconcile its manual edits. Record intentional later overrides.
+
+Review mnemonic-split words against their unmarked counterparts. Preserve a
+usable accelerator in the final wording. Aim for compact labels, especially
+Ukrainian and Dimensions/Glyph Window preferences: 120% of source character
+length is a review target, not a licence to lose meaning. Omit contextually
+redundant font or color wording where safe. TTH options can omit use and
+abbreviate TrueType hinting as TTH; tooltips may explain more.
+
+For a complete catalog harmonization, record three full reviews per language: terminology and mnemonic variants, contextual accuracy and compact UI labels, then consistency across repeated controls. Reconcile help against the final UI and inspect the implementation when the English help contradicts a control. Preserve placeholders, markup, plural forms and translation-state metadata. Verify generated phrasebooks against the upstream cores and confirm requested pushes against the remote commit.
 
 **Derive from the chosen noun.** Verbs, adjectives and compounds follow the
 settled noun, not the English: Polish *kernować* and *kernowy* from *kerning*
@@ -336,6 +364,10 @@ scope. A compact German *hinzu* does not replace *hinzufügen* in sentences;
 a shortened control may inherit a noun from the screen. Apply a chosen pattern
 to every plural form. Update canonical memory and language guidance, then
 regenerate portable tables and phrase books. Preserve status and source keys.
+
+## Reconcile upstream structural changes
+
+Before pulling changed catalogs or help schemas, preserve reviewed files as `.draft.ts` and `.draft.json`, retain the original base and record hashes. Merge into the pulled upstream files. Match stable IDs first; for renamed keys, use unique English text with TS context and disambiguation. Never match ambiguous repeated strings by order. Review changed English wording and concurrent translation edits explicitly. Preserve upstream source, metadata, plural shape, ordering and new entries; verify the draft hashes and merged result before glossary synchronization.
 
 <!-- fontlab:shared:start -->
 ## House rules

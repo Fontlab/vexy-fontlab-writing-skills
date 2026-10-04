@@ -525,3 +525,8 @@ review and final Proteus commit/push remain pending.
 - Regenerated canonical term pages, skill reference tables, all four UI memories and phrasebooks. Removed contradictory recommendations from the language guides and skills.
 - Verification: 72,614 strings across 16 resources; 4,722 differ from the saved baseline, with every edit accounted for by ordered ledgers. Source metadata, placeholders, markup and URLs preserved. All four Qt catalogs compile: 10,517 finished, zero unfinished each. Localization tests: 252 passed; styleguide tests: 33 passed; skills tests: 5 passed. Built 225 HTML pages with local links/assets and publication checks passing. All generated memory pairs match sources and synchronization is idempotent.
 - Proteus delivery: a6568d22c and 4a7c0b911. Issue 304 is the next user-requested task and includes another final Proteus push. The candidate-string inventory remains a regex discovery aid, not evidence that every unrelated UI sentence has received complete linguistic proofreading.
+
+## 2026-10-04
+
+- Reconcile 19-language terminology tables and localization guidance with team agreements and the complete Proteus review.
+- Preserve per-term approval status and document safe draft-to-upstream reconciliation by stable identity and English text.

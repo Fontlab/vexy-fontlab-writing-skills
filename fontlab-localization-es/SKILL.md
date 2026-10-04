@@ -148,7 +148,7 @@ Preserve literal `masters/` paths when correcting prose to *másteres*.
 
 - **Professional terminology first:** *ancho de avance* (advance width),
   *margen izquierdo/derecho* (sidebearings), *cifras elzevirianas* (old style
-  figures), *asta* (stem), *contraforma* (counter), *rebase* (overshoot),
+  figures), *asta* (stem), *contador* (counter), *rebase* (overshoot),
   *interlínea* (leading), *manejador* (handle), *recta* (straight segment).
 - **Units per em is *unidades por eme***, the em being the *eme*. UPM stays as
   a short form in compact fields after one expansion.
@@ -161,14 +161,14 @@ Preserve literal `masters/` paths when correcting prose to *másteres*.
 - ***smart* is *astuto/a***, inflected: *esquina astuta*, *filtro astuto*,
   *lápiz astuto*. Never *inteligente*.
 - **Feature names follow the house voice:** operations with a fixed technical
-  meaning keep their name (*Oblique*, *Flex*, *OT Def*); Power names are playful
+  meaning keep their name (*oblicua*, *Flex*, *OT Def*); Power names are playful
   power (*Empuje fuerte* for Power Nudge); *smart* is *astuto/a*; Genius, Follower, Cousins, Skin and
   Sketchboard take a plain native word where one is attested, otherwise translate
   the fallback original term in the term table (the Fallback column). See
   `fontlab-localization`, section "Choose terms in the house voice".
-- **Established loans stay:** *kerning*, *tracking*, *hinting*, *máster*
-  (with accent, plural *másteres*), *lookup*. *Interletraje* is prose, not
-  the feature name.
+- **Established loans stay:** *kerning*, *hinting*, *autohinting*, *máster*
+  (with accent, plural *másteres*). OpenType lookup is *procedimiento*.
+  Use *espaciado* for tracking.
 - **Standard commands follow the platform:** *Cancelar*, *Copiar*, *Pegar*,
   *Deshacer*, *Rehacer*, *Salir*, *Preferencias* on macOS, *Configuración*
   where Windows uses it, *Mostrar en Finder*. Qt's own `qtbase_es` catalog
@@ -248,6 +248,16 @@ and reason. Report only checks performed.
 
 `fontlab-localization` for the shared rules; `fontlab-terminology` for
 product names and shared nouns; `fontlab-technical` for Spanish help text.
+
+## FontLab terminology and compact labels
+
+Preserve deliberately uppercase source labels using the language’s case rules. Keep numeric controls compact with UPM, PPM and LSB/RSB (French AG/AD); explain the full terms in help. The Family Dimensions “Units Per eM:” label is an intentional expanded exception.
+
+Use the current core memory and its approval status. OpenType *lookup* defaults to the translation of *procedure*, with a different term only when strong OpenType-specific evidence supports it. Explicit choices are German *Lookup*, French *lookup*, Polish *procedura* and Russian *процедура*. Ordinary searches, individual rules and OpenType features are separate concepts. Preserve literal code keywords and identifiers.
+
+Translate Fusion with the fallback *Welder*. Use the core's phonetic FontAudit transliteration in non-Latin scripts, including Chinese; preserve `FontAudit` in code. Proposed spellings remain proposed. Before rebuilding a QPH, recover team edits and import their terms and notes into the core memory.
+
+Compare mnemonic-split terms with unmarked labels. Keep labels compact, aiming for 120% of the English length in Dimensions and Glyph Window preferences without losing meaning. Omit redundant font, color or command wording when context supplies it. TTH labels can omit “use” and abbreviate TrueType hinting; help can explain more. A full harmonization requires three complete catalog reviews, then reconciliation of help with the final UI and verification of generated resources.
 
 <!-- fontlab:shared:start -->
 ## House rules

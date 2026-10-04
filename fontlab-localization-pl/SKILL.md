@@ -78,6 +78,18 @@ for the crop command. A checkbox describing a font takes *Nieproporcjonalny*,
 not the plural *nieproporcjonalne*. Keep cases and agreement in complete help
 sentences, including *tęgość obrysu*, *tęgości obrysu* and *grubość trzonu*.
 
+## References, guides and components in context
+
+Use *odwołanie do elementu* for a linked element reference, with *odwołania*,
+*odwołań* and *odwołaniem* in complete phrases. A measurement reference is a
+different concept: retain *punkt odniesienia*, *wartość odniesienia* and
+*materiał odniesienia* for geometry, comparison values and visual source material.
+
+A positioning guide is *prowadnica*: *dodaj prowadnicę*, *nazwa prowadnicy*,
+*usuń prowadnice*, *do prowadnic*. A component is *komponent*, with genitive
+*komponentu* and plural *komponenty*. Use *z komponentami* and *z komponentów*;
+a change of noun can require a different preposition form as well as an ending.
+
 ## Register and address
 
 Use the direct second person singular in product help and dialogs, without a
@@ -146,7 +158,7 @@ visible characters without markup or mnemonic markers; a count cannot prove
 that a label fits its control.
 
 Polish has no articles. Drop a repeated object or an obvious verb: *Dodaj
-odniesienie* in an element dialog, *Na wierzch* for stacking order, *Spacjami*
+odwołanie* in an element dialog, *Na wierzch* for stacking order, *Spacjami*
 in the Copy Text submenu. Preserve case endings. A standalone object is
 *Ramka*, not *Ramkę*; the command is *Utwórz Prowadnicę mocy*, not *Utwórz
 Prowadnica mocy*. Commands use imperatives: *Wektoryzuj* performs an action,
@@ -159,8 +171,7 @@ and *Dopasuj przesunięcia*. Master compatibility remains *zgodność matryc*;
 copying German's synchron family must not erase that distinction.
 
 A construction recipe is *przepis*: *Edytuj przepis*, *w przepisie*, *przepisy
-autowarstw*. Keep *bez szerokości pola* for nonspacing elements even when it is
-longer than German. The property excludes the element from metrics; it does
+autowarstw*. Use *bezmetryczny* for nonspacing elements, with the appropriate grammatical agreement. The property excludes the element from metrics; it does
 not delete its contours. Measurements may use *wers.* and *min.*. Check every
 occurrence of a repaired concept, including mnemonic-split sources and quoted
 menu paths. Retain necessary conditions and precise technical terms.
@@ -180,27 +191,27 @@ menu paths. Retain necessary conditions and precise technical terms.
 - **Width:** advance width is *szerokość pola* and vertical advance *wysokość
   pola* (founder's decision of 29 September 2026; FontForge says *szerokość
   znaku*); the width axis is *szerokość* with *oś* named; tracking is
-  *tracking* (Felici and FontForge); line gap is *interlinia*; sidebearings
+  *rozświetlenie*; line gap is *interlinia*; sidebearings
   *odsadka lewa/prawa*; kerning *kerning*, *para kernowa*, *klasa kernowa*,
   *wyjątek kernowy*, with the verb *kernować* and the adjective *kernowy*
   (never *kerningować*); hinting gives *hintować*, *hintowy*, and
   autohinting is *autohinting*.
 - **Drawing:** *kontur* (contour), *węzeł* (node), *uchwyt* (handle),
   *segment*, *krzywa*, *odcinek* (straight segment), *punkt kontrolny*,
-  *kotwica* (anchor), *element*, *składnik* (component), *odniesienie*
+  *kotwica* (anchor), *element*, *komponent* (component), *odwołanie*
   (reference), *warstwa* (layer), *maska* (mask), *pinezka* (pin).
 - **Type anatomy:** *szeryf*, *trzon* (stem; *trzon standardowy* for a
   standard stem, *łącze trzonu* for a stem link), *zwieńczenie* (terminal;
   a stroke cap stays *zakończenie*), *wydłużenie górne/dolne*
   (ascender/descender), *wysokość x*, *wysokość wersalików*, *linia pisma*
-  (baseline), *światło wewnątrzliterowe* (counter), *brzuszek* (bowl),
+  (baseline), *punca* (counter), *brzuszek* (bowl),
   *naddatek* (overshoot, the optical surplus), *pułapka* (ink trap). A drawn
   path is *obrys* (stroke): *zakończenie* (cap), *łącze obrysu* (join),
   *utrwal obrys* (expand stroke), *utrwal filtr* (expand filter).
 - **Other reviewed decisions:** autotrace is *wektoryzacja*; mark is
   *diakrytyk*, mark attachment *przyłączanie diakrytyków*, cursive attachment
-  *przyłączanie pisankowe*, nonspacing mark *diakrytyk bez szerokości pola*;
-  variation selector *przełącznik wariantu*; lookup is *podprogram zecerski*,
+  *łącze pisankowe*, nonspacing mark *diakrytyk bezmetryczny*;
+  variation selector *przełącznik wariantów*; lookup is *procedura*,
   feature code *kod funkcji zecerskiej*; Unicode codepoint *jednostka
   unikodu*, glyph index *indeks glifu*; font tables are *tablica CVT*,
   *tablica OS/2* (an interface table stays *tabela*); axis map *mapa osi*;
@@ -212,18 +223,18 @@ menu paths. Retain necessary conditions and precise technical terms.
   sort and the everyday word. The catalog says *font* for the file and *krój*
   for the design; never *czcionka* in the UI.
 - **Feature names follow the house voice** (founder's decisions of 29
-  September 2026): Nudge is *holowanie*, Power Nudge *superholowanie*, Power
+  September 2026): Nudge is *Szturch*, Power Nudge *Mocny szturch*, Power
   Brush *Pędzel mocy*, Power Guide *Prowadnica mocy*, Power Stroke *Obrys
-  mocy*; Matchmaker *swat*; True Fill *Pełna krasa*; Sketchboard
+  mocy*; Matchmaker *Swatka*; True Fill *Pełna krasa*; Sketchboard
   *szkicownik*; Skin *skórka*; Cousins *kuzynostwo* (singular *kuzyn*);
   Follower node *węzeł naśladowca*; Dream Up *wyczaruj*; FontLab account *konto
   FontLab*; Vexy coins *żetony Vexy coin*. Operations with a fixed technical
   meaning keep their name: *Oblique*, *Flex*, *OT Def*, *Genius* (*węzeł
-  Genius*), *Fusion*. When a term has no plain Polish word, translate the
+  Genius*). Fusion is *Spawacz*, from the fallback *Welder*. When a term has no plain Polish word, translate the
   fallback original term shown in the term table.
-- **Established loans stay:** *kerning*, *hinting*, *tracking* (feature),
+- **Established loans stay:** *kerning*, *hinting*,
   *glif*, *font*, *interfejs*, *panel*, *eksport*, *import*.
-  In FontLab, *lookup* is *podprogram zecerski*, as specified above.
+  In FontLab, *lookup* is *procedura*, as specified above.
   Calques such as *aplikować* for *apply* (use *zastosuj*) or *suportować*
   are errors.
 - **Standard commands follow the platform:** *Anuluj*, *Kopiuj*, *Wklej*,
@@ -310,6 +321,16 @@ until a native reviewer approves it.
 
 `fontlab-localization` for the shared rules; `fontlab-terminology` for
 product names and shared nouns; `fontlab-technical` for Polish help text.
+
+## FontLab terminology and compact labels
+
+Preserve deliberately uppercase source labels using the language’s case rules. Keep numeric controls compact with UPM, PPM and LSB/RSB (French AG/AD); explain the full terms in help. The Family Dimensions “Units Per eM:” label is an intentional expanded exception.
+
+Use the current core memory and its approval status. OpenType *lookup* defaults to the translation of *procedure*, with a different term only when strong OpenType-specific evidence supports it. Explicit choices are German *Lookup*, French *lookup*, Polish *procedura* and Russian *процедура*. Ordinary searches, individual rules and OpenType features are separate concepts. Preserve literal code keywords and identifiers.
+
+Translate Fusion with the fallback *Welder*. Use the core's phonetic FontAudit transliteration in non-Latin scripts, including Chinese; preserve `FontAudit` in code. Proposed spellings remain proposed. Before rebuilding a QPH, recover team edits and import their terms and notes into the core memory.
+
+Compare mnemonic-split terms with unmarked labels. Keep labels compact, aiming for 120% of the English length in Dimensions and Glyph Window preferences without losing meaning. Omit redundant font, color or command wording when context supplies it. TTH labels can omit “use” and abbreviate TrueType hinting; help can explain more. A full harmonization requires three complete catalog reviews, then reconciliation of help with the final UI and verification of generated resources.
 
 <!-- fontlab:shared:start -->
 ## House rules
