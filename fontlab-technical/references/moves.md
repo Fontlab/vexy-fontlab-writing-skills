@@ -100,6 +100,29 @@ The reader meets the consequence before the command. A decorative metaphor or
 an invented backup route would make this passage less dependable, not warmer.
 The example describes the operation; it does not claim the command was run.
 
+## Give the condition and the result a subject
+
+Facts: in a fictional drawing app, Sketcher, the Auto Fill command fills each
+layer of the current drawing separately. The destination links terms to a
+glossary that defines *layer*.
+
+Draft:
+
+> Filling works separately for each layer, a stacked drawing surface such as
+> Background or Ink.
+
+Revision, with *layer* linked to its glossary entry:
+
+> If you run Auto Fill on a drawing, Sketcher fills each layer independently.
+
+The draft hides both actors. “Filling” could be the reader's action or the
+app's, and the apposition interrupts the relationship to define a term the
+glossary already covers. The revision restates the action compactly, so a reader
+who lands on this sentence alone knows what triggers the behavior. The packet
+names no narrower surface than the app, so Sketcher responds; if it said the
+Layers panel reported progress, that panel would be the subject of that result.
+The result is immediate, so both clauses stay in present tense.
+
 ## Give a next step without inventing a cause
 
 Facts: export stops with E17. Its cause is unknown. The supported next step is

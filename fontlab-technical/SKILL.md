@@ -177,6 +177,20 @@ inventing one. Keep timing and duration distinct. FontLab is the product;
 Fontlab Ltd. is the company. Name the app when Layer, Mask, Group or another
 shared term could be ambiguous.
 
+Write a behavior statement as a condition with its result. The condition names
+the reader and restates the whole action, so the sentence survives a scan: “If
+you generate a glyph with Aidus”, not “Generation”. The result names who
+responds. Treat the software as an organization and address the department the
+reader is dealing with: the Glyph window, the Element tool, the open dialog. Use
+FontLab when the response belongs to the whole application or the evidence names
+no narrower surface; never invent one. Keep both clauses in present tense when
+the result is immediate, and change tense only for a noticeable interval. Steps
+stay imperative.
+
+Link a domain term such as *master* to its glossary entry instead of explaining
+it in an apposition (“a stored design such as Regular or Bold”). Define it inline
+only when no entry exists or the surface cannot link.
+
 ## Preserve notation and executable material
 
 Use the destination’s supported notation. House technical Markdown can mark
@@ -256,7 +270,7 @@ Worked cases: `references/moves.md`.
 
 These rules implement the FontLab writing guide. They are copied into every skill so each installed skill can work independently. Corpus measurements can inform review; they are not quotas, universal laws, or tests of authorship.
 
-**H1. Accurate actors.** Address the reader when they act or choose. Name the application when it performs an operation. Fonts and files contain data that software interprets. Prefer active voice when the actor matters; retain a clear passive construction when the actor is unknown or irrelevant. Never invent an actor or cause to change the grammar.
+**H1. Accurate actors.** Address the reader when they act or choose. Name the application when it performs an operation. Fonts and files contain data that software interprets. Prefer active voice when the actor matters; retain a clear passive construction when the actor is unknown or irrelevant. Never invent an actor or cause to change the grammar. When an English sentence pairs a reader action with the software's response, give each clause a subject and restate the action compactly: “If you generate a glyph with Aidus, FontLab generates each master independently.” Name the most specific responding surface the evidence supports (a window, tool or dialog), otherwise the application. Use present tense for an immediate result. Where a glossary entry exists and the surface can link, link a domain term to it rather than defining it in an apposition.
 
 **H2. Never invent a fact.** Ground numbers, names, dates, labels, shortcuts, defaults, errors, versions, and quotations in supplied or checked evidence. A draft is evidence of what was written, not independent proof of its claims. Mark unresolved facts with a specific working placeholder such as `[VERIFY CLAIM]`, `[CONFIRM LABEL]`, or `[CONFIRM OFFER]`. A marked draft is unfinished; resolve the gap before publication. Clearly label fictional examples before their invented details.
 
