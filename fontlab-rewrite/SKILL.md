@@ -68,6 +68,13 @@ thought that joined the original clauses. Restore the qualification or the
 concrete noun that lets one sentence develop the next. Retain warmth in a
 specific observation rather than adding a greeting or telling readers how they feel.
 
+Check the opening's promise against the body: a headline or first line that
+the next sentences do not pay is bait, even when every word is true. Repair a
+superlative by naming the specific fact it gestures at, or remove it. Move an
+answer to the reader's likeliest objection next to the decision it blocks, and
+keep price, eligibility and exit terms together. Do not add urgency, social
+proof or an objection the draft's evidence does not contain.
+
 ## Keep the facts within reach
 
 Build each claim from evidence for the named product, version and platform.
@@ -208,7 +215,7 @@ register joins and evidence boundaries. This skill works independently.
 
 These rules implement the FontLab writing guide. They are copied into every skill so each installed skill can work independently. Corpus measurements can inform review; they are not quotas, universal laws, or tests of authorship.
 
-**H1. Accurate actors.** Address the reader when they act or choose. Name the application when it performs an operation. Fonts and files contain data that software interprets. Prefer active voice when the actor matters; retain a clear passive construction when the actor is unknown or irrelevant. Never invent an actor or cause to change the grammar.
+**H1. Accurate actors.** Address the reader when they act or choose. Name the application when it performs an operation. Fonts and files contain data that software interprets. Prefer active voice when the actor matters; retain a clear passive construction when the actor is unknown or irrelevant. Never invent an actor or cause to change the grammar. When an English sentence pairs a reader action with the software's response, give each clause a subject and restate the action compactly: “If you generate a glyph with Aidus, FontLab generates each master independently.” Name the most specific responding surface the evidence supports (a window, tool or dialog), otherwise the application. Use present tense for an immediate result. Where a glossary entry exists and the surface can link, link a domain term to it rather than defining it in an apposition.
 
 **H2. Never invent a fact.** Ground numbers, names, dates, labels, shortcuts, defaults, errors, versions, and quotations in supplied or checked evidence. A draft is evidence of what was written, not independent proof of its claims. Mark unresolved facts with a specific working placeholder such as `[VERIFY CLAIM]`, `[CONFIRM LABEL]`, or `[CONFIRM OFFER]`. A marked draft is unfinished; resolve the gap before publication. Clearly label fictional examples before their invented details.
 

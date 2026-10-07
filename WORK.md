@@ -4,6 +4,16 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-10-07: marketing skill expansion
+
+Expanded `fontlab-marketing` from the writing guide's October 2026 marketing
+work (new guide page and chapters 311–315, sourced from the Marketing2 video
+corpus and seven books). Added four reference files and short additions to
+`fontlab-write` and `fontlab-rewrite`. Shared house-rules block untouched;
+`sync_shared.py --check` and `check_all.sh` pass. Nothing committed; the skills
+site in `docs/` was not rebuilt, and installed copies need reinstalling.
+
+
 ## 2026-10-01: fl10n issue 154, fifteen machine-drafted language skills
 
 Added `fontlab-localization-<code>` skills for Simplified Chinese (zh),

@@ -27,7 +27,7 @@ notes and approval status.
 | Skill | Use it for |
 |---|---|
 | `fontlab-neutral` | Release notes, what's new, announcements, introductions, About pages. The primary voice skill. |
-| `fontlab-marketing` | Landing pages, product pages, store copy, campaigns, taglines. |
+| `fontlab-marketing` | Landing pages, product pages, store copy, campaigns, taglines, upgrade mail, comparison pages, offers and objections, search-ready product passages, AI-assisted marketing drafts. |
 | `fontlab-technical` | Manuals, procedures, reference pages, help articles, tooltips, API docs. |
 | `fontlab-write` | New text that connects emotional appeal to precise technical explanation. |
 | `fontlab-rewrite` | Existing mixed text: recognize each passage's job, edit in the matching style, and smooth the transitions. |

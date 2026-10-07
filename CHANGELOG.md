@@ -4,6 +4,24 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-10-07: fontlab-marketing gains openings, offers, objections, search and AI drafting
+
+`fontlab-marketing/SKILL.md` adds eight sections: placing the reader before the
+first sentence (four questions, a private message note, the salesperson test),
+openings as promises the next line keeps, specific claims and visible proof,
+objections answered where they arise with fit statements as requirements,
+legible offers with literal exit terms and real deadlines only, readers' own
+words without invented testimonials, passages that survive being quoted by
+search and answer engines, and drafting with a model under the same rules. The
+surface section adds message match, email segmentation by ownership and opening
+on the work in video. Four new reference files hold worked cases:
+`reader-and-openings.md`, `offers-and-objections.md`, `channels.md` and
+`ai-drafting.md`. `fontlab-write` gains the reader-start rule for openings;
+`fontlab-rewrite` gains the promise, superlative and objection checks. The
+rules mirror the writing guide's new Persuasion without pressure page and
+chapters 311 to 315. `check_all.sh` passes.
+
+
 ## 2026-10-07: fontlab-simplify and the skills website
 
 New `fontlab-simplify` skill: rewrites FontLab and Vexy text at one of three
@@ -19,6 +37,16 @@ with ProperDocs, MaterialX and fltheme26 into `docs/`, published at
 https://fontlab.dev/vexy-fontlab-writing-skills/. The old `fl1992mk/` address
 redirects there. The `Site` workflow rebuilds the site on every push to `main`
 and commits the result.
+
+## 2026-10-07: condition and result sentences
+
+House rule H1 now covers sentences that pair a reader action with the
+software's response: give each clause a subject, restate the action compactly,
+name the most specific responding surface the evidence supports and keep an
+immediate result in present tense. Domain terms link to the glossary instead of
+an apposition. `fontlab-technical` explains the choice of surface and adds a
+worked case to `references/moves.md`. Synced the block into every skill;
+`check_all.sh` passes.
 
 ## 2026-10-01: fl10n issue 154, fifteen machine-drafted language skills
 

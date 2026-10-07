@@ -2,9 +2,11 @@
 name: fontlab-marketing
 description: >-
   Write marketing copy for FontLab and Vexy products in the house voice: landing pages, product
-  pages, hero sections, pricing pages, store and campaign copy, email, ad text, taglines and calls
-  to action. Use when the reader needs to assess an offer or decide whether to try, buy,
-  or upgrade. Choose the register per passage: neutral for factual notices and technical
+  pages, hero sections, pricing pages, store and campaign copy, email and upgrade mail, ad text,
+  comparison pages, video and social scripts, taglines and calls to action. Use when the reader
+  needs to assess an offer or decide whether to try, buy, or upgrade, and when planning
+  openings, offers, objection handling, search-ready product passages or AI-assisted
+  marketing drafts. Choose the register per passage: neutral for factual notices and technical
   for instructions, including inside marketing documents. Existing customers may need
   a notice or a new offer according to the message's purpose.
 license: MIT
@@ -47,6 +49,41 @@ Choose the register per passage. An offer may persuade, a notice informs and a
 walkthrough instructs. Existing-customer mail can contain a new offer; it should
 still answer relevant questions about cost, eligibility, changes and action.
 Keep prices, licensing, compatibility, privacy, security and limitations literal.
+
+## Place the reader before the first sentence
+
+Ask four questions in order: does the reader know the problem, know that tools
+solve it, know this product, know its price and requirements? The first “no”
+sets the opening. An owner of the previous version gets the change, price and
+date first. Someone comparing tools gets the mechanism and evidence. Someone
+who has not named the problem gets their own task first; the product enters
+when that task is recognizable. Give each piece one primary starting point and
+route other readers elsewhere.
+
+Before drafting a substantial piece, write the message privately: what the
+product does and how, then why this reader would consider it, why ask us, why
+change what they use now (doing nothing included, without inventing a cost of
+staying put), why this product, and why now if a true reason exists. Leave an empty answer empty. Compress the message
+to about ten words; every section must serve that version.
+
+Apply the salesperson test to each line: would a knowledgeable colleague say
+it to this reader with the file open between them? Visible effort to persuade,
+such as a slogan, a clever line that needs explaining or mood before the first
+fact, raises resistance. Let the work be visible instead.
+
+## Open with a promise the next line keeps
+
+The headline, subject line, first frame or first sentence makes a promise the
+next screen must pay at once. Curiosity is honest when the piece answers its
+own question promptly; withholding the answer, or answering something smaller,
+is bait. Never hold back price, eligibility or a limit for a reveal.
+
+Select the reader by task, object or situation, never by status or flattery.
+If an opening could be sent to anyone, rewrite it. Generate candidates from
+different points of entry (task, visible result, object, condition, the
+question the reader would type) rather than synonyms, and keep the plain
+version as a fallback. Draft at full strength, then walk each candidate back
+until every word has a mechanism behind it.
 
 ## Find the detail that develops the promise
 
@@ -116,6 +153,79 @@ specific placeholders such as `[VERIFY CLAIM: evidence needed]`, `[CONFIRM OFFER
 eligibility and price]` or `[CONFIRM DESTINATION: next step]`. Never put a guessed
 value before its marker. A marked draft is unfinished.
 
+## Prefer specific claims and visible proof
+
+A superlative is discounted and taints neighboring claims; a specific claim is
+either true or false. Name the format, the count, the control, the condition.
+An ordinary process nobody has explained can carry a page when stated plainly.
+Run the swap test on praise (with a competitor's name, is it still true?); a
+shared fact stated plainly still earns its place. Where a general claim is
+needed, say what it means, why it matters to this reader and how to check it.
+
+Use the strongest evidence available, in this order: a demonstration on the
+reader's kind of material with input, settings, result and anything untested
+named; an exact, permissioned account from someone else; the company's own
+statement. Many small proofs beat one large claim. A demonstration that keeps
+its first imperfect pass and the setting that fixed it is more believable than
+a montage.
+
+## Answer objections where they arise
+
+Readers leave over unanswered questions: will my files open, what does the
+license cover, will my scripts run, can I learn it, can I undo the purchase.
+Draw objections from supplied support mail, forum threads, reviews and sales
+questions. Answer each next to the decision it blocks, the likeliest early,
+in the order objection, claim, proof, benefit. Answer the strongest real
+objection directly, including an honest limit. Never invent an objection to
+knock down or a reader's doubt about themselves.
+
+When evidence supports it, state fit: who needs the product, what they need
+before starting, and which tool, including another Fontlab Ltd. product, serves
+a task better. Write it as a requirement, not a verdict on the reader. It is
+not compulsory on every page.
+
+## Make the offer legible
+
+Put the offer where the reader decides: what they get, amount and currency,
+who qualifies, term, and exit terms (trial length and limits, refund window,
+renewal and cancellation, what the buyer keeps after stopping). If eligibility,
+contents, price and date do not fit one or two sentences, the offer is not
+ready; ask for the missing terms. Say what the price covers before or beside
+the number. Do not follow it with an apology, a minimizing comparison or
+per-day arithmetic; answering a price question with what it covers is expected. An upgrade message lists the changes
+since the version the reader owns.
+
+Risk reversal means literal terms, never outcome guarantees. Answer price
+resistance with a different package at its own price rather than an unexplained
+cut. Eligibility discounts (upgrade, education, crossgrade) are fine when their
+reason is stated. Every promotion needs a true, stated reason. A genuine deadline gives
+date, time and time zone and appears everywhere the offer does. Reject resetting
+timers, invented reference prices, decoy tiers, “only” before a price and
+scarcity claims for unlimited digital goods.
+
+## Use the reader's words
+
+Prefer the practitioner's nouns from supplied research to internal feature
+names, keeping exact interface labels where the reader acts. Never publish a
+paraphrase as a quotation, a composite as a customer, or a public phrase as an
+endorsement. Method: `references/reader-and-openings.md`.
+
+## Write passages that survive being quoted
+
+In help, FAQ, comparison and product-detail passages, put the question in the
+heading and the answer first, and name the product, version, format and
+platform so a lifted passage stays true; keep prices and limits beside their
+claims. Reuse a supplied approved product description verbatim. Compare only on
+stated criteria, naming the other tool's real strengths. Cases:
+`references/channels.md`.
+
+## Draft with a model under the same rules
+
+Draft only from supplied material and mark missing facts instead of filling
+them. In an AI-assisted workflow, keep verified facts, outline, draft, separate
+review and named human approval as distinct stages; a person writes or approves
+the lead claim, the offer and any quotation. Cases: `references/ai-drafting.md`.
+
 ## Make the next action match what happens
 
 A label should describe the actual destination and relevant commitment. A
@@ -163,6 +273,13 @@ Honor actual length limits and count them. Do not treat an editorial suggestion
 as a platform limit or claim a speaking duration without timing it. Give each
 message in a sequence a distinct purpose, and recheck current terms before reuse.
 
+Match the message across a route: the ad, post, subject line or link text and
+the landing headline make the same promise, and checkout repeats the same
+terms. Segment mail by what the reader owns, from supplied facts; most messages
+should be useful on their own, with any offer labelled as one. A plain-text
+note is signed by the real person who wrote it. In video, open on the work
+itself, the result or the visible problem, and let the next shot pay it.
+
 Plan video speech and images together. Captions convey speech and meaningful
 sounds; essential visual information also needs narration or audio description
 and suitable transcript treatment. Demonstrations need fair inputs, settings,
@@ -206,14 +323,18 @@ notes. Identify blocked deliverables; do not call them publication-ready.
 `fontlab-terminology` covers names; `fontlab-localization` covers translation
 readiness. These rules work without another installed skill.
 
-Worked cases: `references/moves.md`.
+Worked cases: `references/moves.md` (voice and evidence),
+`references/reader-and-openings.md` (starting points, message, openings),
+`references/offers-and-objections.md` (offers, terms, fit, objections),
+`references/channels.md` (email, video, ads, comparisons, search and answer
+engines) and `references/ai-drafting.md` (model briefs, markers, review).
 
 <!-- fontlab:shared:start -->
 ## House rules
 
 These rules implement the FontLab writing guide. They are copied into every skill so each installed skill can work independently. Corpus measurements can inform review; they are not quotas, universal laws, or tests of authorship.
 
-**H1. Accurate actors.** Address the reader when they act or choose. Name the application when it performs an operation. Fonts and files contain data that software interprets. Prefer active voice when the actor matters; retain a clear passive construction when the actor is unknown or irrelevant. Never invent an actor or cause to change the grammar.
+**H1. Accurate actors.** Address the reader when they act or choose. Name the application when it performs an operation. Fonts and files contain data that software interprets. Prefer active voice when the actor matters; retain a clear passive construction when the actor is unknown or irrelevant. Never invent an actor or cause to change the grammar. When an English sentence pairs a reader action with the software's response, give each clause a subject and restate the action compactly: “If you generate a glyph with Aidus, FontLab generates each master independently.” Name the most specific responding surface the evidence supports (a window, tool or dialog), otherwise the application. Use present tense for an immediate result. Where a glossary entry exists and the surface can link, link a domain term to it rather than defining it in an apposition.
 
 **H2. Never invent a fact.** Ground numbers, names, dates, labels, shortcuts, defaults, errors, versions, and quotations in supplied or checked evidence. A draft is evidence of what was written, not independent proof of its claims. Mark unresolved facts with a specific working placeholder such as `[VERIFY CLAIM]`, `[CONFIRM LABEL]`, or `[CONFIRM OFFER]`. A marked draft is unfinished; resolve the gap before publication. Clearly label fictional examples before their invented details.
 
