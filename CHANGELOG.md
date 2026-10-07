@@ -4,6 +4,31 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-10-07: checklists, a check-and-repair loop, and the prompts
+
+Every skill now ends with a checklist and starts with the order of work. The
+voice skills (neutral, marketing, technical, write, rewrite, tldr, simplify,
+terminology, partners and localization) each have eight to twelve observable
+yes-or-no items tagged with the house rule they enforce. The four hand-written
+language skills gained a numbered review checklist; the fifteen generated ones
+treat their existing Review list as the checklist, through a new section that
+`new_language_skills.py` writes.
+
+New house rule H17: after each portion, answer each checklist item separately
+against the text and the evidence, name the passage, repair only failures,
+recheck and stop after three rounds, marking what still fails. It also asks for
+a separate reviewer when the tool can start one, and keeps the record private
+unless notes are allowed. `fontlab-tldr` runs the checklist inside its three
+rounds; a trial showed that its length item otherwise drew the agent into extra
+passes, and the skill now says the final check adds no round.
+
+The eight copyable prompts moved here from the writing guide's book, as
+`prompts/`, and the site gained a Prompts section. A ninth prompt reviews a
+draft as a second reader. Each short variant ends with a checklist and the same
+loop. Each long variant is generated from its skill by the new
+`tools/scripts/sync_prompts.py`, which `check_all.sh` runs with `--check`;
+`tests/test_sync_prompts.py` covers it.
+
 ## 2026-10-07: fontlab-marketing gains openings, offers, objections, search and AI drafting
 
 `fontlab-marketing/SKILL.md` adds eight sections: placing the reader before the

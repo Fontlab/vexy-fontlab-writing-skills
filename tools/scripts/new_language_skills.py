@@ -117,6 +117,13 @@ def opening(name):
 
 def closing(code, name):
     return textwrap.dedent(f"""\
+        ## Run the review as a loop
+
+        The Review list above is this skill's checklist. Run it on each portion
+        as H17 describes: one item at a time against source, target and the term
+        table; name the string behind each answer; repair what fails and recheck
+        it. Stop after three rounds and report what still fails.
+
         ## References
 
         - `references/terms.md`: the full {name} term table, generated from the core

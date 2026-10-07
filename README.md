@@ -62,6 +62,31 @@ Balanced is a deliberate mixture, not a new name for neutral. Use neutral for th
 
 Use `/fontlab-tldr` to condense a source while keeping its own narrative voice. It combines neutral-writing discipline with three rounds at the same 20% target, then returns only the final text. When no distinctive English style is identifiable, it uses ASD-STE100 as the fallback.
 
+## Prompts for tools without skills
+
+Not every chat installs skills. The [prompts](prompts/index.md) carry the same
+rules for copying and pasting, one page per job: neutral text, marketing and
+technical writing or editing, balanced writing or editing, TLDR and a review
+prompt for a second reader. Each page has a short variant and a long one. The
+long variant is generated from the skill by `tools/scripts/sync_prompts.py`,
+so it cannot drift; the short variant is maintained by hand.
+
+## How the skills make their rules hold
+
+A long rule set asks the agent to remember everything while it writes, and
+models drop instructions as their number grows. So each skill starts with the
+order of work and ends with a checklist of eight to twelve yes-or-no questions
+about the text and its evidence, tagged with the house rule each enforces.
+House rule H17 says how to use it: after every portion of the work, answer each
+item separately and quote the words behind the answer, repair only what
+fails, recheck the repairs, mark an item that fails twice and stop after three
+rounds, marking what still fails. Where the agent can open a subagent or a fresh chat, it hands that
+reviewer the draft, the evidence and the checklist, not its own reasoning.
+`fontlab-tldr` runs the checklist inside its three rounds and adds none.
+
+The writing guide's [For agents](https://fontlab.dev/vexy-fontlab-writing-styleguide/fl1992mk/guide/for-agents/)
+page gives the research behind this.
+
 ## How the skills use the house voice
 
 Neutral states facts and changes warmly. Marketing connects an offer with the
@@ -101,6 +126,7 @@ python3 tools/scripts/new_language_skills.py  # rewrite the fifteen machine-draf
 python3 tools/scripts/export_terms.py         # regenerate the per-language term tables from ../vexy-fontlab-writing-styleguide
 python3 tools/scripts/sync_shared.py          # write the block into every skill
 python3 tools/scripts/sync_shared.py --check  # fail if any skill is out of date
+python3 tools/scripts/sync_prompts.py         # regenerate the long variant of every prompt
 python3 tools/scripts/check_paths.py          # fail on an unresolvable path or sibling name
 bash tools/scripts/check_all.sh               # all of the above
 ```

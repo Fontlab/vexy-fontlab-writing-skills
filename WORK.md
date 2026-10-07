@@ -4,6 +4,37 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-10-07: making the rules hold
+
+Research: a NotebookLM deep web search (34 sources, notes in the writing
+guide's `dev/agent-adherence-2026-10/`) and the primary papers and Anthropic
+documents it led to. Gemini deep research through `gdr` failed twice ("silently
+aborted by Google") after the CLI was repaired by pinning `gemini-webapi==2.0.0`.
+The findings that shaped the change: adherence falls as instruction count grows
+(IFScale); independent verification questions reduce hallucination (CoVe);
+self-correction without external evidence can make answers worse; Anthropic's
+skill guidance prescribes a checklist and a review-revise loop for style guides;
+fresh-context review and single-line emphasis come from the Claude Code guidance.
+
+Changes: H17, a work order and a checklist in every skill, language checklists,
+the prompts folder and its generator, the review prompt, README and tests.
+`check_all.sh` passes (21 tests) and `./build.py` builds strictly.
+
+Trials with fresh agents: a neutral release note from a new packet (copy-only
+output, no audit leaked, a price placeholder where the evidence had none); an
+edit of a balanced draft with planted faults through the short prompt (invented
+"3x faster", "seamless", a warning after its action, a title-case heading and an
+unspaced dash all repaired; correct passages kept; two rounds); a TLDR, which
+first ran three rounds plus four extra cutting passes because the length item
+kept failing. After the fix, the retrial ran exactly three rounds and returned
+the shortest faithful version. Trials show the method works on these cases;
+they do not measure quality across tasks.
+
+Next: run the skills' evals with and without the checklists; consider a small
+script that flags mechanical candidates (markers, heading case, unspaced dashes,
+stock phrases) for the checklist's literal items.
+
+
 ## 2026-10-07: marketing skill expansion
 
 Expanded `fontlab-marketing` from the writing guide's October 2026 marketing

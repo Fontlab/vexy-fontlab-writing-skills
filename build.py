@@ -41,6 +41,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
+PROMPTS = ROOT / "prompts"
 SITE_URL = "https://fontlab.dev/vexy-fontlab-writing-skills/"
 # The site first lived under fl1992mk/; keep that address working.
 OLD_PATH = "fl1992mk"
@@ -477,11 +478,15 @@ def page_title(md: Path) -> str:
 
 
 def stage_markdown(stage: Path, skills: list[str]) -> None:
-    """Copy README.md and each skill into `stage`, renaming SKILL.md to index.md."""
+    """Copy README.md, the prompts and each skill into `stage`, renaming SKILL.md to index.md."""
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     # Turn the skill names in the README table into links to their pages.
     readme = SKILL_CODE_CELL.sub(lambda m: f"| [`{m[1]}`]({m[1]}/index.md) |", readme)
     (stage / "index.md").write_text(readme, encoding="utf-8")
+    for src in sorted(PROMPTS.glob("*.md")):
+        dest = stage / "prompts" / src.name
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(SKILL_LINK.sub(r"](\1index.md", src.read_text(encoding="utf-8")), encoding="utf-8")
     for name in skills:
         for src in sorted((ROOT / name).rglob("*.md")):
             rel = src.relative_to(ROOT)
@@ -489,6 +494,13 @@ def stage_markdown(stage: Path, skills: list[str]) -> None:
             dest.parent.mkdir(parents=True, exist_ok=True)
             text = SKILL_LINK.sub(r"](\1index.md", src.read_text(encoding="utf-8"))
             dest.write_text(text, encoding="utf-8")
+
+
+def prompt_pages() -> list[Path]:
+    """Return the prompt pages in reading order: the order of the overview table."""
+    overview = (PROMPTS / "index.md").read_text(encoding="utf-8")
+    names = re.findall(r"^\| \[[^\]]+\]\(([a-z-]+\.md)\)", overview, re.M)
+    return [PROMPTS / name for name in names]
 
 
 def skill_section(name: str, indent: str) -> list[str]:
@@ -513,7 +525,10 @@ def nav_yaml(skills: list[str]) -> str:
     languages = [s for s in skills if s.startswith(f"{LOCALIZATION_CORE}-")]
     other = [s for s in skills if s not in VOICE_SKILLS + [LOCALIZATION_CORE] + languages]
     languages.sort(key=lambda s: page_title(ROOT / s / "SKILL.md"))
-    lines = ["  - Home: index.md", "  - Voice skills:"]
+    lines = ["  - Home: index.md", "  - Prompts:", "      - Overview: prompts/index.md"]
+    lines += [f'      - "{page_title(p).removeprefix("Prompt: ")}": prompts/{p.name}'
+              for p in prompt_pages()]
+    lines.append("  - Voice skills:")
     for name in VOICE_SKILLS + other:
         lines += skill_section(name, "      ")
     lines.append("  - Localization:")

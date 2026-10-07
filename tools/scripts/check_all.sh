@@ -6,6 +6,7 @@ cd "$(dirname "$0")/../.." || exit 2
 status=0
 python3 tools/scripts/sync_shared.py --check || status=1
 python3 tools/scripts/check_paths.py || status=1
+python3 tools/scripts/sync_prompts.py --check || status=1
 # Punctuation needs contextual review; it is not a structural failure.
 python3 -m unittest discover -s tests || status=1
 for d in fontlab-*/; do
