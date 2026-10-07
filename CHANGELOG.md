@@ -15,9 +15,10 @@ seven worked cases. The rules mirror the new plain-writing page of the writing
 guide. `check_paths.py` knows the new skill; `check_all.sh` passes.
 
 `build.py`, a self-contained `uv` script, renders the README and every skill
-with ProperDocs, MaterialX and fltheme26 into `docs/fl1992mk/`, published at
-https://fontlab.dev/vexy-fontlab-writing-skills/fl1992mk/. The `Site` workflow
-rebuilds it on every push to `main` and commits the result.
+with ProperDocs, MaterialX and fltheme26 into `docs/`, published at
+https://fontlab.dev/vexy-fontlab-writing-skills/. The old `fl1992mk/` address
+redirects there. The `Site` workflow rebuilds the site on every push to `main`
+and commits the result.
 
 ## 2026-10-01: fl10n issue 154, fifteen machine-drafted language skills
 

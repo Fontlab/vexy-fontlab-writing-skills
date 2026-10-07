@@ -12,9 +12,9 @@
 # ]
 # ///
 # this_file: build.py
-"""Build the FontLab writing skills site into docs/fl1992mk.
+"""Build the FontLab writing skills site into docs/.
 
-The site is published at https://fontlab.dev/vexy-fontlab-writing-skills/fl1992mk/
+The site is published at https://fontlab.dev/vexy-fontlab-writing-skills/
 by GitHub Pages (main branch, /docs). The configuration mirrors
 vexy-fontlab-writing-styleguide/src_docs (ProperDocs + MaterialX + fltheme26),
 but every file it needs is embedded here so the build runs from a bare clone.
@@ -25,7 +25,7 @@ renamed SKILL.md copy inside the tree would look like a duplicate skill to
 folder's index.md, so the skills' relative `references/...` links keep working.
 
 Usage:
-    ./build.py           # build docs/fl1992mk
+    ./build.py           # build docs/
     ./build.py --serve   # live preview on http://127.0.0.1:8000/
 """
 
@@ -41,8 +41,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
-SITE = DOCS / "fl1992mk"
-SITE_URL = "https://fontlab.dev/vexy-fontlab-writing-skills/fl1992mk/"
+SITE_URL = "https://fontlab.dev/vexy-fontlab-writing-skills/"
+# The site first lived under fl1992mk/; keep that address working.
+OLD_PATH = "fl1992mk"
 
 # Skills that are not per-language localization skills, in reading order.
 VOICE_SKILLS = [
@@ -58,14 +59,16 @@ VOICE_SKILLS = [
 ]
 LOCALIZATION_CORE = "fontlab-localization"
 
-ROOT_INDEX_HTML = """<!DOCTYPE html>
+REDIRECT_HTML = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vexy FontLab Writing Skills</title>
+    <link rel="canonical" href="{url}">
+    <meta http-equiv="refresh" content="0; url=../">
 </head>
 <body>
+    <p><a href="../">Vexy FontLab Writing Skills</a></p>
 </body>
 </html>
 """
@@ -529,7 +532,7 @@ def write_config(stage: Path, skills: list[str]) -> Path:
     (partials / "nav-item.html").write_text(NAV_ITEM_HTML, encoding="utf-8")
     config = stage / "mkdocs.yml"
     config.write_text(
-        MKDOCS_YML.format(site_url=SITE_URL, site_dir=SITE, nav=nav_yaml(skills)),
+        MKDOCS_YML.format(site_url=SITE_URL, site_dir=DOCS, nav=nav_yaml(skills)),
         encoding="utf-8",
     )
     return config
@@ -549,20 +552,24 @@ def main(argv: list[str]) -> int:
     if LOCALIZATION_CORE not in skills:
         sys.exit(f"build.py: {LOCALIZATION_CORE}/SKILL.md not found under {ROOT}")
     serve = "--serve" in argv
-    with tempfile.TemporaryDirectory(prefix="fl1992mk-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="skills-site-") as tmp:
         stage = Path(tmp)
         (stage / "md").mkdir()
         stage_markdown(stage / "md", skills)
         config = write_config(stage, skills)
         if not serve:
-            shutil.rmtree(SITE, ignore_errors=True)
-            DOCS.mkdir(exist_ok=True)
-            (DOCS / "index.html").write_text(ROOT_INDEX_HTML, encoding="utf-8")
-            (DOCS / ".nojekyll").write_text("", encoding="utf-8")
+            # docs/ holds only build output, so start from an empty tree.
+            shutil.rmtree(DOCS, ignore_errors=True)
         command = ["serve"] if serve else ["build", "--strict"]
         env = os.environ | {"SOURCE_DATE_EPOCH": source_date_epoch()}
         cmd = [sys.executable, "-m", "properdocs", *command, "-f", str(config)]
-        return subprocess.run(cmd, env=env, check=False).returncode
+        code = subprocess.run(cmd, env=env, check=False).returncode
+    if code == 0 and not serve:
+        (DOCS / ".nojekyll").write_text("", encoding="utf-8")
+        old = DOCS / OLD_PATH
+        old.mkdir()
+        (old / "index.html").write_text(REDIRECT_HTML.format(url=SITE_URL), encoding="utf-8")
+    return code
 
 
 if __name__ == "__main__":
