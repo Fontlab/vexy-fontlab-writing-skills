@@ -172,6 +172,9 @@ French *Facile à lire et à comprendre*, Spanish *Lectura Fácil*, Finnish
 terminology. Do not translate English sentence rules word for word into a
 language with different grammar.
 
+Per-language advice for 19 languages, with the rule that wins where a
+national edition conflicts with FontLab conventions: `references/languages.md`.
+
 ## Error messages and code
 
 An error message names the problem in the reader's words, shows a value only
@@ -209,7 +212,7 @@ names; `fontlab-localization` prepares English for translation;
 `fontlab-tldr` shortens a text while keeping its voice. These rules work
 without another installed skill.
 
-Worked cases: `references/moves.md`.
+Worked cases: `references/moves.md`. Other languages: `references/languages.md`.
 
 <!-- fontlab:shared:start -->
 ## House rules
