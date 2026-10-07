@@ -118,6 +118,14 @@ code to the script's refused list and maintain the skill by hand.
 The combined check also runs the script tests. Punctuation choices
 need editorial review; a dash alone does not fail the structural checks.
 
+## Website
+
+`./build.py` (a self-contained `uv` script) renders this README and every skill
+with ProperDocs, MaterialX and the fltheme26 theme into `docs/fl1992mk/`, published at
+<https://fontlab.dev/vexy-fontlab-writing-skills/fl1992mk/>. The `Site` GitHub
+workflow rebuilds it on every push and commits the result. `./build.py --serve`
+previews it locally.
+
 ## Licence
 
 MIT. See `LICENSE`.
