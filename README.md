@@ -32,6 +32,7 @@ notes and approval status.
 | `fontlab-write` | New text that connects emotional appeal to precise technical explanation. |
 | `fontlab-rewrite` | Existing mixed text: recognize each passage's job, edit in the matching style, and smooth the transitions. |
 | `fontlab-tldr` | Literary condensation to about 20%, preserving source voice, structure, named identities, and distinctive phrases through three private rounds. |
+| `fontlab-simplify` | Plain-language, controlled-English (ASD-STE100 writing rules) or easy-to-read rewrites that keep every fact, condition, hedge and label. |
 | `fontlab-terminology` | Product names, term checking, the nouns that mean different things in different apps. |
 | `fontlab-localization` | Writing English that survives translation, Qt catalog mechanics, translation memories, machine drafts, and the error typology a review measures against. |
 | `fontlab-localization-de` | German: register, headline-style compression, compounds and loanwords, plural and number facts, mnemonics, key names, false friends, and the German term table. |

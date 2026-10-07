@@ -52,6 +52,7 @@ VOICE_SKILLS = [
     "fontlab-write",
     "fontlab-rewrite",
     "fontlab-tldr",
+    "fontlab-simplify",
     "fontlab-terminology",
     "fontlab-partners",
 ]

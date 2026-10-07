@@ -4,6 +4,21 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-10-07: fontlab-simplify and the skills website
+
+New `fontlab-simplify` skill: rewrites FontLab and Vexy text at one of three
+levels: plain language after ISO 24495-1, controlled English after the
+ASD-STE100 writing rules (without its dictionary), or easy-to-read after the
+Inclusion Europe standards. Every condition, hedge, label and number survives
+the rewrite; a missing fact becomes a placeholder. `references/moves.md` holds
+seven worked cases. The rules mirror the new plain-writing page of the writing
+guide. `check_paths.py` knows the new skill; `check_all.sh` passes.
+
+`build.py`, a self-contained `uv` script, renders the README and every skill
+with ProperDocs, MaterialX and fltheme26 into `docs/fl1992mk/`, published at
+https://fontlab.dev/vexy-fontlab-writing-skills/fl1992mk/. The `Site` workflow
+rebuilds it on every push to `main` and commits the result.
+
 ## 2026-10-01: fl10n issue 154, fifteen machine-drafted language skills
 
 Added `fontlab-localization-<code>` skills for Simplified Chinese (zh),

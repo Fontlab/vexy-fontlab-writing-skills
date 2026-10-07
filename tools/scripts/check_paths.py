@@ -19,7 +19,7 @@ from pathlib import Path
 
 SKILLS = ["fontlab-neutral", "fontlab-technical", "fontlab-marketing",
           "fontlab-terminology", "fontlab-localization", "fontlab-partners",
-          "fontlab-write", "fontlab-rewrite", "fontlab-tldr",
+          "fontlab-write", "fontlab-rewrite", "fontlab-tldr", "fontlab-simplify",
           "fontlab-localization-de", "fontlab-localization-es",
           "fontlab-localization-fr", "fontlab-localization-pl"] + [
     f"fontlab-localization-{code}" for code in (
