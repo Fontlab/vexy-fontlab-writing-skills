@@ -27,8 +27,16 @@ edit of a balanced draft with planted faults through the short prompt (invented
 unspaced dash all repaired; correct passages kept; two rounds); a TLDR, which
 first ran three rounds plus four extra cutting passes because the length item
 kept failing. After the fix, the retrial ran exactly three rounds and returned
-the shortest faithful version. Trials show the method works on these cases;
-they do not measure quality across tasks.
+the shortest faithful version. Those trials used the first wording of H17
+("name the passage"). The shipped wording asks for a quotation of each failure
+and, for a pass, the passage that satisfies the item or a search of the whole
+portion for items about something absent; an item that fails twice is marked.
+A retrial with that wording (an upgrade-mail edit through the short marketing
+prompt) removed invented social proof, an overstated benefit and a missing
+eligibility condition, marked the unknown button destination, checked the
+absence items by searching the section, and finished in two rounds with no
+audit in the output. Trials show the method works on these cases; they do not
+measure quality across tasks.
 
 Next: run the skills' evals with and without the checklists; consider a small
 script that flags mechanical candidates (markers, heading case, unspaced dashes,
