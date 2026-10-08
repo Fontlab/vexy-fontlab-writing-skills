@@ -4,6 +4,28 @@ this_file: CHANGELOG.md
 
 # Changelog
 
+## 2026-10-08: an evaluation set and more rejected tactics
+
+`fontlab-marketing/evals/evals.json` adds ten cases, the voice skills' first
+for marketing. `references/testing-and-claims.md` grows its rejected table,
+words that need a fact, numbers not to quote, and opens as indicative only.
+Prompts resynced; `check_all.sh` passes.
+
+## 2026-10-07: claims, disclosure and tests in the marketing skill
+
+`fontlab-marketing` follows the writing guide's October additions. SKILL.md
+adds quotations as our claims, "free" with its condition, the whole offer at
+the end with one offer per message, and a short section on disclosing
+relationships and testing on buyers; checklist item 13 covers quotations,
+"free" and disclosure. New `references/testing-and-claims.md`: the claims row,
+quotation and comparison rules, German labels, a five-step test on buyers and a
+rejected-tactics table. `references/reader-and-openings.md` adds the
+mechanism-first rule for crowded categories, the first sentence and captions,
+and where the product name goes; `references/channels.md` adds the news release
+on our own newsroom and one phrase, one page. Prompts resynced
+(`write-marketing`, `edit-marketing`, `review`); `tools/scripts/check_all.sh`
+passes.
+
 ## 2026-10-07: checklists, a check-and-repair loop, and the prompts
 
 Every skill now ends with a checklist and starts with the order of work. The

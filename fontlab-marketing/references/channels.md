@@ -85,6 +85,22 @@ Disclose who wrote the page, state the criteria, describe the other product by
 its own published facts, date the table and say when the other tool fits
 better. No adjectives about the competitor.
 
+## A news release on our own newsroom
+
+A news release is written for buyers as well as editors and kept permanently on
+our own news page under the company's name, with prices, eligibility and links
+to the pages that carry the facts. That is not disguised advertising; a paid
+placement made to look like reporting is. Pitches go to one writer at a time,
+naming an article of theirs that makes the news relevant: plain text, no
+attachments, no "Re:" on a first message.
+
+## One phrase, one page
+
+Each phrase a buyer searches for has one preferred page; other pages link to
+it. Put the brand beside the generic phrase in the first sentence ("TransType
+converts a variable font to static fonts"). Research search terms in each
+language instead of translating the English list. Retired pages redirect.
+
 ## Passages that survive being quoted
 
 > **Question heading:** Does Vexy Lines export SVG?

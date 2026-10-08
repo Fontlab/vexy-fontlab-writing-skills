@@ -4,6 +4,16 @@ this_file: WORK.md
 
 # Work log
 
+## 2026-10-07: claims, disclosure and tests in fontlab-marketing
+
+Followed the writing guide's October additions (source research in
+`Marketing2/.work/corpus-synthesis-3.md`). SKILL.md stays compact: three
+paragraphs and one checklist item added, the detail in the new
+`references/testing-and-claims.md`, in line with the adherence finding that
+long instruction lists are followed less reliably. Prompts resynced;
+`tools/scripts/check_all.sh` passes (21 tests). The installed copy in
+`~/.agents/skills/fontlab-marketing` is separate and was not changed.
+
 ## 2026-10-07: making the rules hold
 
 Research: a NotebookLM deep web search (34 sources, notes in the writing

@@ -136,6 +136,7 @@ Answer each question separately, against the text and the evidence: quote the wo
 10. Stock praise such as “seamless”, “powerful” or “game-changing” was replaced by a specific detail or removed. (H8)
 11. Instructions, warnings and licence wording inside the copy stay literal. (H13)
 12. Product names, labels and notation are exact; new headings use sentence case. (H7, H11, H12)
+13. Every quotation shows date, version, source and any connection; every "free" carries its condition; any partner relationship is disclosed before the recommendation. (H2, H3)
 
 #### Checklist: FontLab technical writing
 

@@ -153,7 +153,12 @@ percentage increase in speed. Do not invent customers or soften an unsupported
 universal claim into an unsupported “many”.
 
 Preserve quotations and attribution exactly. Obtain missing permission rather
-than writing a plausible endorsement. A comparison can recommend a fit without
+than writing a plausible endorsement. A published quotation is our claim: show
+its date, product version and source, and disclose any connection (employment,
+partnership, free license, pre-release build). "Free" carries its condition in
+the same unit wherever it appears, subject lines and translations included. A
+claim the reader could read as a measurement or a complete list ("saves
+hours", "every format") needs that evidence or becomes the mechanism. A comparison can recommend a fit without
 ridiculing another tool or the people who use it. A shared fact or common action
 label can be useful even when another company could say it too.
 
@@ -217,6 +222,21 @@ reason is stated. Every promotion needs a true, stated reason. A genuine deadlin
 date, time and time zone and appears everywhere the offer does. Reject resetting
 timers, invented reference prices, decoy tiers, “only” before a price and
 scarcity claims for unlimited digital goods.
+
+Give each message one offer for its reader; other products wait for the order
+confirmation. End a page with the whole offer in one place (what the buyer
+receives, who qualifies, total price, requirements) and a button that names the
+action. A notice to owners can end on the reader's choice, stated truthfully:
+"Version 4 keeps working; upgrade when the master view matters to you."
+
+## Disclose relationships and test on buyers
+
+When a partner, creator, affiliate or employee recommends a product, the
+relationship comes first, in the reader's language, where the recommendation is
+read; German readers get "Werbung" or "Anzeige" at the start. When asked for
+variants, deliver a test: one variable, two supported promises, a key per
+variant, judged on purchases. Cases and German labels:
+`references/testing-and-claims.md`.
 
 ## Use the reader's words
 
@@ -348,6 +368,7 @@ Answer each question separately, against the text and the evidence: quote the wo
 10. Stock praise such as “seamless”, “powerful” or “game-changing” was replaced by a specific detail or removed. (H8)
 11. Instructions, warnings and licence wording inside the copy stay literal. (H13)
 12. Product names, labels and notation are exact; new headings use sentence case. (H7, H11, H12)
+13. Every quotation shows date, version, source and any connection; every "free" carries its condition; any partner relationship is disclosed before the recommendation. (H2, H3)
 
 ## Related skills
 
@@ -359,7 +380,9 @@ Worked cases: `references/moves.md` (voice and evidence),
 `references/reader-and-openings.md` (starting points, message, openings),
 `references/offers-and-objections.md` (offers, terms, fit, objections),
 `references/channels.md` (email, video, ads, comparisons, search and answer
-engines) and `references/ai-drafting.md` (model briefs, markers, review).
+engines), `references/ai-drafting.md` (model briefs, markers, review) and
+`references/testing-and-claims.md` (claims evidence, quotations, "free",
+disclosure, tests on buyers).
 
 <!-- fontlab:shared:start -->
 ## House rules

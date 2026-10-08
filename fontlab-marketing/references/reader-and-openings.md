@@ -88,6 +88,38 @@ Candidates from different points of entry, for the same guide:
 Choose by surface. The question suits a help page and a search result; the task
 suits a tutorial heading.
 
+## In a crowded category, the mechanism leads
+
+Before writing a headline for a crowded category (auto-trace, font conversion,
+"AI for designers"), read a dozen recent headlines from the products the reader
+compares us with. If they share one claim, put the mechanism first and let the
+familiar claim follow as shorthand:
+
+> Smart corners keep the sharp node underneath, so the radius can still change
+> next week.
+
+not "Faster, smoother corners". A larger number is never the answer to a
+crowded market.
+
+Starting points move: after a release, last month's prospects are owners.
+Recheck the reader before reusing a headline that worked.
+
+## The first sentence and the caption
+
+The first body sentence only has to get the second one read: short, easy,
+nearly free of qualification. Captions are read more than body text, so each
+one carries the product name and a complete claim on its own:
+
+> In version 5, the master view shows every master of a glyph side by
+> side.
+
+## Where the product name goes
+
+Name the product in the headline on product pages, upgrade notices, store
+listings and advertisements to readers who know the category; a news headline
+names the version and the change. An article for a reader who has not yet named
+the problem leads with their work and names the product where it does the job.
+
 ## Select the reader, do not flatter them
 
 > **Status:** For serious creative professionals.

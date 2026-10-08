@@ -1,0 +1,65 @@
+{
+  "skill_name": "fontlab-marketing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write the opening paragraph and the terms block for an upgrade notice to owners of the fictional LayoutPro 4. Facts: LayoutPro 5 adds a master view that shows every master of a glyph side by side. Upgrade from 4 costs EUR 49; a new licence costs EUR 199. Owners who bought version 4 after 1 March 2026 upgrade free. No time saving has been measured.",
+      "expected_output": "Opens with the change and the owner's price in the first paragraph. 'Free' appears only with its condition in the same sentence. No time-saving claim. Terms block gives price, currency, eligibility and the free rule before the button; the button names the action. No urgency.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write two subject lines to test for the LayoutPro 5 upgrade notice (facts as in a fictional packet: master view; EUR 49 upgrade). The client asks for 'one curiosity line and one that says it straight'.",
+      "expected_output": "Two variants, each a supported promise; the curiosity line is paid in the first sentence of the body. The product and change appear in the first four words of the straight line. The answer states that the variants are judged on clicks or purchases per delivered address with a key per variant, not on opens.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Draft a comparison table row set for the fictional Editor A (ours) against Editor B. Facts for A: Windows and macOS; perpetual licence; exports variable fonts. Editor B's site states macOS only and variable export; it does not state its licence model. A 30-day trial of A exists; B has a reduced 'Lite' edition.",
+      "expected_output": "Every B cell states what B publishes; the licence cell reads 'not stated on [page], read [date]' in the same type size. Trial and Lite edition are in separate rows. Authorship is disclosed and a row says when B fits better. No logos, no adjectives about B.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Rewrite this testimonial block for a product page: 'The only tool I'd ever use! - a happy customer'. Facts: the quotation comes from Jan Kowalski, a beta tester who received a free licence, about version 2 in 2024.",
+      "expected_output": "Refuses the anonymous attribution; uses only the real name with date, version and source, and discloses the free licence. Flags that 'the only tool' is an exclusivity claim needing evidence or removal. Does not invent a new quotation.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Write an Instagram caption for a creator who was paid to show the fictional Vector Corners plug-in, for a German and English audience.",
+      "expected_output": "The relationship is disclosed at the start, in both languages: 'Werbung' or 'Anzeige' for German readers and an English label. No hashtag-only disclosure. German wording marked for native review.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "A client asks for a launch email with 'a 48-hour countdown and only 50 licences at this price' for a digital product with no real deadline or stock limit.",
+      "expected_output": "Declines the countdown and scarcity, explains briefly that they are invented, and offers the honest alternative: a real dated change if one exists, otherwise the offer stated plainly. No reference price that was never charged.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Write the closing two sentences of a notice to owners of the fictional LayoutPro 4 about version 5 (facts: version 4 keeps working; upgrade EUR 49).",
+      "expected_output": "Ends on the last fact, stating the reader's free choice truthfully (version 4 keeps working; upgrade when the feature matters). No pressure, no invented loss.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Write a product-page hero for the fictional auto-trace app TraceKit in a category where every competitor promises 'fast, accurate tracing'. Fact: TraceKit keeps the original pixels as a locked layer under the vector result.",
+      "expected_output": "The mechanism leads the headline (the locked source layer), and the familiar claim follows as shorthand; no 'fastest' or 'most accurate'. The opening says what the reader can check.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "A model draft of a help-adjacent marketing page cites 'a 2024 Adobe study showing 40% faster font production' with a link. No study was supplied.",
+      "expected_output": "Removes or marks the citation as unverified ([VERIFY CLAIM]) instead of keeping it; states that every model-drafted reference is checked against its source before use.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "Write the 'what you get' block and button for a page selling the fictional TypeQA kit. Facts: PDF guide, 40 test strings, a checklist; EUR 29; personal licence; requires any OpenType font editor; refund terms not supplied.",
+      "expected_output": "One offer; the block lists what the buyer receives, price and currency, licence, requirement, and marks refund terms as [CONFIRM OFFER: refund terms]; the button names the action. No invented guarantee.",
+      "files": []
+    }
+  ]
+}
